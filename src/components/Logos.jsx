@@ -1,4 +1,4 @@
-export default function NintendoLogos() {
+export default function Logos() {
   return (
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-2xl px-6 lg:px-8">

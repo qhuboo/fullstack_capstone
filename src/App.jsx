@@ -5,7 +5,8 @@ import NintendoProductFeatures from "./components/NintendoProductFeatures";
 import PlaystationProductFeatures from "./components/PlaystationProductFeatures";
 import XboxProductFeatures from "./components/XboxProductFeatures";
 import HeaderSection from "./components/HeaderSection";
-import NintendoLogos from "./components/NintendoLogos";
+import Logos from "./components/Logos";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -14,9 +15,10 @@ function App() {
       <HeaderSection />
       <FeatureSection />
       <NintendoProductFeatures />
-      <NintendoLogos />
+      <Logos />
       <PlaystationProductFeatures />
       <XboxProductFeatures />
+      <Footer />
     </div>
   );
 }
