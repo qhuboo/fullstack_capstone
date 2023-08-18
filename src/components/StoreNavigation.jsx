@@ -16,7 +16,7 @@ const navigation = {
         {
           name: "New Arrivals",
           href: "#",
-          imageSrc: "./src/assets/artwork.png",
+          imageSrc: "./src/assets/nintendo/artwork.png",
           imageAlt:
             "Models sitting back to back, wearing Basic Tee in black and bone.",
         },
@@ -70,7 +70,7 @@ export default function StoreNavigation() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="bg-white">
+    <div className="bg-white mt-14">
       {/* Mobile menu */}
       <Transition.Root show={open} as={Fragment}>
         <Dialog as="div" className="relative z-40 lg:hidden" onClose={setOpen}>
@@ -225,6 +225,7 @@ export default function StoreNavigation() {
                     >
                       Create account
                     </a>
+                    1
                   </div>
                 </div>
 
@@ -269,7 +270,7 @@ export default function StoreNavigation() {
                 <a href="#">
                   <span className="sr-only">Your Company</span>
                   <img
-                    className="h-24 w-auto"
+                    className="h-52 w-auto relative z-10"
                     src="../src/assets/main_logo.png"
                     alt=""
                   />
