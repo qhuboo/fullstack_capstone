@@ -1,10 +1,12 @@
 import "./App.css";
 import MainPage from "../src/pages/MainPage";
+import MarketPlace from "./pages/MarketPlace";
 
 function App() {
   return (
     <div>
-      <MainPage />
+      {/* <MainPage /> */}
+      <MarketPlace />
     </div>
   );
 }
