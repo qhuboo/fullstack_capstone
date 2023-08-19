@@ -2,7 +2,7 @@ import game_data from "../data/game_data";
 
 const page_one = [];
 
-for (let i = 0; i < 24; i++) {
+for (let i = 24; i < 48; i++) {
   page_one.push(game_data[i]);
 }
 
