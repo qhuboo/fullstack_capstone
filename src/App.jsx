@@ -5,8 +5,9 @@ import CheckoutPage from "./Components/CheckoutPage";
 
 function App() {
   return (
-    // <Shopping_Cart />
-    <CheckoutPage/>
+    <Shopping_Cart />
+    // <CheckoutPage/>
+    // <Sign_IN/>
     // <Router>
     //   <Switch>
     //     <Route path="/checkout" component={CheckoutPage} />
