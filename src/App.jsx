@@ -1,19 +1,19 @@
 import "./App.css";
-import Sign_IN from "./Components/Sign_In";
-import Shopping_Cart from "./Components/Shopping_Cart";
-import CheckoutPage from "./Components/CheckoutPage";
+import MainPage from "./pages/MainPage";
+import MarketPlace from "./pages/MarketPlace";
+import ProductPage from "./pages/ProductPage";
+import CheckoutPage from "./pages/CheckoutPage";
+import Sign_In from "./pages/Sign_In";
 
 function App() {
   return (
-    <Shopping_Cart />
-    // <CheckoutPage/>
-    // <Sign_IN/>
-    // <Router>
-    //   <Switch>
-    //     <Route path="/checkout" component={CheckoutPage} />
-    //     <Route path="/" component={Shopping_Cart} />
-    //   </Switch>
-    // </Router>
+    <div>
+      <MainPage />
+      <MarketPlace />
+      <ProductPage />
+      <CheckoutPage />
+      <Sign_In />
+    </div>
   );
 }
 
