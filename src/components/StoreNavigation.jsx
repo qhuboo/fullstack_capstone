@@ -67,9 +67,8 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function StoreNavigation() {
+export default function StoreNavigation({ marketList, setMarketList }) {
   const [open, setOpen] = useState(false);
-
   return (
     <div className="bg-white mt-14 z-100">
       {/* Mobile menu */}
@@ -150,8 +149,8 @@ export default function StoreNavigation() {
                                   className="object-cover object-center"
                                 />
                               </div>
-                              <a
-                                href={item.href}
+                              <Link
+                                to="/marketplace"
                                 className="mt-6 block font-medium text-gray-900"
                               >
                                 <span
@@ -159,10 +158,7 @@ export default function StoreNavigation() {
                                   aria-hidden="true"
                                 />
                                 {item.name}
-                              </a>
-                              <p aria-hidden="true" className="mt-1">
-                                Shop now
-                              </p>
+                              </Link>
                             </div>
                           ))}
                         </div>
@@ -181,13 +177,11 @@ export default function StoreNavigation() {
                             >
                               {section.items.map((item) => (
                                 <li key={item.name} className="flow-root">
-                                  <Link to="/marketplace">
-                                    <a
-                                      href={item.href}
-                                      className="-m-2 block p-2 text-gray-500"
-                                    >
-                                      {item.name}
-                                    </a>
+                                  <Link
+                                    to="/marketplace"
+                                    className="-m-2 block p-2 text-gray-500"
+                                  >
+                                    {item.name}
                                   </Link>
                                 </li>
                               ))}
@@ -202,13 +196,11 @@ export default function StoreNavigation() {
                 <div className="space-y-6 border-t border-gray-200 px-4 py-6">
                   {navigation.pages.map((page) => (
                     <div key={page.name} className="flow-root">
-                      <Link to="/marketplace">
-                        <a
-                          href={page.href}
-                          className="-m-2 block p-2 font-medium text-gray-900"
-                        >
-                          {page.name}
-                        </a>
+                      <Link
+                        to="/marketplace"
+                        className="-m-2 block p-2 font-medium text-gray-900"
+                      >
+                        {page.name}
                       </Link>
                     </div>
                   ))}
@@ -216,13 +208,11 @@ export default function StoreNavigation() {
 
                 <div className="space-y-6 border-t border-gray-200 px-4 py-6">
                   <div className="flow-root">
-                    <Link to="/sign-in">
-                      <a
-                        href="#"
-                        className="-m-2 block p-2 font-medium text-gray-900"
-                      >
-                        Sign in | Create Account
-                      </a>
+                    <Link
+                      to="/sign-in"
+                      className="-m-2 block p-2 font-medium text-gray-900"
+                    >
+                      Sign in | Create Account
                     </Link>
                   </div>
                 </div>
@@ -319,8 +309,8 @@ export default function StoreNavigation() {
                                               className="object-cover object-center"
                                             />
                                           </div>
-                                          <a
-                                            href={item.href}
+                                          <Link
+                                            to="/marketplace"
                                             className="mt-6 block font-medium text-gray-900"
                                           >
                                             <span
@@ -328,7 +318,7 @@ export default function StoreNavigation() {
                                               aria-hidden="true"
                                             />
                                             {item.name}
-                                          </a>
+                                          </Link>
                                         </div>
                                       ))}
                                     </div>
@@ -407,17 +397,15 @@ export default function StoreNavigation() {
 
                 {/* Cart */}
                 <div className="ml-4 flow-root lg:ml-6">
-                  <Link to="/cart">
-                    <a href="#" className="group -m-2 flex items-center p-2">
-                      <ShoppingBagIcon
-                        className="h-6 w-6 flex-shrink-0 text-gray-400 group-hover:text-gray-500"
-                        aria-hidden="true"
-                      />
-                      <span className="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800">
-                        0
-                      </span>
-                      <span className="sr-only">items in cart, view bag</span>
-                    </a>
+                  <Link to="/cart" className="group -m-2 flex items-center p-2">
+                    <ShoppingBagIcon
+                      className="h-6 w-6 flex-shrink-0 text-gray-400 group-hover:text-gray-500"
+                      aria-hidden="true"
+                    />
+                    <span className="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800">
+                      0
+                    </span>
+                    <span className="sr-only">items in cart, view bag</span>
                   </Link>
                 </div>
               </div>

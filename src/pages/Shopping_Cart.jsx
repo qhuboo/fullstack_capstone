@@ -1,6 +1,4 @@
 import { Link } from "react-router-dom";
-import React from "react";
-import { XMarkIcon } from "@heroicons/react/24/outline";
 import StoreNavigation from "../components/StoreNavigation";
 import Footer from "../components/Footer";
 
