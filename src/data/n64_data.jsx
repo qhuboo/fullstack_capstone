@@ -12903,9 +12903,12 @@ const n64_data = [
   },
 ];
 
-delete n64_data.alternate_titles;
-delete n64_data.genres;
-delete n64_data.official_url;
-delete n64_data.num_votes;
+for (let i = 0; i < n64_data.length; i++) {
+  delete n64_data[i].alternate_titles;
+  delete n64_data[i].genres;
+  delete n64_data[i].official_url;
+  delete n64_data[i].num_votes;
+  delete n64_data[i].moby_url;
+}
 
 export default n64_data;
