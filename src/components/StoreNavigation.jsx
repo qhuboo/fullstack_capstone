@@ -71,7 +71,7 @@ export default function StoreNavigation() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="bg-white mt-14">
+    <div className="bg-white mt-14 z-100">
       {/* Mobile menu */}
       <Transition.Root show={open} as={Fragment}>
         <Dialog as="div" className="relative z-40 lg:hidden" onClose={setOpen}>
@@ -226,27 +226,13 @@ export default function StoreNavigation() {
                     </Link>
                   </div>
                 </div>
-
-                <div className="border-t border-gray-200 px-4 py-6">
-                  <a href="#" className="-m-2 flex items-center p-2">
-                    <img
-                      src="https://tailwindui.com/img/flags/flag-canada.svg"
-                      alt=""
-                      className="block h-auto w-5 flex-shrink-0"
-                    />
-                    <span className="ml-3 block text-base font-medium text-gray-900">
-                      CAD
-                    </span>
-                    <span className="sr-only">, change currency</span>
-                  </a>
-                </div>
               </Dialog.Panel>
             </Transition.Child>
           </div>
         </Dialog>
       </Transition.Root>
 
-      <header className="relative bg-white">
+      <header className="relative bg-white z-40">
         <nav
           aria-label="Top"
           className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8"
@@ -262,7 +248,6 @@ export default function StoreNavigation() {
                 <span className="sr-only">Open menu</span>
                 <Bars3Icon className="h-6 w-6" aria-hidden="true" />
               </button>
-
               {/* Logo */}
               <div className="ml-4 flex lg:ml-0">
                 <Link to="/">
@@ -273,15 +258,21 @@ export default function StoreNavigation() {
                   />
                 </Link>
               </div>
-
+              {/* ********************************************************************************************************************************************************************************************************
+               ********************************************************************************************************************************************************************************************************
+               ********************************************************************************************************************************************************************************************************
+               ********************************************************************************************************************************************************************************************************
+               ********************************************************************************************************************************************************************************************************
+               ******************************************************************************************************************************************************************************************************** */}
+              {/* DESKTOP        */}
               {/* Flyout menus */}
               <Popover.Group className="hidden lg:ml-8 lg:block lg:self-stretch">
-                <div className="flex h-full space-x-8">
+                <div className="flex h-full space-x-8 z-50">
                   {navigation.categories.map((category) => (
                     <Popover key={category.name} className="flex">
                       {({ open }) => (
                         <>
-                          <div className="relative flex">
+                          <div className="relative flex z-50">
                             <Popover.Button
                               className={classNames(
                                 open
@@ -309,8 +300,10 @@ export default function StoreNavigation() {
                                 className="absolute inset-0 top-1/2 bg-white shadow"
                                 aria-hidden="true"
                               />
-
-                              <div className="relative bg-white">
+                              {/* ***************************************************************
+                               *************************************************************** */}
+                              {/* This is the marketplace menu */}
+                              <div className="relative bg-slate-300	">
                                 <div className="mx-auto max-w-7xl px-8">
                                   <div className="grid grid-cols-2 gap-x-8 gap-y-10 py-16">
                                     <div className="col-start-2 grid grid-cols-2 gap-x-8">
@@ -336,12 +329,6 @@ export default function StoreNavigation() {
                                             />
                                             {item.name}
                                           </a>
-                                          <p
-                                            aria-hidden="true"
-                                            className="mt-1"
-                                          >
-                                            Shop now
-                                          </p>
                                         </div>
                                       ))}
                                     </div>
@@ -364,7 +351,10 @@ export default function StoreNavigation() {
                                                 key={item.name}
                                                 className="flex"
                                               >
-                                                <Link to="/marketplace">
+                                                <Link
+                                                  to="/marketplace"
+                                                  className="text-black"
+                                                >
                                                   {item.name}
                                                 </Link>
                                               </li>
@@ -394,7 +384,6 @@ export default function StoreNavigation() {
                   ))}
                 </div>
               </Popover.Group>
-
               <div className="ml-auto flex items-center">
                 <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
                   <Link
@@ -418,16 +407,18 @@ export default function StoreNavigation() {
 
                 {/* Cart */}
                 <div className="ml-4 flow-root lg:ml-6">
-                  <a href="#" className="group -m-2 flex items-center p-2">
-                    <ShoppingBagIcon
-                      className="h-6 w-6 flex-shrink-0 text-gray-400 group-hover:text-gray-500"
-                      aria-hidden="true"
-                    />
-                    <span className="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800">
-                      0
-                    </span>
-                    <span className="sr-only">items in cart, view bag</span>
-                  </a>
+                  <Link to="/cart">
+                    <a href="#" className="group -m-2 flex items-center p-2">
+                      <ShoppingBagIcon
+                        className="h-6 w-6 flex-shrink-0 text-gray-400 group-hover:text-gray-500"
+                        aria-hidden="true"
+                      />
+                      <span className="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800">
+                        0
+                      </span>
+                      <span className="sr-only">items in cart, view bag</span>
+                    </a>
+                  </Link>
                 </div>
               </div>
             </div>

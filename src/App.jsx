@@ -10,8 +10,6 @@ import Sign_In from "./pages/Sign_In";
 function App() {
   return (
     <div>
-      <Link to="/marketplace">Marketplace</Link>
-      <Link to="/checkout">Checkout</Link>
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/marketplace" element={<MarketPlace />} />

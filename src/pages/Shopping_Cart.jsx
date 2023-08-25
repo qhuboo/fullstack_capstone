@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import React from "react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import StoreNavigation from "../components/StoreNavigation";
@@ -49,9 +50,11 @@ export default function Shopping_Cart() {
       <StoreNavigation />
       <div className="h-24"></div>
       <div className="min-h-screen bg-white">
-        <header className="bg-white shadow">
+        <header className="bg-white">
           <div className="max-w-6xl mx-auto py-07 px6 sm:px-6 lg:px-4">
-            <h1 className="text-3xl font-bold text-gray-900">Shopping Cart</h1>
+            <h1 className="text-3xl font-bold text-gray-900 text-center">
+              Shopping Cart
+            </h1>
           </div>
         </header>
 
@@ -97,12 +100,14 @@ export default function Shopping_Cart() {
               Shipping and taxes calculated at checkout.
             </p>
             <div className="mt-6">
-              <a
-                href="#"
-                className="w-full inline-flex items-center justify-center rounded-md border border-transparent bg-orange-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
-              >
-                Checkout
-              </a>
+              <Link to="/checkout">
+                <a
+                  href="#"
+                  className="w-full inline-flex items-center justify-center rounded-md border border-transparent bg-orange-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
+                >
+                  Checkout
+                </a>
+              </Link>
             </div>
             <div className="mt-6 text-center text-sm text-gray-500">
               <p>
@@ -111,7 +116,8 @@ export default function Shopping_Cart() {
                   type="button"
                   className="text-orange-600 hover:text-indigo-500"
                 >
-                  Continue Shopping &rarr;
+                  {" "}
+                  <Link to="/marketplace">Continue Shopping &rarr;</Link>
                 </button>
               </p>
             </div>
