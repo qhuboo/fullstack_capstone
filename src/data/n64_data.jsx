@@ -12903,4 +12903,9 @@ const n64_data = [
   },
 ];
 
+delete n64_data.alternate_titles;
+delete n64_data.genres;
+delete n64_data.official_url;
+delete n64_data.num_votes;
+
 export default n64_data;
