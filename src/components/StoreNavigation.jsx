@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Fragment, useState } from "react";
 import { Dialog, Popover, Tab, Transition } from "@headlessui/react";
 import {
@@ -180,12 +181,14 @@ export default function StoreNavigation() {
                             >
                               {section.items.map((item) => (
                                 <li key={item.name} className="flow-root">
-                                  <a
-                                    href={item.href}
-                                    className="-m-2 block p-2 text-gray-500"
-                                  >
-                                    {item.name}
-                                  </a>
+                                  <Link to="/marketplace">
+                                    <a
+                                      href={item.href}
+                                      className="-m-2 block p-2 text-gray-500"
+                                    >
+                                      {item.name}
+                                    </a>
+                                  </Link>
                                 </li>
                               ))}
                             </ul>
@@ -199,33 +202,28 @@ export default function StoreNavigation() {
                 <div className="space-y-6 border-t border-gray-200 px-4 py-6">
                   {navigation.pages.map((page) => (
                     <div key={page.name} className="flow-root">
-                      <a
-                        href={page.href}
-                        className="-m-2 block p-2 font-medium text-gray-900"
-                      >
-                        {page.name}
-                      </a>
+                      <Link to="/marketplace">
+                        <a
+                          href={page.href}
+                          className="-m-2 block p-2 font-medium text-gray-900"
+                        >
+                          {page.name}
+                        </a>
+                      </Link>
                     </div>
                   ))}
                 </div>
 
                 <div className="space-y-6 border-t border-gray-200 px-4 py-6">
                   <div className="flow-root">
-                    <a
-                      href="#"
-                      className="-m-2 block p-2 font-medium text-gray-900"
-                    >
-                      Sign in
-                    </a>
-                  </div>
-                  <div className="flow-root">
-                    <a
-                      href="#"
-                      className="-m-2 block p-2 font-medium text-gray-900"
-                    >
-                      Create account
-                    </a>
-                    1
+                    <Link to="/sign-in">
+                      <a
+                        href="#"
+                        className="-m-2 block p-2 font-medium text-gray-900"
+                      >
+                        Sign in | Create Account
+                      </a>
+                    </Link>
                   </div>
                 </div>
 
@@ -267,14 +265,13 @@ export default function StoreNavigation() {
 
               {/* Logo */}
               <div className="ml-4 flex lg:ml-0">
-                <a href="#">
-                  <span className="sr-only">Your Company</span>
+                <Link to="/">
                   <img
                     className="h-52 w-auto relative z-10"
                     src="../src/assets/main_logo.png"
                     alt=""
                   />
-                </a>
+                </Link>
               </div>
 
               {/* Flyout menus */}
@@ -367,12 +364,9 @@ export default function StoreNavigation() {
                                                 key={item.name}
                                                 className="flex"
                                               >
-                                                <a
-                                                  href={item.href}
-                                                  className="hover:text-gray-800"
-                                                >
+                                                <Link to="/marketplace">
                                                   {item.name}
-                                                </a>
+                                                </Link>
                                               </li>
                                             ))}
                                           </ul>
@@ -390,32 +384,25 @@ export default function StoreNavigation() {
                   ))}
 
                   {navigation.pages.map((page) => (
-                    <a
+                    <Link
+                      to="/"
                       key={page.name}
-                      href={page.href}
                       className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
                     >
                       {page.name}
-                    </a>
+                    </Link>
                   ))}
                 </div>
               </Popover.Group>
 
               <div className="ml-auto flex items-center">
                 <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
-                  <a
-                    href="#"
+                  <Link
+                    to="/sign-in"
                     className="text-sm font-medium text-gray-700 hover:text-gray-800"
                   >
-                    Sign in
-                  </a>
-                  <span className="h-6 w-px bg-gray-200" aria-hidden="true" />
-                  <a
-                    href="#"
-                    className="text-sm font-medium text-gray-700 hover:text-gray-800"
-                  >
-                    Create account
-                  </a>
+                    Sign in | Create Account
+                  </Link>
                 </div>
 
                 {/* Search */}
