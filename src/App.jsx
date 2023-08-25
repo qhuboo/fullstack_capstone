@@ -17,7 +17,12 @@ function App() {
         <Route path="/" element={<MainPage />} />
         <Route
           path="/marketplace"
-          element={<MarketPlace marketList={marketList} />}
+          element={
+            <MarketPlace
+              marketList={marketList}
+              setMarketList={setMarketList}
+            />
+          }
         />
         <Route path="/sign-in" element={<Sign_In />} />
         <Route path="/product" element={<ProductPage />} />

@@ -76528,4 +76528,10 @@ for (let i = 0; i < game_data.length; i++) {
   game_data[i].price = randomPrice;
 }
 
-export default game_data;
+const newArray = game_data.filter((game) => {
+  if (game.game_id != 3575 && game.game_id != 3720 && game.game_id != 657) {
+    return true;
+  }
+});
+
+export default newArray;

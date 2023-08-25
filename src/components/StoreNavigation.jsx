@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Fragment, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import { Dialog, Popover, Tab, Transition } from "@headlessui/react";
 import {
   Bars3Icon,
@@ -7,6 +7,7 @@ import {
   ShoppingBagIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
+import game_data from "../data/game_data";
 
 const navigation = {
   categories: [
@@ -35,40 +36,60 @@ const navigation = {
           id: "Games",
           name: "Games",
           items: [
-            { name: "Nintendo 64", href: "#" },
-            { name: "NES", href: "#" },
-            { name: "Super Nintendo", href: "#" },
-            { name: "Playstation 1", href: "#" },
-            { name: "Playstation 2", href: "#" },
-            { name: "Xbox", href: "#" },
-            { name: "Xbox 360", href: "#" },
-            { name: "Gamecube", href: "#" },
-            { name: "Browse All", href: "#" },
+            { name: "Nintendo 64" },
+            { name: "NES" },
+            { name: "SNES" },
+            { name: "PlayStation" },
+            { name: "PlayStation 2" },
+            { name: "Xbox" },
+            { name: "Xbox 360" },
+            { name: "GameCube" },
+            { name: "Browse All" },
           ],
         },
         {
           id: "accessories",
           name: "Accessories",
-          items: [
-            { name: "Consoles", href: "#" },
-            { name: "Controllers", href: "#" },
-          ],
+          items: [{ name: "Consoles" }, { name: "Controllers" }],
         },
       ],
     },
   ],
-  pages: [
-    { name: "About Us", href: "#" },
-    { name: "Account", href: "#" },
-  ],
+  pages: [{ name: "About Us" }, { name: "Account" }],
 };
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function StoreNavigation({ marketList, setMarketList }) {
+export default function StoreNavigation({
+  marketList,
+  setMarketList,
+  setPage,
+}) {
   const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    console.log(marketList);
+  });
+
+  const handleCategoryClick = (event) => {
+    console.log(event.target.textContent);
+    setMarketList(() => {
+      if (event.target.textContent === "Browse All") {
+        return game_data;
+      } else {
+        return game_data.filter((game) => {
+          for (let i = 0; i < game.platforms.length; i++) {
+            if (game.platforms[i].platform_name == event.target.textContent) {
+              return true;
+            }
+          }
+        });
+      }
+    });
+    setPage(0);
+  };
   return (
     <div className="bg-white mt-14 z-100">
       {/* Mobile menu */}
@@ -178,6 +199,7 @@ export default function StoreNavigation({ marketList, setMarketList }) {
                               {section.items.map((item) => (
                                 <li key={item.name} className="flow-root">
                                   <Link
+                                    onClick={handleCategoryClick}
                                     to="/marketplace"
                                     className="-m-2 block p-2 text-gray-500"
                                   >
@@ -342,6 +364,7 @@ export default function StoreNavigation({ marketList, setMarketList }) {
                                                 className="flex"
                                               >
                                                 <Link
+                                                  onClick={handleCategoryClick}
                                                   to="/marketplace"
                                                   className="text-black"
                                                 >

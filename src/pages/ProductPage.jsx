@@ -3,7 +3,6 @@ import ProductOverview from "../components/ProductOverview";
 import StoreNavigation from "../components/StoreNavigation";
 
 export default function ProductPage() {
-  const [page, setPage] = useState(0);
   return (
     <div>
       <StoreNavigation />

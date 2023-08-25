@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 export default function ProductList({ marketList, page }) {
@@ -5,6 +6,7 @@ export default function ProductList({ marketList, page }) {
   for (let i = 0; i < marketList.length; i += 24) {
     pages.push(marketList.slice(i, i + 24));
   }
+  console.log(pages);
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
