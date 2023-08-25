@@ -103,6 +103,7 @@ const game_data = [
       },
     ],
     title: "Resident Evil 3: Nemesis",
+    price: "64.04",
   },
   {
     description:
@@ -190,6 +191,7 @@ const game_data = [
       },
     ],
     title: "Super Bust-A-Move",
+    price: "66.83",
   },
   {
     description:
@@ -320,6 +322,7 @@ const game_data = [
       },
     ],
     title: "Crazy Taxi",
+    price: "109.09",
   },
   {
     description:
@@ -426,6 +429,7 @@ const game_data = [
       },
     ],
     title: "Resident Evil 2",
+    price: "42.84",
   },
   {
     description:
@@ -528,6 +532,7 @@ const game_data = [
       },
     ],
     title: "Resident Evil: Code: Veronica X",
+    price: "30.17",
   },
   {
     description:
@@ -673,6 +678,7 @@ const game_data = [
       },
     ],
     title: "Star Wars",
+    price: "114.80",
   },
   {
     description:
@@ -758,6 +764,7 @@ const game_data = [
       },
     ],
     title: "Gauntlet: Dark Legacy",
+    price: "36.19",
   },
   {
     description:
@@ -838,6 +845,7 @@ const game_data = [
       },
     ],
     title: "Namco Museum",
+    price: "118.45",
   },
   {
     description:
@@ -923,6 +931,7 @@ const game_data = [
       },
     ],
     title: "Eighteen Wheeler: American Pro Trucker",
+    price: "88.35",
   },
   {
     description:
@@ -952,6 +961,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "NBA Street",
+    price: "60.21",
   },
   {
     description:
@@ -1030,6 +1040,7 @@ const game_data = [
       },
     ],
     title: "XGIII: Extreme G Racing",
+    price: "86.56",
   },
   {
     description:
@@ -1107,6 +1118,7 @@ const game_data = [
       },
     ],
     title: "Capcom vs. SNK 2: Mark of the Millennium",
+    price: "105.71",
   },
   {
     description:
@@ -1197,6 +1209,7 @@ const game_data = [
       },
     ],
     title: "Tetris Worlds",
+    price: "92.96",
   },
   {
     description:
@@ -1287,6 +1300,7 @@ const game_data = [
       },
     ],
     title: "Spy Hunter",
+    price: "96.74",
   },
   {
     description:
@@ -1321,6 +1335,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "NHL Hitz 20-02",
+    price: "69.70",
   },
   {
     description:
@@ -1355,6 +1370,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "Madden NFL 2002",
+    price: "82.60",
   },
   {
     description:
@@ -1440,6 +1456,7 @@ const game_data = [
       },
     ],
     title: "Batman: Vengeance",
+    price: "38.19",
   },
   {
     description:
@@ -1525,6 +1542,7 @@ const game_data = [
       },
     ],
     title: "FIFA Soccer 2002: Major League Soccer",
+    price: "98.72",
   },
   {
     description:
@@ -1625,6 +1643,7 @@ const game_data = [
       },
     ],
     title: "Tony Hawk&#39;s Pro Skater 3",
+    price: "58.09",
   },
   {
     description:
@@ -1659,6 +1678,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "NFL Blitz 20-02",
+    price: "55.04",
   },
   {
     description:
@@ -1740,6 +1760,7 @@ const game_data = [
       },
     ],
     title: "SSX Tricky",
+    price: "71.37",
   },
   {
     description:
@@ -1820,6 +1841,7 @@ const game_data = [
       },
     ],
     title: "Dark Summit",
+    price: "118.27",
   },
   {
     description:
@@ -1844,6 +1866,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "Wave Race: Blue Storm",
+    price: "47.47",
   },
   {
     description:
@@ -1914,6 +1937,7 @@ const game_data = [
       },
     ],
     title: "Star Wars: Rogue Squadron II - Rogue Leader",
+    price: "29.43",
   },
   {
     description:
@@ -1989,6 +2013,7 @@ const game_data = [
       },
     ],
     title: "Luigi&#39;s Mansion",
+    price: "94.86",
   },
   {
     description:
@@ -2064,6 +2089,7 @@ const game_data = [
       },
     ],
     title: "Super Monkey Ball",
+    price: "94.67",
   },
   {
     description:
@@ -2093,6 +2119,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "All-Star Baseball 2002",
+    price: "114.69",
   },
   {
     description:
@@ -2183,6 +2210,7 @@ const game_data = [
       },
     ],
     title: "Rayman Arena",
+    price: "29.19",
   },
   {
     description:
@@ -2268,6 +2296,7 @@ const game_data = [
       },
     ],
     title: "Crash Bandicoot: The Wrath of Cortex",
+    price: "43.11",
   },
   {
     description:
@@ -2364,6 +2393,7 @@ const game_data = [
       },
     ],
     title: "Tom Clancy&#39;s Ghost Recon",
+    price: "30.83",
   },
   {
     description:
@@ -2445,6 +2475,7 @@ const game_data = [
       },
     ],
     title: "The Simpsons: Road Rage",
+    price: "47.20",
   },
   {
     description:
@@ -2515,6 +2546,7 @@ const game_data = [
       },
     ],
     title: "Super Smash Bros.: Melee",
+    price: "40.87",
   },
   {
     description:
@@ -2595,6 +2627,7 @@ const game_data = [
       },
     ],
     title: "Dave Mirra Freestyle BMX 2",
+    price: "51.48",
   },
   {
     description:
@@ -2700,6 +2733,7 @@ const game_data = [
       },
     ],
     title: "Cel Damage",
+    price: "91.09",
   },
   {
     description:
@@ -2785,6 +2819,7 @@ const game_data = [
       },
     ],
     title: "Pikmin",
+    price: "75.12",
   },
   {
     description:
@@ -2809,6 +2844,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "NBA Courtside 2002",
+    price: "111.11",
   },
   {
     description:
@@ -2891,6 +2927,7 @@ const game_data = [
       },
     ],
     title: "007: Agent Under Fire",
+    price: "100.92",
   },
   {
     description:
@@ -3029,6 +3066,7 @@ const game_data = [
       },
     ],
     title: "Baldur&#39;s Gate: Dark Alliance",
+    price: "108.76",
   },
   {
     description:
@@ -3063,6 +3101,7 @@ const game_data = [
       },
     ],
     title: "Sonic Adventure 2: Battle",
+    price: "96.61",
   },
   {
     description:
@@ -3133,6 +3172,7 @@ const game_data = [
       },
     ],
     title: "Bloody Roar: Primal Fury",
+    price: "86.82",
   },
   {
     description:
@@ -3172,6 +3212,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "Sega Soccer Slam",
+    price: "106.07",
   },
   {
     description:
@@ -3258,6 +3299,7 @@ const game_data = [
       },
     ],
     title: "Pac-Man World 2",
+    price: "29.36",
   },
   {
     description:
@@ -3355,6 +3397,7 @@ const game_data = [
       },
     ],
     title: "Star Wars: Jedi Knight II - Jedi Outcast",
+    price: "115.35",
   },
   {
     description:
@@ -3441,6 +3484,7 @@ const game_data = [
       },
     ],
     title: "The Legacy of Kain Series: Blood Omen 2",
+    price: "29.29",
   },
   {
     description:
@@ -3519,6 +3563,7 @@ const game_data = [
       },
     ],
     title: "Top Angler",
+    price: "33.92",
   },
   {
     description:
@@ -3614,6 +3659,7 @@ const game_data = [
       },
     ],
     title: "Worms Blast",
+    price: "83.24",
   },
   {
     description:
@@ -3701,6 +3747,7 @@ const game_data = [
       },
     ],
     title: "Spider-Man",
+    price: "30.44",
   },
   {
     description:
@@ -3735,6 +3782,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "RedCard 20-03",
+    price: "42.29",
   },
   {
     description:
@@ -3818,6 +3866,7 @@ const game_data = [
       },
     ],
     title: "The Sum of All Fears",
+    price: "22.80",
   },
   {
     description:
@@ -3900,6 +3949,7 @@ const game_data = [
       },
     ],
     title: "Burnout",
+    price: "85.73",
   },
   {
     description:
@@ -3934,6 +3984,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "All-Star Baseball 2003",
+    price: "31.41",
   },
   {
     description:
@@ -4014,6 +4065,7 @@ const game_data = [
       },
     ],
     title: "Army Men RTS",
+    price: "23.41",
   },
   {
     description:
@@ -4089,6 +4141,7 @@ const game_data = [
       },
     ],
     title: "Darkened Skye",
+    price: "64.54",
   },
   {
     description:
@@ -4179,6 +4232,7 @@ const game_data = [
       },
     ],
     title: "2002 FIFA World Cup",
+    price: "39.19",
   },
   {
     description:
@@ -4249,6 +4303,7 @@ const game_data = [
       },
     ],
     title: "Lost Kingdoms",
+    price: "87.58",
   },
   {
     description:
@@ -4278,6 +4333,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "Virtua Striker 2002",
+    price: "59.77",
   },
   {
     description:
@@ -4302,6 +4358,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "Bomberman Generation",
+    price: "22.52",
   },
   {
     description:
@@ -4389,6 +4446,7 @@ const game_data = [
       },
     ],
     title: "Outlaw Golf",
+    price: "87.62",
   },
   {
     description:
@@ -4413,6 +4471,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "Universal Studios Theme Parks Adventure",
+    price: "80.80",
   },
   {
     description:
@@ -4489,6 +4548,7 @@ const game_data = [
       },
     ],
     title: "Smuggler&#39;s Run 2: Hostile Territory",
+    price: "40.69",
   },
   {
     description:
@@ -4577,6 +4637,7 @@ const game_data = [
       },
     ],
     title: "Hunter: The Reckoning",
+    price: "38.55",
   },
   {
     description:
@@ -4649,6 +4710,7 @@ const game_data = [
       },
     ],
     title: "Eternal Darkness: Sanity&#39;s Requiem",
+    price: "76.74",
   },
   {
     description:
@@ -4736,6 +4798,7 @@ const game_data = [
       },
     ],
     title: "Medal of Honor: Frontline",
+    price: "59.81",
   },
   {
     description:
@@ -4770,6 +4833,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "MLB SlugFest 20-03",
+    price: "56.18",
   },
   {
     description:
@@ -4804,6 +4868,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "Legends of Wrestling",
+    price: "74.64",
   },
   {
     description:
@@ -4888,6 +4953,7 @@ const game_data = [
       },
     ],
     title: "Aggressive Inline",
+    price: "33.62",
   },
   {
     description:
@@ -4973,6 +5039,7 @@ const game_data = [
       },
     ],
     title: "V-Rally 3",
+    price: "77.01",
   },
   {
     description:
@@ -5007,6 +5074,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "Scooby-Doo!: Night of 100 Frights",
+    price: "56.03",
   },
   {
     description:
@@ -5041,6 +5109,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "NCAA Football 2003",
+    price: "41.51",
   },
   {
     description:
@@ -5126,6 +5195,7 @@ const game_data = [
       },
     ],
     title: "F1 2002",
+    price: "95.74",
   },
   {
     description:
@@ -5212,6 +5282,7 @@ const game_data = [
       },
     ],
     title: "Smashing Drive",
+    price: "77.20",
   },
   {
     description:
@@ -5287,6 +5358,7 @@ const game_data = [
       },
     ],
     title: "Beach Spikers: Virtua Beach Volleyball",
+    price: "65.77",
   },
   {
     description:
@@ -5357,6 +5429,7 @@ const game_data = [
       },
     ],
     title: "Super Mario Sunshine",
+    price: "21.06",
   },
   {
     description:
@@ -5452,6 +5525,7 @@ const game_data = [
       },
     ],
     title: "Dead to Rights",
+    price: "73.00",
   },
   {
     description:
@@ -5538,6 +5612,7 @@ const game_data = [
       },
     ],
     title: "Turok: Evolution",
+    price: "28.70",
   },
   {
     description:
@@ -5608,6 +5683,7 @@ const game_data = [
       },
     ],
     title: "Super Monkey Ball 2",
+    price: "68.86",
   },
   {
     description:
@@ -5680,6 +5756,7 @@ const game_data = [
       },
     ],
     title: "Animal Crossing",
+    price: "88.91",
   },
   {
     description:
@@ -5750,6 +5827,7 @@ const game_data = [
       },
     ],
     title: "Star Fox Adventures",
+    price: "59.01",
   },
   {
     description:
@@ -5831,6 +5909,7 @@ const game_data = [
       },
     ],
     title: "NFL 2K3",
+    price: "45.31",
   },
   {
     description:
@@ -5929,6 +6008,7 @@ const game_data = [
       },
     ],
     title: "Hitman 2: Silent Assassin",
+    price: "51.58",
   },
   {
     description:
@@ -6010,6 +6090,7 @@ const game_data = [
       },
     ],
     title: "NBA 2K3",
+    price: "21.85",
   },
   {
     description:
@@ -6034,6 +6115,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "WWE WrestleMania X8",
+    price: "103.83",
   },
   {
     description:
@@ -6124,6 +6206,7 @@ const game_data = [
       },
     ],
     title: "Kelly Slater&#39;s Pro Surfer",
+    price: "103.50",
   },
   {
     description:
@@ -6200,6 +6283,7 @@ const game_data = [
       },
     ],
     title: "Summoner 2",
+    price: "87.37",
   },
   {
     description:
@@ -6275,6 +6359,7 @@ const game_data = [
       },
     ],
     title: "Godzilla: Destroy All Monsters Melee",
+    price: "25.74",
   },
   {
     description:
@@ -6309,6 +6394,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "Mat Hoffman&#39;s Pro BMX 2",
+    price: "97.55",
   },
   {
     description:
@@ -6407,6 +6493,7 @@ const game_data = [
       },
     ],
     title: "BloodRayne",
+    price: "59.77",
   },
   {
     description:
@@ -6441,6 +6528,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "X-Men: Next Dimension",
+    price: "89.69",
   },
   {
     description:
@@ -6526,6 +6614,7 @@ const game_data = [
       },
     ],
     title: "Largo Winch: Empire Under Threat",
+    price: "21.49",
   },
   {
     description:
@@ -6619,6 +6708,7 @@ const game_data = [
       },
     ],
     title: "TimeSplitters 2",
+    price: "95.61",
   },
   {
     description:
@@ -6714,6 +6804,7 @@ const game_data = [
       },
     ],
     title: "Tony Hawk&#39;s Pro Skater 4",
+    price: "96.03",
   },
   {
     description:
@@ -6794,6 +6885,7 @@ const game_data = [
       },
     ],
     title: "Star Wars: The Clone Wars",
+    price: "28.53",
   },
   {
     description:
@@ -6870,6 +6962,7 @@ const game_data = [
       },
     ],
     title: "Phantasy Star Online: Episode I &amp; II",
+    price: "109.50",
   },
   {
     description:
@@ -6904,6 +6997,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "Robotech: Battlecry",
+    price: "20.54",
   },
   {
     description:
@@ -6986,6 +7080,7 @@ const game_data = [
       },
     ],
     title: "TransWorld Surf",
+    price: "80.25",
   },
   {
     description:
@@ -7077,6 +7172,7 @@ const game_data = [
       },
     ],
     title: "Zapper: One Wicked Cricket!",
+    price: "119.91",
   },
   {
     description:
@@ -7158,6 +7254,7 @@ const game_data = [
       },
     ],
     title: "The Lord of the Rings: The Two Towers",
+    price: "79.09",
   },
   {
     description:
@@ -7274,6 +7371,7 @@ const game_data = [
       },
     ],
     title: "Ikaruga",
+    price: "91.44",
   },
   {
     description:
@@ -7355,6 +7453,7 @@ const game_data = [
       },
     ],
     title: "Rocky",
+    price: "93.91",
   },
   {
     description:
@@ -7463,6 +7562,7 @@ const game_data = [
       },
     ],
     title: "Resident Evil 0",
+    price: "75.70",
   },
   {
     description:
@@ -7564,6 +7664,7 @@ const game_data = [
       },
     ],
     title: "Star Wars: Episode I - Racer",
+    price: "105.56",
   },
   {
     description:
@@ -7644,6 +7745,7 @@ const game_data = [
       },
     ],
     title: "NHL 99",
+    price: "30.39",
   },
   {
     description:
@@ -7724,6 +7826,7 @@ const game_data = [
       },
     ],
     title: "World Cup 98",
+    price: "29.16",
   },
   {
     description:
@@ -7799,6 +7902,7 @@ const game_data = [
       },
     ],
     title: "Star Wars: Rogue Squadron 3D",
+    price: "84.87",
   },
   {
     description:
@@ -7900,6 +8004,7 @@ const game_data = [
       },
     ],
     title: "Re-Volt",
+    price: "52.07",
   },
   {
     description:
@@ -8018,6 +8123,7 @@ const game_data = [
       },
     ],
     title: "Quake",
+    price: "110.50",
   },
   {
     description:
@@ -8111,6 +8217,7 @@ const game_data = [
       },
     ],
     title: "Shadow Man",
+    price: "39.81",
   },
   {
     description:
@@ -8206,6 +8313,7 @@ const game_data = [
       },
     ],
     title: "Nuclear Strike",
+    price: "27.29",
   },
   {
     description:
@@ -8291,6 +8399,7 @@ const game_data = [
       },
     ],
     title: "Space Invaders",
+    price: "44.41",
   },
   {
     description:
@@ -8391,6 +8500,7 @@ const game_data = [
       },
     ],
     title: "Worms: Armageddon",
+    price: "47.07",
   },
   {
     description:
@@ -8548,6 +8658,7 @@ const game_data = [
       },
     ],
     title: "SimCity 2000",
+    price: "107.33",
   },
   {
     description:
@@ -8644,6 +8755,7 @@ const game_data = [
       },
     ],
     title: "FIFA: Road to World Cup 98",
+    price: "110.00",
   },
   {
     description:
@@ -8747,6 +8859,7 @@ const game_data = [
       },
     ],
     title: "Tom Clancy&#39;s Rainbow Six",
+    price: "59.75",
   },
   {
     description:
@@ -8832,6 +8945,7 @@ const game_data = [
       },
     ],
     title: "Mortal Kombat 4",
+    price: "23.72",
   },
   {
     description:
@@ -8912,6 +9026,7 @@ const game_data = [
       },
     ],
     title: "WCW Nitro",
+    price: "70.52",
   },
   {
     description:
@@ -8987,6 +9102,7 @@ const game_data = [
       },
     ],
     title: "Dark Rift",
+    price: "62.03",
   },
   {
     description:
@@ -9067,6 +9183,7 @@ const game_data = [
       },
     ],
     title: "FIFA 99",
+    price: "112.35",
   },
   {
     description:
@@ -9152,6 +9269,7 @@ const game_data = [
       },
     ],
     title: "Disney&#39;s Tarzan",
+    price: "70.98",
   },
   {
     description:
@@ -9232,6 +9350,7 @@ const game_data = [
       },
     ],
     title: "Carmageddon 2: Carpocalypse Now",
+    price: "24.41",
   },
   {
     description:
@@ -9309,6 +9428,7 @@ const game_data = [
       },
     ],
     title: "Indiana Jones and the Infernal Machine",
+    price: "48.36",
   },
   {
     description:
@@ -9404,6 +9524,7 @@ const game_data = [
       },
     ],
     title: "Hexen: Beyond Heretic",
+    price: "71.09",
   },
   {
     description:
@@ -9502,6 +9623,7 @@ const game_data = [
       },
     ],
     title: "Mortal Kombat Trilogy",
+    price: "65.51",
   },
   {
     description:
@@ -9623,6 +9745,7 @@ const game_data = [
       },
     ],
     title: "Rayman 2: The Great Escape",
+    price: "92.71",
   },
   {
     description:
@@ -9698,6 +9821,7 @@ const game_data = [
       },
     ],
     title: "Turok: Dinosaur Hunter",
+    price: "38.88",
   },
   {
     description:
@@ -9773,6 +9897,7 @@ const game_data = [
       },
     ],
     title: "Turok 2: Seeds of Evil",
+    price: "84.83",
   },
   {
     description:
@@ -9853,6 +9978,7 @@ const game_data = [
       },
     ],
     title: "NBA Live 2000",
+    price: "99.51",
   },
   {
     description:
@@ -9948,6 +10074,7 @@ const game_data = [
       },
     ],
     title: "Gex: Enter the Gecko",
+    price: "55.25",
   },
   {
     description:
@@ -10048,6 +10175,7 @@ const game_data = [
       },
     ],
     title: "Tony Hawk&#39;s Pro Skater 2",
+    price: "107.51",
   },
   {
     description:
@@ -10129,6 +10257,7 @@ const game_data = [
       },
     ],
     title: "LEGO Racers",
+    price: "27.06",
   },
   {
     description:
@@ -10204,6 +10333,7 @@ const game_data = [
       },
     ],
     title: "Tonic Trouble",
+    price: "21.16",
   },
   {
     description:
@@ -10289,6 +10419,7 @@ const game_data = [
       },
     ],
     title: "Monaco Grand Prix Racing Simulation 2",
+    price: "35.70",
   },
   {
     description:
@@ -10374,6 +10505,7 @@ const game_data = [
       },
     ],
     title: "S.C.A.R.S.",
+    price: "63.40",
   },
   {
     description:
@@ -10459,6 +10591,7 @@ const game_data = [
       },
     ],
     title: "Madden NFL 2000",
+    price: "24.34",
   },
   {
     description:
@@ -10539,6 +10672,7 @@ const game_data = [
       },
     ],
     title: "Brunswick Circuit Pro Bowling",
+    price: "57.48",
   },
   {
     description:
@@ -10624,6 +10758,7 @@ const game_data = [
       },
     ],
     title: "South Park Rally",
+    price: "28.24",
   },
   {
     description:
@@ -10710,6 +10845,7 @@ const game_data = [
       },
     ],
     title: "South Park: Chef&#39;s Luv Shack",
+    price: "76.50",
   },
   {
     description:
@@ -10785,6 +10921,7 @@ const game_data = [
       },
     ],
     title: "Earthworm Jim 3D",
+    price: "77.27",
   },
   {
     description:
@@ -10860,6 +10997,7 @@ const game_data = [
       },
     ],
     title: "Starshot: Space Circus Fever",
+    price: "55.10",
   },
   {
     description:
@@ -10935,6 +11073,7 @@ const game_data = [
       },
     ],
     title: "Star Wars: Shadows of the Empire",
+    price: "102.84",
   },
   {
     description:
@@ -11012,6 +11151,7 @@ const game_data = [
       },
     ],
     title: "Extreme-G: XG2",
+    price: "118.03",
   },
   {
     description:
@@ -11079,6 +11219,7 @@ const game_data = [
       },
     ],
     title: "NFL Blitz",
+    price: "59.56",
   },
   {
     description:
@@ -11164,6 +11305,7 @@ const game_data = [
       },
     ],
     title: "Glover",
+    price: "64.36",
   },
   {
     description:
@@ -11245,6 +11387,7 @@ const game_data = [
       },
     ],
     title: "Wetrix",
+    price: "21.28",
   },
   {
     description:
@@ -11343,6 +11486,7 @@ const game_data = [
       },
     ],
     title: "Fighting Force",
+    price: "58.73",
   },
   {
     description:
@@ -11377,6 +11521,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "Triple Play 2000",
+    price: "25.83",
   },
   {
     description:
@@ -11472,6 +11617,7 @@ const game_data = [
       },
     ],
     title: "Mega Man Legends",
+    price: "27.56",
   },
   {
     description:
@@ -11550,6 +11696,7 @@ const game_data = [
       },
     ],
     title: "Star Wars: Episode I - Battle for Naboo",
+    price: "73.30",
   },
   {
     description:
@@ -11630,6 +11777,7 @@ const game_data = [
       },
     ],
     title: "South Park",
+    price: "31.41",
   },
   {
     description:
@@ -11715,6 +11863,7 @@ const game_data = [
       },
     ],
     title: "GoldenEye 007",
+    price: "95.50",
   },
   {
     description:
@@ -11802,6 +11951,7 @@ const game_data = [
       },
     ],
     title: "Super Mario 64",
+    price: "86.89",
   },
   {
     description:
@@ -11887,6 +12037,7 @@ const game_data = [
       },
     ],
     title: "Mario Kart 64",
+    price: "110.42",
   },
   {
     description:
@@ -11974,6 +12125,7 @@ const game_data = [
       },
     ],
     title: "Star Fox 64",
+    price: "54.13",
   },
   {
     description:
@@ -12044,6 +12196,7 @@ const game_data = [
       },
     ],
     title: "Mario Party",
+    price: "38.76",
   },
   {
     description:
@@ -12130,6 +12283,7 @@ const game_data = [
       },
     ],
     title: "Mario Golf",
+    price: "104.42",
   },
   {
     description:
@@ -12215,6 +12369,7 @@ const game_data = [
       },
     ],
     title: "Yoshi&#39;s Story",
+    price: "103.64",
   },
   {
     description:
@@ -12291,6 +12446,7 @@ const game_data = [
       },
     ],
     title: "Wave Race 64: Kawasaki Jet Ski",
+    price: "27.00",
   },
   {
     description:
@@ -12367,6 +12523,7 @@ const game_data = [
       },
     ],
     title: "Super Smash Bros.",
+    price: "49.33",
   },
   {
     description:
@@ -12452,6 +12609,7 @@ const game_data = [
       },
     ],
     title: "Mario Tennis",
+    price: "43.08",
   },
   {
     description:
@@ -12537,6 +12695,7 @@ const game_data = [
       },
     ],
     title: "The Legend of Zelda: Ocarina of Time",
+    price: "37.18",
   },
   {
     description:
@@ -12624,6 +12783,7 @@ const game_data = [
       },
     ],
     title: "The Legend of Zelda: Majora&#39;s Mask",
+    price: "109.90",
   },
   {
     description:
@@ -12710,6 +12870,7 @@ const game_data = [
       },
     ],
     title: "Tony Hawk&#39;s Pro Skater",
+    price: "55.59",
   },
   {
     description:
@@ -12784,6 +12945,7 @@ const game_data = [
       },
     ],
     title: "Diddy Kong Racing",
+    price: "62.07",
   },
   {
     description:
@@ -12877,6 +13039,7 @@ const game_data = [
       },
     ],
     title: "Banjo-Kazooie",
+    price: "51.24",
   },
   {
     description:
@@ -12952,6 +13115,7 @@ const game_data = [
       },
     ],
     title: "Bomberman 64",
+    price: "85.40",
   },
   {
     description:
@@ -13032,6 +13196,7 @@ const game_data = [
       },
     ],
     title: "Cruis&#39;n USA",
+    price: "77.66",
   },
   {
     description:
@@ -13107,6 +13272,7 @@ const game_data = [
       },
     ],
     title: "Cruis&#39;n World",
+    price: "61.35",
   },
   {
     description:
@@ -13192,6 +13358,7 @@ const game_data = [
       },
     ],
     title: "Gauntlet: Legends",
+    price: "103.47",
   },
   {
     description:
@@ -13245,6 +13412,7 @@ const game_data = [
       },
     ],
     title: "NFL Blitz 2001",
+    price: "96.50",
   },
   {
     description:
@@ -13315,6 +13483,7 @@ const game_data = [
       },
     ],
     title: "Conker&#39;s Bad Fur Day",
+    price: "22.06",
   },
   {
     description:
@@ -13385,6 +13554,7 @@ const game_data = [
       },
     ],
     title: "Blast Corps",
+    price: "105.55",
   },
   {
     description:
@@ -13455,6 +13625,7 @@ const game_data = [
       },
     ],
     title: "WCW/NWO Revenge",
+    price: "40.45",
   },
   {
     description:
@@ -13525,6 +13696,7 @@ const game_data = [
       },
     ],
     title: "WWF Wrestlemania 2000",
+    price: "47.51",
   },
   {
     description:
@@ -13605,6 +13777,7 @@ const game_data = [
       },
     ],
     title: "Ogre Battle 64: Person of Lordly Caliber",
+    price: "117.29",
   },
   {
     description:
@@ -13648,6 +13821,7 @@ const game_data = [
       },
     ],
     title: "Destruction Derby 64",
+    price: "89.17",
   },
   {
     description:
@@ -13733,6 +13907,7 @@ const game_data = [
       },
     ],
     title: "Bio Freaks",
+    price: "28.56",
   },
   {
     description:
@@ -13810,6 +13985,7 @@ const game_data = [
       },
     ],
     title: "BattleTanx: Global Assault",
+    price: "29.46",
   },
   {
     description:
@@ -13883,6 +14059,7 @@ const game_data = [
       },
     ],
     title: "Duke Nukem 64",
+    price: "44.02",
   },
   {
     description:
@@ -13992,6 +14169,7 @@ const game_data = [
       },
     ],
     title: "Resident Evil 2",
+    price: "119.02",
   },
   {
     description:
@@ -14067,6 +14245,7 @@ const game_data = [
       },
     ],
     title: "Namco Museum 64",
+    price: "98.19",
   },
   {
     description:
@@ -14137,6 +14316,7 @@ const game_data = [
       },
     ],
     title: "Turok 3: Shadow of Oblivion",
+    price: "24.67",
   },
   {
     description:
@@ -14207,6 +14387,7 @@ const game_data = [
       },
     ],
     title: "Turok: Rage Wars",
+    price: "115.34",
   },
   {
     description:
@@ -14278,6 +14459,7 @@ const game_data = [
       },
     ],
     title: "Tetrisphere",
+    price: "90.25",
   },
   {
     description:
@@ -14331,6 +14513,7 @@ const game_data = [
       },
     ],
     title: "The New Tetris",
+    price: "55.75",
   },
   {
     description:
@@ -14418,6 +14601,7 @@ const game_data = [
       },
     ],
     title: "WinBack: Covert Operations",
+    price: "50.08",
   },
   {
     description:
@@ -14491,6 +14675,7 @@ const game_data = [
       },
     ],
     title: "Rocket: Robot on Wheels",
+    price: "55.30",
   },
   {
     description:
@@ -14562,6 +14747,7 @@ const game_data = [
       },
     ],
     title: "Jet Force Gemini",
+    price: "24.93",
   },
   {
     description:
@@ -14586,6 +14772,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "Road Rash 64",
+    price: "50.71",
   },
   {
     description:
@@ -14620,6 +14807,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "Army Men: Air Attack",
+    price: "29.84",
   },
   {
     description:
@@ -14695,6 +14883,7 @@ const game_data = [
       },
     ],
     title: "Dr. Mario 64",
+    price: "43.17",
   },
   {
     description:
@@ -14765,6 +14954,7 @@ const game_data = [
       },
     ],
     title: "Shadowgate 64: Trials of the Four Towers",
+    price: "38.23",
   },
   {
     description:
@@ -14823,6 +15013,7 @@ const game_data = [
       },
     ],
     title: "WCW Mayhem",
+    price: "102.80",
   },
   {
     description:
@@ -14847,6 +15038,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "007: The World Is Not Enough",
+    price: "104.16",
   },
   {
     description:
@@ -14933,6 +15125,7 @@ const game_data = [
       },
     ],
     title: "Banjo-Tooie",
+    price: "79.49",
   },
   {
     description:
@@ -15018,6 +15211,7 @@ const game_data = [
       },
     ],
     title: "Perfect Dark",
+    price: "46.67",
   },
   {
     description:
@@ -15103,6 +15297,7 @@ const game_data = [
       },
     ],
     title: "F-Zero X",
+    price: "108.95",
   },
   {
     description:
@@ -15178,6 +15373,7 @@ const game_data = [
       },
     ],
     title: "Vigilante 8",
+    price: "92.07",
   },
   {
     description:
@@ -15258,6 +15454,7 @@ const game_data = [
       },
     ],
     title: "Vigilante 8: 2nd Offense",
+    price: "88.73",
   },
   {
     description:
@@ -15338,6 +15535,7 @@ const game_data = [
       },
     ],
     title: "San Francisco Rush: Extreme Racing",
+    price: "99.22",
   },
   {
     description:
@@ -15418,6 +15616,7 @@ const game_data = [
       },
     ],
     title: "Rampage 2: Universal Tour",
+    price: "73.13",
   },
   {
     description:
@@ -15498,6 +15697,7 @@ const game_data = [
       },
     ],
     title: "Nightmare Creatures",
+    price: "48.80",
   },
   {
     description:
@@ -15599,6 +15799,7 @@ const game_data = [
       },
     ],
     title: "The Three Stooges",
+    price: "25.98",
   },
   {
     description:
@@ -15720,6 +15921,7 @@ const game_data = [
       },
     ],
     title: "Rocket Ranger",
+    price: "77.87",
   },
   {
     description:
@@ -15821,6 +16023,7 @@ const game_data = [
       },
     ],
     title: "Skate or Die",
+    price: "82.30",
   },
   {
     description:
@@ -15957,6 +16160,7 @@ const game_data = [
       },
     ],
     title: "Thexder",
+    price: "60.08",
   },
   {
     description:
@@ -16099,6 +16303,7 @@ const game_data = [
       },
     ],
     title: "Archon: The Light and the Dark",
+    price: "28.98",
   },
   {
     description:
@@ -16204,6 +16409,7 @@ const game_data = [
       },
     ],
     title: "Karnov",
+    price: "114.14",
   },
   {
     description:
@@ -16354,6 +16560,7 @@ const game_data = [
       },
     ],
     title: "Rampage",
+    price: "103.65",
   },
   {
     description:
@@ -16455,6 +16662,7 @@ const game_data = [
       },
     ],
     title: "King&#39;s Quest V: Absence Makes the Heart Go Yonder!",
+    price: "51.16",
   },
   {
     description:
@@ -16630,6 +16838,7 @@ const game_data = [
       },
     ],
     title: "Galaxian",
+    price: "89.89",
   },
   {
     description:
@@ -16896,6 +17105,7 @@ const game_data = [
       },
     ],
     title: "Pac-Man",
+    price: "24.92",
   },
   {
     description:
@@ -17136,6 +17346,7 @@ const game_data = [
       },
     ],
     title: "Dig Dug",
+    price: "34.79",
   },
   {
     description:
@@ -17296,6 +17507,7 @@ const game_data = [
       },
     ],
     title: "Defender of the Crown",
+    price: "54.53",
   },
   {
     description:
@@ -17396,6 +17608,7 @@ const game_data = [
       },
     ],
     title: "The Blues Brothers",
+    price: "45.38",
   },
   {
     description:
@@ -17576,6 +17789,7 @@ const game_data = [
       },
     ],
     title: "Prince of Persia",
+    price: "37.83",
   },
   {
     description:
@@ -17701,6 +17915,7 @@ const game_data = [
       },
     ],
     title: "Sid Meier&#39;s Pirates!",
+    price: "115.82",
   },
   {
     description:
@@ -17826,6 +18041,7 @@ const game_data = [
       },
     ],
     title: "Ys: The Vanished Omens",
+    price: "42.27",
   },
   {
     description:
@@ -18041,6 +18257,7 @@ const game_data = [
       },
     ],
     title: "Lode Runner",
+    price: "93.61",
   },
   {
     description:
@@ -18132,6 +18349,7 @@ const game_data = [
       },
     ],
     title: "Bad Street Brawler",
+    price: "101.17",
   },
   {
     description:
@@ -18288,6 +18506,7 @@ const game_data = [
       },
     ],
     title: "Marble Madness",
+    price: "52.84",
   },
   {
     description:
@@ -18448,6 +18667,7 @@ const game_data = [
       },
     ],
     title: "BurgerTime",
+    price: "36.89",
   },
   {
     description:
@@ -18533,6 +18753,7 @@ const game_data = [
       },
     ],
     title: "Ski or Die",
+    price: "27.97",
   },
   {
     description:
@@ -18608,6 +18829,7 @@ const game_data = [
       },
     ],
     title: "The Adventures of Captain Comic",
+    price: "99.81",
   },
   {
     description:
@@ -18719,6 +18941,7 @@ const game_data = [
       },
     ],
     title: "Pool of Radiance",
+    price: "76.88",
   },
   {
     description:
@@ -18819,6 +19042,7 @@ const game_data = [
       },
     ],
     title: "Hillsfar",
+    price: "42.84",
   },
   {
     description:
@@ -18996,6 +19220,7 @@ const game_data = [
       },
     ],
     title: "Donkey Kong",
+    price: "60.10",
   },
   {
     description:
@@ -19202,6 +19427,7 @@ const game_data = [
       },
     ],
     title: "Ms. Pac-Man",
+    price: "73.86",
   },
   {
     description:
@@ -19392,6 +19618,7 @@ const game_data = [
       },
     ],
     title: "Ghosts &#39;N Goblins",
+    price: "111.72",
   },
   {
     description:
@@ -19582,6 +19809,7 @@ const game_data = [
       },
     ],
     title: "Lemmings",
+    price: "78.63",
   },
   {
     description:
@@ -19697,6 +19925,7 @@ const game_data = [
       },
     ],
     title: "Maniac Mansion",
+    price: "92.05",
   },
   {
     description:
@@ -19804,6 +20033,7 @@ const game_data = [
       },
     ],
     title: "Times of Lore",
+    price: "40.51",
   },
   {
     description:
@@ -19990,6 +20220,7 @@ const game_data = [
       },
     ],
     title: "Bubble Bobble",
+    price: "43.06",
   },
   {
     description:
@@ -20111,6 +20342,7 @@ const game_data = [
       },
     ],
     title: "Tales of the Unknown: Volume I - The Bard&#39;s Tale",
+    price: "23.18",
   },
   {
     description:
@@ -20246,6 +20478,7 @@ const game_data = [
       },
     ],
     title: "Exodus: Ultima III",
+    price: "113.09",
   },
   {
     description:
@@ -20406,6 +20639,7 @@ const game_data = [
       },
     ],
     title: "Ultima IV: Quest of the Avatar",
+    price: "112.07",
   },
   {
     description:
@@ -20532,6 +20766,7 @@ const game_data = [
       },
     ],
     title: "Joe &amp; Mac: Caveman Ninja",
+    price: "61.86",
   },
   {
     description:
@@ -20648,6 +20883,7 @@ const game_data = [
       },
     ],
     title: "Alien Syndrome",
+    price: "80.40",
   },
   {
     description:
@@ -20758,6 +20994,7 @@ const game_data = [
       },
     ],
     title: "Deja Vu: A Nightmare Comes True!!",
+    price: "111.36",
   },
   {
     description:
@@ -20864,6 +21101,7 @@ const game_data = [
       },
     ],
     title: "Shadowgate",
+    price: "26.35",
   },
   {
     description:
@@ -20975,6 +21213,7 @@ const game_data = [
       },
     ],
     title: "Uninvited",
+    price: "41.22",
   },
   {
     description:
@@ -21140,6 +21379,7 @@ const game_data = [
       },
     ],
     title: "Arkanoid",
+    price: "35.06",
   },
   {
     description:
@@ -21260,6 +21500,7 @@ const game_data = [
       },
     ],
     title: "Arkanoid: Revenge of DOH",
+    price: "106.72",
   },
   {
     description:
@@ -21385,6 +21626,7 @@ const game_data = [
       },
     ],
     title: "Indiana Jones and the Last Crusade: The Action Game",
+    price: "66.84",
   },
   {
     description:
@@ -21515,6 +21757,7 @@ const game_data = [
       },
     ],
     title: "Wizardry: Proving Grounds of the Mad Overlord",
+    price: "93.21",
   },
   {
     description:
@@ -21665,6 +21908,7 @@ const game_data = [
       },
     ],
     title: "Winter Games",
+    price: "113.93",
   },
   {
     description:
@@ -21790,6 +22034,7 @@ const game_data = [
       },
     ],
     title: "World Games",
+    price: "39.26",
   },
   {
     description:
@@ -21930,6 +22175,7 @@ const game_data = [
       },
     ],
     title: "Karateka",
+    price: "41.90",
   },
   {
     description:
@@ -22030,6 +22276,7 @@ const game_data = [
       },
     ],
     title: "The Bard&#39;s Tale II: The Destiny Knight",
+    price: "101.18",
   },
   {
     description:
@@ -22176,6 +22423,7 @@ const game_data = [
       },
     ],
     title: "Bad Dudes",
+    price: "35.10",
   },
   {
     description:
@@ -22301,6 +22549,7 @@ const game_data = [
       },
     ],
     title: "Wizardry: Knight of Diamonds - The Second Scenario",
+    price: "52.06",
   },
   {
     description:
@@ -22416,6 +22665,7 @@ const game_data = [
       },
     ],
     title: "Sky Shark",
+    price: "115.15",
   },
   {
     description:
@@ -22546,6 +22796,7 @@ const game_data = [
       },
     ],
     title: "Elite",
+    price: "88.00",
   },
   {
     description:
@@ -22641,6 +22892,7 @@ const game_data = [
       },
     ],
     title: "Tag Team Wrestling",
+    price: "85.62",
   },
   {
     description:
@@ -22743,6 +22995,7 @@ const game_data = [
       },
     ],
     title: "Days of Thunder",
+    price: "27.46",
   },
   {
     description:
@@ -22913,6 +23166,7 @@ const game_data = [
       },
     ],
     title: "Space Harrier",
+    price: "54.52",
   },
   {
     description:
@@ -23039,6 +23293,7 @@ const game_data = [
       },
     ],
     title: "Last Ninja 2: Back with a Vengeance",
+    price: "36.65",
   },
   {
     description:
@@ -23145,6 +23400,7 @@ const game_data = [
       },
     ],
     title: "Speedball",
+    price: "33.76",
   },
   {
     description:
@@ -23280,6 +23536,7 @@ const game_data = [
       },
     ],
     title: "Mega Man 3",
+    price: "86.87",
   },
   {
     description:
@@ -23385,6 +23642,7 @@ const game_data = [
       },
     ],
     title: "Platoon",
+    price: "47.39",
   },
   {
     description:
@@ -23511,6 +23769,7 @@ const game_data = [
       },
     ],
     title: "Guerrilla War",
+    price: "88.58",
   },
   {
     description:
@@ -23701,6 +23960,7 @@ const game_data = [
       },
     ],
     title: "Commando",
+    price: "29.31",
   },
   {
     description:
@@ -23822,6 +24082,7 @@ const game_data = [
       },
     ],
     title: "Might and Magic: Book One - Secret of the Inner Sanctum",
+    price: "29.25",
   },
   {
     description:
@@ -23903,6 +24164,7 @@ const game_data = [
       },
     ],
     title: "Kings of the Beach",
+    price: "100.44",
   },
   {
     description:
@@ -24053,6 +24315,7 @@ const game_data = [
       },
     ],
     title: "Silent Service",
+    price: "119.06",
   },
   {
     description:
@@ -24208,6 +24471,7 @@ const game_data = [
       },
     ],
     title: "California Games",
+    price: "112.45",
   },
   {
     description:
@@ -24323,6 +24587,7 @@ const game_data = [
       },
     ],
     title: "Indiana Jones and the Temple of Doom",
+    price: "41.59",
   },
   {
     description:
@@ -24509,6 +24774,7 @@ const game_data = [
       },
     ],
     title: "Double Dragon",
+    price: "113.43",
   },
   {
     description:
@@ -24646,6 +24912,7 @@ const game_data = [
       },
     ],
     title: "Shinobi",
+    price: "24.84",
   },
   {
     description:
@@ -24772,6 +25039,7 @@ const game_data = [
       },
     ],
     title: "Uncharted Waters",
+    price: "27.27",
   },
   {
     description:
@@ -24882,6 +25150,7 @@ const game_data = [
       },
     ],
     title: "Genghis Khan",
+    price: "73.43",
   },
   {
     description:
@@ -25022,6 +25291,7 @@ const game_data = [
       },
     ],
     title: "Genghis Khan II: Clan of the Gray Wolf",
+    price: "35.82",
   },
   {
     description:
@@ -25132,6 +25402,7 @@ const game_data = [
       },
     ],
     title: "L&#39;Empereur",
+    price: "48.78",
   },
   {
     description:
@@ -25242,6 +25513,7 @@ const game_data = [
       },
     ],
     title: "Gemfire",
+    price: "95.29",
   },
   {
     description:
@@ -25392,6 +25664,7 @@ const game_data = [
       },
     ],
     title: "Battle Chess",
+    price: "100.17",
   },
   {
     description:
@@ -25582,6 +25855,7 @@ const game_data = [
       },
     ],
     title: "Altered Beast",
+    price: "37.26",
   },
   {
     description:
@@ -25708,6 +25982,7 @@ const game_data = [
       },
     ],
     title: "Dragon Wars",
+    price: "82.35",
   },
   {
     description:
@@ -25834,6 +26109,7 @@ const game_data = [
       },
     ],
     title: "Castlevania",
+    price: "77.34",
   },
   {
     description:
@@ -25939,6 +26215,7 @@ const game_data = [
       },
     ],
     title: "Disney&#39;s Aladdin",
+    price: "60.83",
   },
   {
     description:
@@ -26110,6 +26387,7 @@ const game_data = [
       },
     ],
     title: "Pipe Dream",
+    price: "81.73",
   },
   {
     description:
@@ -26248,6 +26526,7 @@ const game_data = [
       },
     ],
     title: "Bandit Kings of Ancient China",
+    price: "102.87",
   },
   {
     description:
@@ -26333,6 +26612,7 @@ const game_data = [
       },
     ],
     title: "Win, Lose or Draw",
+    price: "44.73",
   },
   {
     description:
@@ -26433,6 +26713,7 @@ const game_data = [
       },
     ],
     title: "Ninja Gaiden II: The Dark Sword of Chaos",
+    price: "22.07",
   },
   {
     description:
@@ -26568,6 +26849,7 @@ const game_data = [
       },
     ],
     title: "The Immortal",
+    price: "52.89",
   },
   {
     description:
@@ -26683,6 +26965,7 @@ const game_data = [
       },
     ],
     title: "Ghostbusters",
+    price: "103.05",
   },
   {
     description:
@@ -26808,6 +27091,7 @@ const game_data = [
       },
     ],
     title: "Impossible Mission II",
+    price: "115.09",
   },
   {
     description:
@@ -26948,6 +27232,7 @@ const game_data = [
       },
     ],
     title: "Rush&#39;n Attack",
+    price: "100.61",
   },
   {
     description:
@@ -27029,6 +27314,7 @@ const game_data = [
       },
     ],
     title: "Metal Gear",
+    price: "28.87",
   },
   {
     description:
@@ -27134,6 +27420,7 @@ const game_data = [
       },
     ],
     title: "Dizzy: Prince of the Yolkfolk",
+    price: "107.78",
   },
   {
     description:
@@ -27230,6 +27517,7 @@ const game_data = [
       },
     ],
     title: "The Fantastic Adventures of Dizzy",
+    price: "91.36",
   },
   {
     description:
@@ -27360,6 +27648,7 @@ const game_data = [
       },
     ],
     title: "Rampart",
+    price: "25.39",
   },
   {
     description:
@@ -27457,6 +27746,7 @@ const game_data = [
       },
     ],
     title: "The Legend of Zelda",
+    price: "119.95",
   },
   {
     description:
@@ -27593,6 +27883,7 @@ const game_data = [
       },
     ],
     title: "Operation Wolf",
+    price: "84.74",
   },
   {
     description:
@@ -27748,6 +28039,7 @@ const game_data = [
       },
     ],
     title: "QIX",
+    price: "98.15",
   },
   {
     description:
@@ -27868,6 +28160,7 @@ const game_data = [
       },
     ],
     title: "Gauntlet II",
+    price: "74.70",
   },
   {
     description:
@@ -27974,6 +28267,7 @@ const game_data = [
       },
     ],
     title: "Shufflepuck Cafe",
+    price: "108.99",
   },
   {
     description:
@@ -28101,6 +28395,7 @@ const game_data = [
       },
     ],
     title: "Titan",
+    price: "119.70",
   },
   {
     description:
@@ -28231,6 +28526,7 @@ const game_data = [
       },
     ],
     title: "Heroes of the Lance",
+    price: "117.93",
   },
   {
     description:
@@ -28336,6 +28632,7 @@ const game_data = [
       },
     ],
     title: "Cabal",
+    price: "96.44",
   },
   {
     description:
@@ -28466,6 +28763,7 @@ const game_data = [
       },
     ],
     title: "Tower Toppler",
+    price: "115.16",
   },
   {
     description:
@@ -28576,6 +28874,7 @@ const game_data = [
       },
     ],
     title: "Micro Machines",
+    price: "56.45",
   },
   {
     description:
@@ -28711,6 +29010,7 @@ const game_data = [
       },
     ],
     title: "Championship Lode Runner",
+    price: "34.85",
   },
   {
     description:
@@ -28791,6 +29091,7 @@ const game_data = [
       },
     ],
     title: "The X-Files Game",
+    price: "51.18",
   },
   {
     description:
@@ -28871,6 +29172,7 @@ const game_data = [
       },
     ],
     title: "Sid Meier&#39;s Civilization II",
+    price: "100.04",
   },
   {
     description:
@@ -28972,6 +29274,7 @@ const game_data = [
       },
     ],
     title: "The Three Stooges",
+    price: "37.71",
   },
   {
     description:
@@ -29058,6 +29361,7 @@ const game_data = [
       },
     ],
     title: "Quarantine",
+    price: "66.74",
   },
   {
     description:
@@ -29148,6 +29452,7 @@ const game_data = [
       },
     ],
     title: "MechWarrior 2: 31st Century Combat",
+    price: "82.57",
   },
   {
     description:
@@ -29223,6 +29528,7 @@ const game_data = [
       },
     ],
     title: "Forsaken",
+    price: "78.78",
   },
   {
     description:
@@ -29314,6 +29620,7 @@ const game_data = [
       },
     ],
     title: "Motorhead",
+    price: "118.12",
   },
   {
     description:
@@ -29389,6 +29696,7 @@ const game_data = [
       },
     ],
     title: "Moto Racer",
+    price: "25.10",
   },
   {
     description:
@@ -29475,6 +29783,7 @@ const game_data = [
       },
     ],
     title: "Discworld",
+    price: "30.14",
   },
   {
     description:
@@ -29566,6 +29875,7 @@ const game_data = [
       },
     ],
     title: "Master of Magic",
+    price: "34.92",
   },
   {
     description:
@@ -29651,6 +29961,7 @@ const game_data = [
       },
     ],
     title: "Railroad Tycoon II",
+    price: "27.44",
   },
   {
     description:
@@ -29727,6 +30038,7 @@ const game_data = [
       },
     ],
     title: "Heart of Darkness",
+    price: "117.97",
   },
   {
     description:
@@ -29818,6 +30130,7 @@ const game_data = [
       },
     ],
     title: "Novastorm",
+    price: "35.60",
   },
   {
     description:
@@ -29908,6 +30221,7 @@ const game_data = [
       },
     ],
     title: "Extreme Pinball",
+    price: "38.40",
   },
   {
     description:
@@ -29988,6 +30302,7 @@ const game_data = [
       },
     ],
     title: "NHL 99",
+    price: "68.29",
   },
   {
     description:
@@ -30089,6 +30404,7 @@ const game_data = [
       },
     ],
     title: "Dark Seed",
+    price: "31.96",
   },
   {
     description:
@@ -30169,6 +30485,7 @@ const game_data = [
       },
     ],
     title: "Battle Bugs",
+    price: "79.23",
   },
   {
     description:
@@ -30274,6 +30591,7 @@ const game_data = [
       },
     ],
     title: "Driver",
+    price: "74.65",
   },
   {
     description:
@@ -30349,6 +30667,7 @@ const game_data = [
       },
     ],
     title: "Test Drive 5",
+    price: "95.90",
   },
   {
     description:
@@ -30440,6 +30759,7 @@ const game_data = [
       },
     ],
     title: "SimTower: The Vertical Empire",
+    price: "104.59",
   },
   {
     description:
@@ -30520,6 +30840,7 @@ const game_data = [
       },
     ],
     title: "World Cup 98",
+    price: "82.93",
   },
   {
     description:
@@ -30601,6 +30922,7 @@ const game_data = [
       },
     ],
     title: "Diablo",
+    price: "20.84",
   },
   {
     description:
@@ -30721,6 +31043,7 @@ const game_data = [
       },
     ],
     title: "Worms",
+    price: "28.29",
   },
   {
     description:
@@ -30812,6 +31135,7 @@ const game_data = [
       },
     ],
     title: "Time Commando",
+    price: "33.49",
   },
   {
     description:
@@ -30913,6 +31237,7 @@ const game_data = [
       },
     ],
     title: "Wing Commander IV: The Price of Freedom",
+    price: "51.92",
   },
   {
     description:
@@ -31002,6 +31327,7 @@ const game_data = [
       },
     ],
     title: "MDK",
+    price: "80.21",
   },
   {
     description:
@@ -31112,6 +31438,7 @@ const game_data = [
       },
     ],
     title: "Z",
+    price: "113.52",
   },
   {
     description:
@@ -31223,6 +31550,7 @@ const game_data = [
       },
     ],
     title: "Tomb Raider",
+    price: "58.16",
   },
   {
     description:
@@ -31324,6 +31652,7 @@ const game_data = [
       },
     ],
     title: "Duke Nukem 3D",
+    price: "44.83",
   },
   {
     description:
@@ -31425,6 +31754,7 @@ const game_data = [
       },
     ],
     title: "Re-Volt",
+    price: "106.04",
   },
   {
     description:
@@ -31550,6 +31880,7 @@ const game_data = [
       },
     ],
     title: "Earthworm Jim 2",
+    price: "27.43",
   },
   {
     description:
@@ -31646,6 +31977,7 @@ const game_data = [
       },
     ],
     title: "Prisoner of Ice",
+    price: "59.46",
   },
   {
     description:
@@ -31739,6 +32071,7 @@ const game_data = [
       },
     ],
     title: "Shadow Man",
+    price: "66.73",
   },
   {
     description:
@@ -31839,6 +32172,7 @@ const game_data = [
       },
     ],
     title: "Quake II",
+    price: "71.18",
   },
   {
     description:
@@ -31925,6 +32259,7 @@ const game_data = [
       },
     ],
     title: "Grand Theft Auto",
+    price: "43.62",
   },
   {
     description:
@@ -32021,6 +32356,7 @@ const game_data = [
       },
     ],
     title: "FIFA Soccer 96",
+    price: "55.97",
   },
   {
     description:
@@ -32114,6 +32450,7 @@ const game_data = [
       },
     ],
     title: "Command &amp; Conquer: Red Alert",
+    price: "71.40",
   },
   {
     description:
@@ -32209,6 +32546,7 @@ const game_data = [
       },
     ],
     title: "Tomb Raider II",
+    price: "64.84",
   },
   {
     description:
@@ -32310,6 +32648,7 @@ const game_data = [
       },
     ],
     title: "Circle of Blood",
+    price: "69.72",
   },
   {
     description:
@@ -32410,6 +32749,7 @@ const game_data = [
       },
     ],
     title: "Star Wars: Dark Forces",
+    price: "40.82",
   },
   {
     description:
@@ -32500,6 +32840,7 @@ const game_data = [
       },
     ],
     title: "X-COM: UFO Defense",
+    price: "102.14",
   },
   {
     description:
@@ -32621,6 +32962,7 @@ const game_data = [
       },
     ],
     title: "Soccer Kid",
+    price: "97.49",
   },
   {
     description:
@@ -32717,6 +33059,7 @@ const game_data = [
       },
     ],
     title: "Nuclear Strike",
+    price: "64.69",
   },
   {
     description:
@@ -32800,6 +33143,7 @@ const game_data = [
       },
     ],
     title: "X-COM: Terror from the Deep",
+    price: "85.68",
   },
   {
     description:
@@ -32895,6 +33239,7 @@ const game_data = [
       },
     ],
     title: "Syndicate Wars",
+    price: "39.96",
   },
   {
     description:
@@ -32995,6 +33340,7 @@ const game_data = [
       },
     ],
     title: "Destruction Derby",
+    price: "61.69",
   },
   {
     description:
@@ -33076,6 +33422,7 @@ const game_data = [
       },
     ],
     title: "Grand Theft Auto: Mission Pack #1 - London 1969",
+    price: "94.48",
   },
   {
     description:
@@ -33201,6 +33548,7 @@ const game_data = [
       },
     ],
     title: "Pinball Fantasies",
+    price: "82.11",
   },
   {
     description:
@@ -33356,6 +33704,7 @@ const game_data = [
       },
     ],
     title: "James Pond 2: Codename: RoboCod",
+    price: "20.09",
   },
   {
     description:
@@ -33466,6 +33815,7 @@ const game_data = [
       },
     ],
     title: "Sid Meier&#39;s Civilization",
+    price: "88.99",
   },
   {
     description:
@@ -33556,6 +33906,7 @@ const game_data = [
       },
     ],
     title: "Darkstone",
+    price: "49.93",
   },
   {
     description:
@@ -33681,6 +34032,7 @@ const game_data = [
       },
     ],
     title: "Mortal Kombat II",
+    price: "83.41",
   },
   {
     description:
@@ -33791,6 +34143,7 @@ const game_data = [
       },
     ],
     title: "Mortal Kombat 3",
+    price: "59.38",
   },
   {
     description:
@@ -33876,6 +34229,7 @@ const game_data = [
       },
     ],
     title: "Asteroids",
+    price: "69.83",
   },
   {
     description:
@@ -33961,6 +34315,7 @@ const game_data = [
       },
     ],
     title: "Space Invaders",
+    price: "32.58",
   },
   {
     description:
@@ -34041,6 +34396,7 @@ const game_data = [
       },
     ],
     title: "Micro Machines V3",
+    price: "57.28",
   },
   {
     description:
@@ -34141,6 +34497,7 @@ const game_data = [
       },
     ],
     title: "Worms: Armageddon",
+    price: "93.48",
   },
   {
     description:
@@ -34217,6 +34574,7 @@ const game_data = [
       },
     ],
     title: "Need for Speed III: Hot Pursuit",
+    price: "41.07",
   },
   {
     description:
@@ -34246,6 +34604,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "The Hive",
+    price: "66.94",
   },
   {
     description:
@@ -34403,6 +34762,7 @@ const game_data = [
       },
     ],
     title: "SimCity 2000",
+    price: "50.17",
   },
   {
     description:
@@ -34493,6 +34853,7 @@ const game_data = [
       },
     ],
     title: "Creatures",
+    price: "50.39",
   },
   {
     description:
@@ -34583,6 +34944,7 @@ const game_data = [
       },
     ],
     title: "Populous: The Beginning",
+    price: "68.53",
   },
   {
     description:
@@ -34658,6 +35020,7 @@ const game_data = [
       },
     ],
     title: "Ian Livingstone&#39;s Deathtrap Dungeon",
+    price: "35.26",
   },
   {
     description:
@@ -34738,6 +35101,7 @@ const game_data = [
       },
     ],
     title: "Die Hard Trilogy",
+    price: "95.40",
   },
   {
     description:
@@ -34839,6 +35203,7 @@ const game_data = [
       },
     ],
     title: "Theme Hospital",
+    price: "40.69",
   },
   {
     description:
@@ -34994,6 +35359,7 @@ const game_data = [
       },
     ],
     title: "Theme Park",
+    price: "33.91",
   },
   {
     description:
@@ -35079,6 +35445,7 @@ const game_data = [
       },
     ],
     title: "Pro Pinball: Timeshock!",
+    price: "100.61",
   },
   {
     description:
@@ -35164,6 +35531,7 @@ const game_data = [
       },
     ],
     title: "Star Wars: Rebel Assault II - The Hidden Empire",
+    price: "57.95",
   },
   {
     description:
@@ -35259,6 +35627,7 @@ const game_data = [
       },
     ],
     title: "Ultima Underworld: The Stygian Abyss",
+    price: "87.60",
   },
   {
     description:
@@ -35349,6 +35718,7 @@ const game_data = [
       },
     ],
     title: "Descent",
+    price: "43.60",
   },
   {
     description:
@@ -35440,6 +35810,7 @@ const game_data = [
       },
     ],
     title: "Shanghai: Great Moments",
+    price: "66.79",
   },
   {
     description:
@@ -35520,6 +35891,7 @@ const game_data = [
       },
     ],
     title: "Pro Pinball: Fantastic Journey",
+    price: "54.29",
   },
   {
     description:
@@ -35619,6 +35991,7 @@ const game_data = [
       },
     ],
     title: "Wizardry: Crusaders of the Dark Savant",
+    price: "55.32",
   },
   {
     description:
@@ -35734,6 +36107,7 @@ const game_data = [
       },
     ],
     title: "Relentless: Twinsen&#39;s Adventure",
+    price: "70.64",
   },
   {
     description:
@@ -35819,6 +36193,7 @@ const game_data = [
       },
     ],
     title: "TFX",
+    price: "98.95",
   },
   {
     description:
@@ -35907,6 +36282,7 @@ const game_data = [
       },
     ],
     title: "Bubble Bobble also featuring Rainbow Islands",
+    price: "37.98",
   },
   {
     description:
@@ -36018,6 +36394,7 @@ const game_data = [
       },
     ],
     title: "Cyberia",
+    price: "26.25",
   },
   {
     description:
@@ -36108,6 +36485,7 @@ const game_data = [
       },
     ],
     title: "Wing Commander III: Heart of the Tiger",
+    price: "35.43",
   },
   {
     description:
@@ -36198,6 +36576,7 @@ const game_data = [
       },
     ],
     title: "NHL 98",
+    price: "47.92",
   },
   {
     description:
@@ -36227,6 +36606,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "Triple Play 98",
+    price: "88.64",
   },
   {
     description:
@@ -36323,6 +36703,7 @@ const game_data = [
       },
     ],
     title: "FIFA: Road to World Cup 98",
+    price: "114.73",
   },
   {
     description:
@@ -36413,6 +36794,7 @@ const game_data = [
       },
     ],
     title: "Crusader: No Remorse",
+    price: "117.11",
   },
   {
     description:
@@ -36540,6 +36922,7 @@ const game_data = [
       },
     ],
     title: "Final Fantasy VII",
+    price: "94.17",
   },
   {
     description:
@@ -36641,6 +37024,7 @@ const game_data = [
       },
     ],
     title: "Alone in the Dark 2",
+    price: "118.37",
   },
   {
     description:
@@ -36728,6 +37112,7 @@ const game_data = [
       },
     ],
     title: "Resident Evil 2",
+    price: "82.42",
   },
   {
     description:
@@ -36831,6 +37216,7 @@ const game_data = [
       },
     ],
     title: "Tom Clancy&#39;s Rainbow Six",
+    price: "51.49",
   },
   {
     description:
@@ -36907,6 +37293,7 @@ const game_data = [
       },
     ],
     title: "Tom Clancy&#39;s Rainbow Six: Rogue Spear",
+    price: "103.58",
   },
   {
     description:
@@ -36982,6 +37369,7 @@ const game_data = [
       },
     ],
     title: "Need for Speed: High Stakes",
+    price: "61.04",
   },
   {
     description:
@@ -37021,6 +37409,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "Scrabble",
+    price: "63.44",
   },
   {
     description:
@@ -37096,6 +37485,7 @@ const game_data = [
       },
     ],
     title: "Star Wars: Episode I - The Phantom Menace",
+    price: "61.44",
   },
   {
     description:
@@ -37194,6 +37584,7 @@ const game_data = [
       },
     ],
     title: "Panzer General",
+    price: "24.53",
   },
   {
     description:
@@ -37269,6 +37660,7 @@ const game_data = [
       },
     ],
     title: "The Neverhood",
+    price: "28.89",
   },
   {
     description:
@@ -37388,6 +37780,7 @@ const game_data = [
       },
     ],
     title: "Oddworld: Abe&#39;s Oddysee",
+    price: "26.61",
   },
   {
     description:
@@ -37468,6 +37861,7 @@ const game_data = [
       },
     ],
     title: "Warhammer: Shadow of the Horned Rat",
+    price: "33.59",
   },
   {
     description:
@@ -37543,6 +37937,7 @@ const game_data = [
       },
     ],
     title: "Rollcage",
+    price: "100.51",
   },
   {
     description:
@@ -37629,6 +38024,7 @@ const game_data = [
       },
     ],
     title: "Grand Theft Auto 2",
+    price: "31.66",
   },
   {
     description:
@@ -37709,6 +38105,7 @@ const game_data = [
       },
     ],
     title: "Top Gun: Fire at Will!",
+    price: "99.33",
   },
   {
     description:
@@ -37784,6 +38181,7 @@ const game_data = [
       },
     ],
     title: "TOCA 2: Touring Car Challenge",
+    price: "94.25",
   },
   {
     description:
@@ -37870,6 +38268,7 @@ const game_data = [
       },
     ],
     title: "Battlesport",
+    price: "72.33",
   },
   {
     description:
@@ -37955,6 +38354,7 @@ const game_data = [
       },
     ],
     title: "Mortal Kombat 4",
+    price: "75.11",
   },
   {
     description:
@@ -38035,6 +38435,7 @@ const game_data = [
       },
     ],
     title: "Age of Empires II: The Age of Kings",
+    price: "26.07",
   },
   {
     description:
@@ -38190,6 +38591,7 @@ const game_data = [
       },
     ],
     title: "James Pond 2: Codename: RoboCod",
+    price: "88.92",
   },
   {
     description:
@@ -38280,6 +38682,7 @@ const game_data = [
       },
     ],
     title: "Unreal Tournament",
+    price: "68.58",
   },
   {
     description:
@@ -38380,6 +38783,7 @@ const game_data = [
       },
     ],
     title: "Sim Theme Park",
+    price: "47.08",
   },
   {
     description:
@@ -38467,6 +38871,7 @@ const game_data = [
       },
     ],
     title: "Deus Ex",
+    price: "78.29",
   },
   {
     description:
@@ -38561,6 +38966,7 @@ const game_data = [
       },
     ],
     title: "Who Wants to Be a Millionaire: 2nd Edition",
+    price: "112.08",
   },
   {
     description:
@@ -38682,6 +39088,7 @@ const game_data = [
       },
     ],
     title: "Rayman 2: The Great Escape",
+    price: "73.55",
   },
   {
     description:
@@ -38762,6 +39169,7 @@ const game_data = [
       },
     ],
     title: "Might and Magic VIII: Day of the Destroyer",
+    price: "41.93",
   },
   {
     description:
@@ -38842,6 +39250,7 @@ const game_data = [
       },
     ],
     title: "NHL 2001",
+    price: "96.48",
   },
   {
     description:
@@ -38928,6 +39337,7 @@ const game_data = [
       },
     ],
     title: "MDK 2",
+    price: "50.35",
   },
   {
     description:
@@ -39009,6 +39419,7 @@ const game_data = [
       },
     ],
     title: "Star Trek: Voyager - Elite Force",
+    price: "81.55",
   },
   {
     description:
@@ -39087,6 +39498,7 @@ const game_data = [
       },
     ],
     title: "FIFA 2001: Major League Soccer",
+    price: "88.57",
   },
   {
     description:
@@ -39169,6 +39581,7 @@ const game_data = [
       },
     ],
     title: "Escape from Monkey Island",
+    price: "65.02",
   },
   {
     description:
@@ -39257,6 +39670,7 @@ const game_data = [
       },
     ],
     title: "Rune",
+    price: "25.65",
   },
   {
     description:
@@ -39332,6 +39746,7 @@ const game_data = [
       },
     ],
     title: "Hype: The Time Quest",
+    price: "106.10",
   },
   {
     description:
@@ -39414,6 +39829,7 @@ const game_data = [
       },
     ],
     title: "Giants: Citizen Kabuto",
+    price: "113.79",
   },
   {
     description:
@@ -39494,6 +39910,7 @@ const game_data = [
       },
     ],
     title: "Le Mans 24 Hours",
+    price: "101.50",
   },
   {
     description:
@@ -39577,6 +39994,7 @@ const game_data = [
       },
     ],
     title: "Oni",
+    price: "70.65",
   },
   {
     description:
@@ -39657,6 +40075,7 @@ const game_data = [
       },
     ],
     title: "NBA Live 2001",
+    price: "47.66",
   },
   {
     description:
@@ -39737,6 +40156,7 @@ const game_data = [
       },
     ],
     title: "Fur Fighters",
+    price: "37.51",
   },
   {
     description: null,
@@ -39765,6 +40185,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "Wacky Races",
+    price: "93.20",
   },
   {
     description:
@@ -39850,6 +40271,7 @@ const game_data = [
       },
     ],
     title: "Summoner",
+    price: "80.46",
   },
   {
     description:
@@ -39936,6 +40358,7 @@ const game_data = [
       },
     ],
     title: "Myst III: Exile",
+    price: "94.52",
   },
   {
     description:
@@ -40011,6 +40434,7 @@ const game_data = [
       },
     ],
     title: "Tekken Tag Tournament",
+    price: "71.78",
   },
   {
     description:
@@ -40100,6 +40524,7 @@ const game_data = [
       },
     ],
     title: "Dead or Alive 2",
+    price: "95.60",
   },
   {
     description:
@@ -40124,6 +40549,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "Aqua Aqua",
+    price: "65.73",
   },
   {
     description:
@@ -40214,6 +40640,7 @@ const game_data = [
       },
     ],
     title: "Star Wars: Starfighter",
+    price: "71.44",
   },
   {
     description:
@@ -40301,6 +40728,7 @@ const game_data = [
       },
     ],
     title: "Super Bust-A-Move",
+    price: "92.90",
   },
   {
     description:
@@ -40373,6 +40801,7 @@ const game_data = [
       },
     ],
     title: "SSX",
+    price: "83.52",
   },
   {
     description:
@@ -40503,6 +40932,7 @@ const game_data = [
       },
     ],
     title: "Crazy Taxi",
+    price: "31.87",
   },
   {
     description:
@@ -40573,6 +41003,7 @@ const game_data = [
       },
     ],
     title: "Zone of the Enders",
+    price: "90.74",
   },
   {
     description:
@@ -40643,6 +41074,7 @@ const game_data = [
       },
     ],
     title: "Sky Odyssey",
+    price: "22.81",
   },
   {
     description:
@@ -40667,6 +41099,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "Quake III: Revolution",
+    price: "43.23",
   },
   {
     description:
@@ -40740,6 +41173,7 @@ const game_data = [
       },
     ],
     title: "TimeSplitters",
+    price: "35.40",
   },
   {
     description:
@@ -40779,6 +41213,7 @@ const game_data = [
       },
     ],
     title: "Ridge Racer V",
+    price: "41.10",
   },
   {
     description:
@@ -40852,6 +41287,7 @@ const game_data = [
       },
     ],
     title: "International Superstar Soccer",
+    price: "103.09",
   },
   {
     description:
@@ -40958,6 +41394,7 @@ const game_data = [
       },
     ],
     title: "Marvel vs. Capcom 2",
+    price: "97.99",
   },
   {
     description:
@@ -41060,22 +41497,7 @@ const game_data = [
       },
     ],
     title: "Resident Evil: Code: Veronica X",
-  },
-  {
-    description:
-      '<p>The <em>Biohazard 5th Anniversary special package</em> may be the ultimate collectors item for fans of the series (Resident Evil in the US). The limited edition comes packaged in a stylish aluminum suitcase. Inside the package comes with an almost-full collection of the Biohazard games:</p>\n<ul>\n<li><a href="https://www.mobygames.com/game/1195/resident-evil/">Biohazard</a></li>\n<li><a href="/search/?q=Resident+Evil+2">Biohazard 2</a></li>\n<li><a href="https://www.mobygames.com/game/3321/resident-evil-3-nemesis/">Biohazard 3: Last Escape</a> for the PlayStation 1</li>\n<li><a href="https://www.mobygames.com/game/23741/resident-evil-survivor-2-code-veronica/">Biohazard Code: Veronica</a> for the PS2 with its included <a href="https://www.mobygames.com/game/5086/devil-may-cry/">Devil May Cry</a> demo</li>\n</ul>\n<p>Rounding out the collection is Wesker\'s Report, a region 1 coded DVD containing interviews with the series\' creators.</p>\n<p>Inside are a collection of Biohazard-themed goods including an individually numbered dog tag, a chrome pen, a keychain, and a silver ring.</p>',
-    game_id: 3769,
-    moby_score: null,
-    platforms: [
-      {
-        first_release_date: "2001-03-22",
-        platform_id: 7,
-        platform_name: "PlayStation 2",
-      },
-    ],
-    sample_cover: null,
-    sample_screenshots: [],
-    title: "Biohazard: 5th Anniversary Special Package",
+    price: "21.15",
   },
   {
     description:
@@ -41167,6 +41589,7 @@ const game_data = [
       },
     ],
     title: "Onimusha: Warlords",
+    price: "52.52",
   },
   {
     description:
@@ -41191,6 +41614,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "Street Fighter EX3",
+    price: "41.91",
   },
   {
     description:
@@ -41279,6 +41703,7 @@ const game_data = [
       },
     ],
     title: "WinBack: Covert Operations",
+    price: "60.78",
   },
   {
     description:
@@ -41313,6 +41738,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "NBA Hoopz",
+    price: "41.60",
   },
   {
     description:
@@ -41393,6 +41819,7 @@ const game_data = [
       },
     ],
     title: "Dynasty Warriors 2",
+    price: "83.39",
   },
   {
     description:
@@ -41464,6 +41891,7 @@ const game_data = [
       },
     ],
     title: "The Bouncer",
+    price: "26.22",
   },
   {
     description:
@@ -41543,6 +41971,7 @@ const game_data = [
       },
     ],
     title: "FantaVision",
+    price: "62.81",
   },
   {
     description:
@@ -41635,6 +42064,7 @@ const game_data = [
       },
     ],
     title: "Silent Scope",
+    price: "59.89",
   },
   {
     description:
@@ -41659,6 +42089,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "Swing Away Golf",
+    price: "83.73",
   },
   {
     description:
@@ -41744,6 +42175,7 @@ const game_data = [
       },
     ],
     title: "F1 Championship: Season 2000",
+    price: "45.53",
   },
   {
     description:
@@ -41814,6 +42246,7 @@ const game_data = [
       },
     ],
     title: "Gran Turismo 3: A-spec",
+    price: "104.44",
   },
   {
     description:
@@ -41901,6 +42334,7 @@ const game_data = [
       },
     ],
     title: "Shadow of Destiny",
+    price: "82.59",
   },
   {
     description:
@@ -41976,6 +42410,7 @@ const game_data = [
       },
     ],
     title: "Star Wars: Super Bombad Racing",
+    price: "37.39",
   },
   {
     description:
@@ -42000,6 +42435,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "MotoGP",
+    price: "110.03",
   },
   {
     description:
@@ -42024,6 +42460,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "Driving Emotion Type-S",
+    price: "42.81",
   },
   {
     description:
@@ -42100,6 +42537,7 @@ const game_data = [
       },
     ],
     title: "Knockout Kings 2001",
+    price: "35.84",
   },
   {
     description:
@@ -42185,6 +42623,7 @@ const game_data = [
       },
     ],
     title: "Gauntlet: Dark Legacy",
+    price: "47.83",
   },
   {
     description:
@@ -42255,6 +42694,7 @@ const game_data = [
       },
     ],
     title: "Silpheed: The Lost Planet",
+    price: "44.55",
   },
   {
     description:
@@ -42326,6 +42766,7 @@ const game_data = [
       },
     ],
     title: "Rumble Racing",
+    price: "73.00",
   },
   {
     description:
@@ -42411,6 +42852,7 @@ const game_data = [
       },
     ],
     title: "Grandia II",
+    price: "59.57",
   },
   {
     description:
@@ -42440,6 +42882,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "NASCAR 2001",
+    price: "58.36",
   },
   {
     description:
@@ -42538,6 +42981,7 @@ const game_data = [
       },
     ],
     title: "Alone in the Dark: The New Nightmare",
+    price: "32.15",
   },
   {
     description:
@@ -42618,6 +43062,7 @@ const game_data = [
       },
     ],
     title: "Army Men: Sarge&#39;s Heroes 2",
+    price: "101.03",
   },
   {
     description:
@@ -42712,6 +43157,7 @@ const game_data = [
       },
     ],
     title: "Red Faction",
+    price: "41.17",
   },
   {
     description:
@@ -42791,6 +43237,7 @@ const game_data = [
       },
     ],
     title: "Kessen",
+    price: "106.59",
   },
   {
     description:
@@ -42871,6 +43318,7 @@ const game_data = [
       },
     ],
     title: "Namco Museum",
+    price: "99.28",
   },
   {
     description:
@@ -42956,6 +43404,7 @@ const game_data = [
       },
     ],
     title: "Eighteen Wheeler: American Pro Trucker",
+    price: "99.13",
   },
   {
     description:
@@ -43000,6 +43449,7 @@ const game_data = [
       },
     ],
     title: "Triple Play Baseball",
+    price: "37.05",
   },
   {
     description:
@@ -43085,6 +43535,7 @@ const game_data = [
       },
     ],
     title: "Ready 2 Rumble Boxing: Round 2",
+    price: "108.67",
   },
   {
     description:
@@ -43156,6 +43607,7 @@ const game_data = [
       },
     ],
     title: "Twisted Metal: Black",
+    price: "27.51",
   },
   {
     description:
@@ -43229,6 +43681,7 @@ const game_data = [
       },
     ],
     title: "X Squad",
+    price: "119.55",
   },
   {
     description:
@@ -43258,6 +43711,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "NBA Street",
+    price: "39.97",
   },
   {
     description:
@@ -43384,6 +43838,7 @@ const game_data = [
       },
     ],
     title: "Max Payne",
+    price: "109.27",
   },
   {
     description:
@@ -43467,6 +43922,7 @@ const game_data = [
       },
     ],
     title: "Dark Cloud",
+    price: "80.89",
   },
   {
     description:
@@ -43542,6 +43998,7 @@ const game_data = [
       },
     ],
     title: "Rugby",
+    price: "46.80",
   },
   {
     description:
@@ -43622,6 +44079,7 @@ const game_data = [
       },
     ],
     title: "F355 Challenge: Passione Rossa",
+    price: "119.53",
   },
   {
     description:
@@ -43646,6 +44104,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "Extermination",
+    price: "85.62",
   },
   {
     description:
@@ -43716,6 +44175,7 @@ const game_data = [
       },
     ],
     title: "Klonoa 2: Lunatea&#39;s Veil",
+    price: "30.34",
   },
   {
     description:
@@ -43794,6 +44254,7 @@ const game_data = [
       },
     ],
     title: "XGIII: Extreme G Racing",
+    price: "112.60",
   },
   {
     description:
@@ -43823,6 +44284,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "The Adventures of Cookie &amp; Cream",
+    price: "64.15",
   },
   {
     description:
@@ -43908,6 +44370,7 @@ const game_data = [
       },
     ],
     title: "4x4 Evo",
+    price: "97.15",
   },
   {
     description:
@@ -43971,6 +44434,7 @@ const game_data = [
       },
     ],
     title: "Moderngroove: Ministry of Sound Edition",
+    price: "73.74",
   },
   {
     description:
@@ -44046,6 +44510,7 @@ const game_data = [
       },
     ],
     title: "The Shadow of Zorro",
+    price: "31.14",
   },
   {
     description:
@@ -44123,6 +44588,7 @@ const game_data = [
       },
     ],
     title: "Capcom vs. SNK 2: Mark of the Millennium",
+    price: "115.19",
   },
   {
     description:
@@ -44214,6 +44680,7 @@ const game_data = [
       },
     ],
     title: "Beyond Atlantis II",
+    price: "27.26",
   },
   {
     description:
@@ -44306,6 +44773,7 @@ const game_data = [
       },
     ],
     title: "Street Fighter III: 3rd Strike",
+    price: "106.17",
   },
   {
     description:
@@ -44396,6 +44864,7 @@ const game_data = [
       },
     ],
     title: "Tetris Worlds",
+    price: "69.49",
   },
   {
     description:
@@ -44478,6 +44947,7 @@ const game_data = [
       },
     ],
     title: "Silent Hill 2: Restless Dreams",
+    price: "35.67",
   },
   {
     description:
@@ -44568,6 +45038,7 @@ const game_data = [
       },
     ],
     title: "Guilty Gear X",
+    price: "103.58",
   },
   {
     description:
@@ -44643,6 +45114,7 @@ const game_data = [
       },
     ],
     title: "Time Crisis II",
+    price: "46.17",
   },
   {
     description:
@@ -44719,6 +45191,7 @@ const game_data = [
       },
     ],
     title: "Kessen II",
+    price: "22.90",
   },
   {
     description:
@@ -44809,6 +45282,7 @@ const game_data = [
       },
     ],
     title: "Spy Hunter",
+    price: "99.61",
   },
   {
     description:
@@ -44887,6 +45361,7 @@ const game_data = [
       },
     ],
     title: "Devil May Cry",
+    price: "27.69",
   },
   {
     description:
@@ -44921,6 +45396,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "NHL Hitz 20-02",
+    price: "20.06",
   },
   {
     description:
@@ -44996,6 +45472,7 @@ const game_data = [
       },
     ],
     title: "Okage: Shadow King",
+    price: "66.38",
   },
   {
     description:
@@ -45072,6 +45549,7 @@ const game_data = [
       },
     ],
     title: "Project Eden",
+    price: "87.57",
   },
   {
     description:
@@ -45147,6 +45625,7 @@ const game_data = [
       },
     ],
     title: "Ico",
+    price: "35.46",
   },
   {
     description:
@@ -45171,6 +45650,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "Monster Rancher 3",
+    price: "43.69",
   },
   {
     description:
@@ -45205,6 +45685,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "Madden NFL 2002",
+    price: "29.56",
   },
   {
     description:
@@ -45234,6 +45715,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "Midnight Club: Street Racing",
+    price: "63.67",
   },
   {
     description:
@@ -45324,6 +45806,7 @@ const game_data = [
       },
     ],
     title: "Desire",
+    price: "64.99",
   },
   {
     description:
@@ -45414,6 +45897,7 @@ const game_data = [
       },
     ],
     title: "Wing Commander",
+    price: "91.38",
   },
   {
     description:
@@ -45506,6 +45990,7 @@ const game_data = [
       },
     ],
     title: "Prince of Persia 2: The Shadow &amp; The Flame",
+    price: "69.80",
   },
   {
     description:
@@ -45618,6 +46103,7 @@ const game_data = [
       },
     ],
     title: "Ultima VI: The False Prophet",
+    price: "45.61",
   },
   {
     description:
@@ -45798,6 +46284,7 @@ const game_data = [
       },
     ],
     title: "Prince of Persia",
+    price: "91.43",
   },
   {
     description:
@@ -45943,6 +46430,7 @@ const game_data = [
       },
     ],
     title: "Cannon Fodder",
+    price: "102.26",
   },
   {
     description:
@@ -46033,6 +46521,7 @@ const game_data = [
       },
     ],
     title: "NHL 95",
+    price: "83.04",
   },
   {
     description:
@@ -46113,6 +46602,7 @@ const game_data = [
       },
     ],
     title: "Brett Hull Hockey 95",
+    price: "20.99",
   },
   {
     description:
@@ -46188,6 +46678,7 @@ const game_data = [
       },
     ],
     title: "Bram Stoker&#39;s Dracula",
+    price: "103.41",
   },
   {
     description:
@@ -46308,6 +46799,7 @@ const game_data = [
       },
     ],
     title: "Worms",
+    price: "91.26",
   },
   {
     description:
@@ -46433,6 +46925,7 @@ const game_data = [
       },
     ],
     title: "Earthworm Jim 2",
+    price: "40.49",
   },
   {
     description:
@@ -46538,6 +47031,7 @@ const game_data = [
       },
     ],
     title: "PGA Tour Golf",
+    price: "26.04",
   },
   {
     description:
@@ -46633,6 +47127,7 @@ const game_data = [
       },
     ],
     title: "World Class Rugby",
+    price: "79.74",
   },
   {
     description:
@@ -46729,6 +47224,7 @@ const game_data = [
       },
     ],
     title: "FIFA Soccer 96",
+    price: "105.58",
   },
   {
     description:
@@ -46839,6 +47335,7 @@ const game_data = [
       },
     ],
     title: "Gods",
+    price: "52.22",
   },
   {
     description:
@@ -46914,6 +47411,7 @@ const game_data = [
       },
     ],
     title: "The Rocketeer",
+    price: "94.23",
   },
   {
     description:
@@ -47035,6 +47533,7 @@ const game_data = [
       },
     ],
     title: "Soccer Kid",
+    price: "45.39",
   },
   {
     description:
@@ -47170,6 +47669,7 @@ const game_data = [
       },
     ],
     title: "Flashback: The Quest for Identity",
+    price: "54.10",
   },
   {
     description:
@@ -47301,6 +47801,7 @@ const game_data = [
       },
     ],
     title: "Out of This World",
+    price: "92.10",
   },
   {
     description:
@@ -47426,6 +47927,7 @@ const game_data = [
       },
     ],
     title: "Pinball Fantasies",
+    price: "97.33",
   },
   {
     description:
@@ -47632,6 +48134,7 @@ const game_data = [
       },
     ],
     title: "Ms. Pac-Man",
+    price: "67.24",
   },
   {
     description:
@@ -47787,6 +48290,7 @@ const game_data = [
       },
     ],
     title: "James Pond 2: Codename: RoboCod",
+    price: "116.06",
   },
   {
     description:
@@ -47897,6 +48401,7 @@ const game_data = [
       },
     ],
     title: "Sid Meier&#39;s Civilization",
+    price: "21.24",
   },
   {
     description:
@@ -48017,6 +48522,7 @@ const game_data = [
       },
     ],
     title: "Mortal Kombat",
+    price: "72.19",
   },
   {
     description:
@@ -48142,6 +48648,7 @@ const game_data = [
       },
     ],
     title: "Mortal Kombat II",
+    price: "41.46",
   },
   {
     description:
@@ -48252,6 +48759,7 @@ const game_data = [
       },
     ],
     title: "Mortal Kombat 3",
+    price: "74.14",
   },
   {
     description:
@@ -48358,6 +48866,7 @@ const game_data = [
       },
     ],
     title: "World Cup USA 94",
+    price: "106.92",
   },
   {
     description:
@@ -48488,6 +48997,7 @@ const game_data = [
       },
     ],
     title: "Populous",
+    price: "116.88",
   },
   {
     description:
@@ -48579,6 +49089,7 @@ const game_data = [
       },
     ],
     title: "Micro Machines 2: Turbo Tournament",
+    price: "86.06",
   },
   {
     description:
@@ -48736,6 +49247,7 @@ const game_data = [
       },
     ],
     title: "SimCity 2000",
+    price: "35.76",
   },
   {
     description:
@@ -48891,6 +49403,7 @@ const game_data = [
       },
     ],
     title: "Theme Park",
+    price: "32.88",
   },
   {
     description:
@@ -48991,6 +49504,7 @@ const game_data = [
       },
     ],
     title: "Cool Spot",
+    price: "33.18",
   },
   {
     description:
@@ -49181,6 +49695,7 @@ const game_data = [
       },
     ],
     title: "Lemmings",
+    price: "108.92",
   },
   {
     description:
@@ -49266,6 +49781,7 @@ const game_data = [
       },
     ],
     title: "Jammit",
+    price: "108.77",
   },
   {
     description:
@@ -49386,6 +49902,7 @@ const game_data = [
       },
     ],
     title: "Pinball Dreams",
+    price: "81.84",
   },
   {
     description:
@@ -49495,6 +50012,7 @@ const game_data = [
       },
     ],
     title: "Wizardry: Bane of the Cosmic Forge",
+    price: "96.78",
   },
   {
     description:
@@ -49601,6 +50119,7 @@ const game_data = [
       },
     ],
     title: "Lamborghini: American Challenge",
+    price: "52.41",
   },
   {
     description:
@@ -49707,6 +50226,7 @@ const game_data = [
       },
     ],
     title: "Jungle Strike",
+    price: "75.51",
   },
   {
     description:
@@ -49797,6 +50317,7 @@ const game_data = [
       },
     ],
     title: "NHL 98",
+    price: "78.91",
   },
   {
     description:
@@ -49902,6 +50423,7 @@ const game_data = [
       },
     ],
     title: "Dungeon Master",
+    price: "20.27",
   },
   {
     description:
@@ -49992,6 +50514,7 @@ const game_data = [
       },
     ],
     title: "Eye of the Beholder",
+    price: "32.56",
   },
   {
     description:
@@ -50088,6 +50611,7 @@ const game_data = [
       },
     ],
     title: "FIFA: Road to World Cup 98",
+    price: "97.75",
   },
   {
     description:
@@ -50259,6 +50783,7 @@ const game_data = [
       },
     ],
     title: "SimCity",
+    price: "119.22",
   },
   {
     description:
@@ -50385,6 +50910,7 @@ const game_data = [
       },
     ],
     title: "Joe &amp; Mac: Caveman Ninja",
+    price: "111.94",
   },
   {
     description:
@@ -50515,6 +51041,7 @@ const game_data = [
       },
     ],
     title: "Soldiers of Fortune",
+    price: "59.11",
   },
   {
     description:
@@ -50605,6 +51132,7 @@ const game_data = [
       },
     ],
     title: "Spirou",
+    price: "34.83",
   },
   {
     description:
@@ -50685,6 +51213,7 @@ const game_data = [
       },
     ],
     title: "The Adventures of Tintin: Prisoners of the Sun",
+    price: "45.74",
   },
   {
     description:
@@ -50801,6 +51330,7 @@ const game_data = [
       },
     ],
     title: "Doom",
+    price: "75.82",
   },
   {
     description:
@@ -50877,6 +51407,7 @@ const game_data = [
       },
     ],
     title: "Wing Commander: The Secret Missions",
+    price: "27.25",
   },
   {
     description:
@@ -51007,6 +51538,7 @@ const game_data = [
       },
     ],
     title: "Pit-Fighter",
+    price: "110.69",
   },
   {
     description:
@@ -51087,6 +51619,7 @@ const game_data = [
       },
     ],
     title: "Jack Nicklaus&#39; Unlimited Golf &amp; Course Design",
+    price: "111.90",
   },
   {
     description:
@@ -51227,6 +51760,7 @@ const game_data = [
       },
     ],
     title: "Raiden",
+    price: "26.79",
   },
   {
     description:
@@ -51317,6 +51851,7 @@ const game_data = [
       },
     ],
     title: "Sink or Swim",
+    price: "25.24",
   },
   {
     description:
@@ -51432,6 +51967,7 @@ const game_data = [
       },
     ],
     title: "Mega Man X",
+    price: "110.29",
   },
   {
     description:
@@ -51534,6 +52070,7 @@ const game_data = [
       },
     ],
     title: "Blackthorne",
+    price: "49.99",
   },
   {
     description:
@@ -51639,6 +52176,7 @@ const game_data = [
       },
     ],
     title: "Terminator 2: Judgment Day",
+    price: "25.54",
   },
   {
     description:
@@ -51755,6 +52293,7 @@ const game_data = [
       },
     ],
     title: "Desert Strike: Return to the Gulf",
+    price: "22.72",
   },
   {
     description:
@@ -51860,6 +52399,7 @@ const game_data = [
       },
     ],
     title: "Rise of the Robots",
+    price: "117.66",
   },
   {
     description:
@@ -51965,6 +52505,7 @@ const game_data = [
       },
     ],
     title: "Williams Arcade Classics",
+    price: "38.20",
   },
   {
     description:
@@ -52196,6 +52737,7 @@ const game_data = [
       },
     ],
     title: "Frogger",
+    price: "109.82",
   },
   {
     description:
@@ -52296,6 +52838,7 @@ const game_data = [
       },
     ],
     title: "The Lost Vikings",
+    price: "104.01",
   },
   {
     description:
@@ -52402,6 +52945,7 @@ const game_data = [
       },
     ],
     title: "Lemmings 2: The Tribes",
+    price: "35.66",
   },
   {
     description:
@@ -52532,6 +53076,7 @@ const game_data = [
       },
     ],
     title: "Might and Magic II: Gates to Another World",
+    price: "78.47",
   },
   {
     description:
@@ -52638,6 +53183,7 @@ const game_data = [
       },
     ],
     title: "Might and Magic III: Isles of Terra",
+    price: "106.61",
   },
   {
     description:
@@ -52754,6 +53300,7 @@ const game_data = [
       },
     ],
     title: "Populous II: Trials of the Olympian Gods",
+    price: "70.28",
   },
   {
     description:
@@ -52859,6 +53406,7 @@ const game_data = [
       },
     ],
     title: "Push-Over",
+    price: "78.84",
   },
   {
     description:
@@ -52939,6 +53487,7 @@ const game_data = [
       },
     ],
     title: "The Blues Brothers: Jukebox Adventure",
+    price: "44.74",
   },
   {
     description:
@@ -53044,6 +53593,7 @@ const game_data = [
       },
     ],
     title: "SimAnt",
+    price: "23.90",
   },
   {
     description:
@@ -53144,6 +53694,7 @@ const game_data = [
       },
     ],
     title: "California Games II",
+    price: "44.85",
   },
   {
     description:
@@ -53265,6 +53816,7 @@ const game_data = [
       },
     ],
     title: "SimEarth: The Living Planet",
+    price: "78.15",
   },
   {
     description:
@@ -53391,6 +53943,7 @@ const game_data = [
       },
     ],
     title: "Uncharted Waters",
+    price: "59.01",
   },
   {
     description:
@@ -53512,6 +54065,7 @@ const game_data = [
       },
     ],
     title: "New Horizons",
+    price: "54.14",
   },
   {
     description:
@@ -53652,6 +54206,7 @@ const game_data = [
       },
     ],
     title: "Genghis Khan II: Clan of the Gray Wolf",
+    price: "53.30",
   },
   {
     description:
@@ -53767,6 +54322,7 @@ const game_data = [
       },
     ],
     title: "Romance of the Three Kingdoms III: Dragon of Destiny",
+    price: "25.70",
   },
   {
     description:
@@ -53852,6 +54408,7 @@ const game_data = [
       },
     ],
     title: "Liberty or Death",
+    price: "67.05",
   },
   {
     description:
@@ -53962,6 +54519,7 @@ const game_data = [
       },
     ],
     title: "Gemfire",
+    price: "87.05",
   },
   {
     description:
@@ -54068,6 +54626,7 @@ const game_data = [
       },
     ],
     title: "Operation Europe: Path to Victory 1939-45",
+    price: "24.99",
   },
   {
     description:
@@ -54184,6 +54743,7 @@ const game_data = [
       },
     ],
     title: "Drakkhen",
+    price: "30.27",
   },
   {
     description:
@@ -54299,6 +54859,7 @@ const game_data = [
       },
     ],
     title: "PowerMonger",
+    price: "115.69",
   },
   {
     description:
@@ -54425,6 +54986,7 @@ const game_data = [
       },
     ],
     title: "Shanghai II: Dragon&#39;s Eye",
+    price: "44.46",
   },
   {
     description:
@@ -54525,6 +55087,7 @@ const game_data = [
       },
     ],
     title: "The Lion King",
+    price: "46.40",
   },
   {
     description:
@@ -54630,6 +55193,7 @@ const game_data = [
       },
     ],
     title: "FIFA International Soccer",
+    price: "86.07",
   },
   {
     description:
@@ -54801,6 +55365,7 @@ const game_data = [
       },
     ],
     title: "Pipe Dream",
+    price: "106.68",
   },
   {
     description:
@@ -54901,6 +55466,7 @@ const game_data = [
       },
     ],
     title: "Tintin in Tibet",
+    price: "76.00",
   },
   {
     description:
@@ -54991,6 +55557,7 @@ const game_data = [
       },
     ],
     title: "NBA Live 98",
+    price: "77.37",
   },
   {
     description:
@@ -55092,6 +55659,7 @@ const game_data = [
       },
     ],
     title: "Atlas",
+    price: "50.16",
   },
   {
     description:
@@ -55197,6 +55765,7 @@ const game_data = [
       },
     ],
     title: "Pitfall: The Mayan Adventure",
+    price: "37.53",
   },
   {
     description:
@@ -55322,6 +55891,7 @@ const game_data = [
       },
     ],
     title: "Mega lo Mania",
+    price: "106.08",
   },
   {
     description:
@@ -55402,6 +55972,7 @@ const game_data = [
       },
     ],
     title: "NBA Live 95",
+    price: "34.59",
   },
   {
     description:
@@ -55492,6 +56063,7 @@ const game_data = [
       },
     ],
     title: "SimTown",
+    price: "23.55",
   },
   {
     description:
@@ -55572,6 +56144,7 @@ const game_data = [
       },
     ],
     title: "HardBall III",
+    price: "49.03",
   },
   {
     description:
@@ -55662,6 +56235,7 @@ const game_data = [
       },
     ],
     title: "BreakThru!",
+    price: "83.38",
   },
   {
     description:
@@ -55772,6 +56346,7 @@ const game_data = [
       },
     ],
     title: "Kick Off 2",
+    price: "67.59",
   },
   {
     description:
@@ -55857,6 +56432,7 @@ const game_data = [
       },
     ],
     title: "Hook",
+    price: "114.79",
   },
   {
     description:
@@ -55987,6 +56563,7 @@ const game_data = [
       },
     ],
     title: "Earthworm Jim",
+    price: "58.42",
   },
   {
     description:
@@ -56082,6 +56659,7 @@ const game_data = [
       },
     ],
     title: "Brutal: Paws of Fury",
+    price: "66.29",
   },
   {
     description:
@@ -56197,6 +56775,7 @@ const game_data = [
       },
     ],
     title: "NBA Jam Tournament Edition",
+    price: "57.79",
   },
   {
     description:
@@ -56292,6 +56871,7 @@ const game_data = [
       },
     ],
     title: "NBA Live 97",
+    price: "60.27",
   },
   {
     description:
@@ -56398,6 +56978,7 @@ const game_data = [
       },
     ],
     title: "P.T.O.: Pacific Theater of Operations II",
+    price: "29.03",
   },
   {
     description:
@@ -56489,6 +57070,7 @@ const game_data = [
       },
     ],
     title: "Norse by Norse West: The Return of the Lost Vikings",
+    price: "47.59",
   },
   {
     description:
@@ -56630,6 +57212,7 @@ const game_data = [
       },
     ],
     title: "Romance of the Three Kingdoms IV: Wall of Fire",
+    price: "62.10",
   },
   {
     description:
@@ -56836,6 +57419,7 @@ const game_data = [
       },
     ],
     title: "Ms. Pac-Man",
+    price: "72.51",
   },
   {
     description:
@@ -56922,6 +57506,7 @@ const game_data = [
       },
     ],
     title: "Myst III: Exile",
+    price: "35.92",
   },
   {
     description:
@@ -57012,6 +57597,7 @@ const game_data = [
       },
     ],
     title: "Star Wars: Starfighter",
+    price: "40.06",
   },
   {
     description:
@@ -57118,6 +57704,7 @@ const game_data = [
       },
     ],
     title: "Marvel vs. Capcom 2",
+    price: "25.77",
   },
   {
     description:
@@ -57205,6 +57792,7 @@ const game_data = [
       },
     ],
     title: "Shadow of Destiny",
+    price: "118.60",
   },
   {
     description:
@@ -57290,6 +57878,7 @@ const game_data = [
       },
     ],
     title: "Gauntlet: Dark Legacy",
+    price: "117.51",
   },
   {
     description:
@@ -57370,6 +57959,7 @@ const game_data = [
       },
     ],
     title: "Namco Museum",
+    price: "36.54",
   },
   {
     description:
@@ -57496,6 +58086,7 @@ const game_data = [
       },
     ],
     title: "Max Payne",
+    price: "25.90",
   },
   {
     description:
@@ -57573,6 +58164,7 @@ const game_data = [
       },
     ],
     title: "Capcom vs. SNK 2: Mark of the Millennium",
+    price: "58.48",
   },
   {
     description:
@@ -57663,6 +58255,7 @@ const game_data = [
       },
     ],
     title: "Tetris Worlds",
+    price: "33.70",
   },
   {
     description:
@@ -57745,6 +58338,7 @@ const game_data = [
       },
     ],
     title: "Silent Hill 2: Restless Dreams",
+    price: "66.03",
   },
   {
     description:
@@ -57835,6 +58429,7 @@ const game_data = [
       },
     ],
     title: "Spy Hunter",
+    price: "46.85",
   },
   {
     description:
@@ -57869,6 +58464,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "NHL Hitz 20-02",
+    price: "69.72",
   },
   {
     description:
@@ -57979,6 +58575,7 @@ const game_data = [
       },
     ],
     title: "Bejeweled: Deluxe",
+    price: "96.07",
   },
   {
     description:
@@ -58013,6 +58610,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "Madden NFL 2002",
+    price: "63.03",
   },
   {
     description:
@@ -58097,6 +58695,7 @@ const game_data = [
       },
     ],
     title: "Championship Manager: Season 01/02",
+    price: "84.95",
   },
   {
     description:
@@ -58178,6 +58777,7 @@ const game_data = [
       },
     ],
     title: "Commandos 2: Men of Courage",
+    price: "86.18",
   },
   {
     description:
@@ -58263,6 +58863,7 @@ const game_data = [
       },
     ],
     title: "Batman: Vengeance",
+    price: "113.80",
   },
   {
     description:
@@ -58363,6 +58964,7 @@ const game_data = [
       },
     ],
     title: "Tony Hawk&#39;s Pro Skater 3",
+    price: "38.42",
   },
   {
     description:
@@ -58448,6 +59050,7 @@ const game_data = [
       },
     ],
     title: "NBA Live 2002",
+    price: "108.71",
   },
   {
     description:
@@ -58482,6 +59085,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "NFL Blitz 20-02",
+    price: "79.59",
   },
   {
     description:
@@ -58563,6 +59167,7 @@ const game_data = [
       },
     ],
     title: "SSX Tricky",
+    price: "44.83",
   },
   {
     description:
@@ -58649,6 +59254,7 @@ const game_data = [
       },
     ],
     title: "Halo: Combat Evolved",
+    price: "84.59",
   },
   {
     description:
@@ -58752,6 +59358,7 @@ const game_data = [
       },
     ],
     title: "Oddworld: Munch&#39;s Oddysee",
+    price: "45.36",
   },
   {
     description:
@@ -58776,6 +59383,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "NFL Fever 2002",
+    price: "28.59",
   },
   {
     description:
@@ -58858,6 +59466,7 @@ const game_data = [
       },
     ],
     title: "Dead or Alive 3",
+    price: "71.56",
   },
   {
     description:
@@ -58938,6 +59547,7 @@ const game_data = [
       },
     ],
     title: "Dark Summit",
+    price: "97.31",
   },
   {
     description:
@@ -59008,6 +59618,7 @@ const game_data = [
       },
     ],
     title: "Project Gotham Racing",
+    price: "82.87",
   },
   {
     description:
@@ -59078,6 +59689,7 @@ const game_data = [
       },
     ],
     title: "Tony Hawk&#39;s Pro Skater 2x",
+    price: "31.70",
   },
   {
     description:
@@ -59156,6 +59768,7 @@ const game_data = [
       },
     ],
     title: "Shenmue II",
+    price: "101.57",
   },
   {
     description:
@@ -59228,6 +59841,7 @@ const game_data = [
       },
     ],
     title: "Amped: Freestyle Snowboarding",
+    price: "34.53",
   },
   {
     description:
@@ -59252,6 +59866,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "Azurik: Rise of Perathia",
+    price: "93.36",
   },
   {
     description:
@@ -59342,6 +59957,7 @@ const game_data = [
       },
     ],
     title: "Rayman Arena",
+    price: "107.70",
   },
   {
     description:
@@ -59427,6 +60043,7 @@ const game_data = [
       },
     ],
     title: "Crash Bandicoot: The Wrath of Cortex",
+    price: "36.06",
   },
   {
     description:
@@ -59507,6 +60124,7 @@ const game_data = [
       },
     ],
     title: "NHL 2002",
+    price: "90.53",
   },
   {
     description:
@@ -59603,6 +60221,7 @@ const game_data = [
       },
     ],
     title: "Tom Clancy&#39;s Ghost Recon",
+    price: "101.22",
   },
   {
     description:
@@ -59684,6 +60303,7 @@ const game_data = [
       },
     ],
     title: "The Simpsons: Road Rage",
+    price: "32.57",
   },
   {
     description:
@@ -59754,6 +60374,7 @@ const game_data = [
       },
     ],
     title: "Blood Wake",
+    price: "31.69",
   },
   {
     description:
@@ -59834,6 +60455,7 @@ const game_data = [
       },
     ],
     title: "Dave Mirra Freestyle BMX 2",
+    price: "41.95",
   },
   {
     description:
@@ -59939,6 +60561,7 @@ const game_data = [
       },
     ],
     title: "Cel Damage",
+    price: "68.09",
   },
   {
     description:
@@ -60014,6 +60637,7 @@ const game_data = [
       },
     ],
     title: "RalliSport Challenge",
+    price: "54.19",
   },
   {
     description:
@@ -60084,6 +60708,7 @@ const game_data = [
       },
     ],
     title: "Star Wars: Obi-Wan",
+    price: "83.62",
   },
   {
     description:
@@ -60118,6 +60743,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "F1 2001",
+    price: "119.77",
   },
   {
     description:
@@ -60142,6 +60768,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "Wreckless: The Yakuza Missions",
+    price: "86.51",
   },
   {
     description:
@@ -60227,6 +60854,7 @@ const game_data = [
       },
     ],
     title: "Dynasty Warriors 3",
+    price: "28.86",
   },
   {
     description:
@@ -60251,6 +60879,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "NBA Inside Drive 2002",
+    price: "57.01",
   },
   {
     description:
@@ -60333,6 +60962,7 @@ const game_data = [
       },
     ],
     title: "007: Agent Under Fire",
+    price: "95.69",
   },
   {
     description:
@@ -60471,6 +61101,7 @@ const game_data = [
       },
     ],
     title: "Baldur&#39;s Gate: Dark Alliance",
+    price: "67.40",
   },
   {
     description:
@@ -60544,6 +61175,7 @@ const game_data = [
       },
     ],
     title: "JSRF: Jet Set Radio Future",
+    price: "49.22",
   },
   {
     description:
@@ -60578,6 +61210,7 @@ const game_data = [
       },
     ],
     title: "Ultimate Fighting Championship: Tapout",
+    price: "105.76",
   },
   {
     description:
@@ -60655,6 +61288,7 @@ const game_data = [
       },
     ],
     title: "Pirates: The Legend of Black Kat",
+    price: "35.48",
   },
   {
     description:
@@ -60737,6 +61371,7 @@ const game_data = [
       },
     ],
     title: "State of Emergency",
+    price: "25.29",
   },
   {
     description:
@@ -60776,6 +61411,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "Sega Soccer Slam",
+    price: "71.38",
   },
   {
     description:
@@ -60862,6 +61498,7 @@ const game_data = [
       },
     ],
     title: "Pac-Man World 2",
+    price: "58.08",
   },
   {
     description:
@@ -60959,6 +61596,7 @@ const game_data = [
       },
     ],
     title: "Star Wars: Jedi Knight II - Jedi Outcast",
+    price: "108.24",
   },
   {
     description:
@@ -61045,6 +61683,7 @@ const game_data = [
       },
     ],
     title: "The Legacy of Kain Series: Blood Omen 2",
+    price: "111.39",
   },
   {
     description:
@@ -61069,6 +61708,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "New Legends",
+    price: "61.44",
   },
   {
     description:
@@ -61156,6 +61796,7 @@ const game_data = [
       },
     ],
     title: "Spider-Man",
+    price: "58.62",
   },
   {
     description:
@@ -61249,6 +61890,7 @@ const game_data = [
       },
     ],
     title: "Star Wars: Jedi Starfighter",
+    price: "62.81",
   },
   {
     description:
@@ -61278,6 +61920,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "RollerCoaster Tycoon: Gold Edition",
+    price: "96.88",
   },
   {
     description:
@@ -61366,6 +62009,7 @@ const game_data = [
       },
     ],
     title: "The Elder Scrolls III: Morrowind",
+    price: "108.38",
   },
   {
     description:
@@ -61390,6 +62034,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "Mad Dash Racing",
+    price: "119.60",
   },
   {
     description:
@@ -61424,6 +62069,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "RedCard 20-03",
+    price: "27.73",
   },
   {
     description:
@@ -61506,6 +62152,7 @@ const game_data = [
       },
     ],
     title: "Burnout",
+    price: "58.93",
   },
   {
     description:
@@ -61540,6 +62187,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "All-Star Baseball 2003",
+    price: "46.93",
   },
   {
     description:
@@ -61623,6 +62271,7 @@ const game_data = [
       },
     ],
     title: "Soldier of Fortune II: Double Helix",
+    price: "44.09",
   },
   {
     description:
@@ -61713,6 +62362,7 @@ const game_data = [
       },
     ],
     title: "2002 FIFA World Cup",
+    price: "116.54",
   },
   {
     description:
@@ -61737,6 +62387,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "World Series Baseball",
+    price: "27.98",
   },
   {
     description:
@@ -61824,6 +62475,7 @@ const game_data = [
       },
     ],
     title: "Outlaw Golf",
+    price: "90.80",
   },
   {
     description:
@@ -61912,6 +62564,7 @@ const game_data = [
       },
     ],
     title: "Hunter: The Reckoning",
+    price: "38.98",
   },
   {
     description:
@@ -61999,6 +62652,7 @@ const game_data = [
       },
     ],
     title: "Medal of Honor: Frontline",
+    price: "98.67",
   },
   {
     description:
@@ -62129,6 +62783,7 @@ const game_data = [
       },
     ],
     title: "Syberia",
+    price: "56.35",
   },
   {
     description:
@@ -62163,6 +62818,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "MLB SlugFest 20-03",
+    price: "64.54",
   },
   {
     description:
@@ -62237,6 +62893,7 @@ const game_data = [
       },
     ],
     title: "Bruce Lee: Quest of the Dragon",
+    price: "23.44",
   },
   {
     description:
@@ -62271,6 +62928,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "Legends of Wrestling",
+    price: "108.69",
   },
   {
     description:
@@ -62341,6 +62999,7 @@ const game_data = [
       },
     ],
     title: "Nightcaster: Defeat the Darkness",
+    price: "67.78",
   },
   {
     description:
@@ -62424,6 +63083,7 @@ const game_data = [
       },
     ],
     title: "Fuzion Frenzy",
+    price: "70.70",
   },
   {
     description:
@@ -62499,6 +63159,7 @@ const game_data = [
       },
     ],
     title: "WWF Raw",
+    price: "28.53",
   },
   {
     description:
@@ -62583,6 +63244,7 @@ const game_data = [
       },
     ],
     title: "Aggressive Inline",
+    price: "72.82",
   },
   {
     description:
@@ -62612,6 +63274,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "Mike Tyson Heavyweight Boxing",
+    price: "20.31",
   },
   {
     description:
@@ -62692,6 +63355,7 @@ const game_data = [
       },
     ],
     title: "Crazy Taxi 3: High Roller",
+    price: "76.58",
   },
   {
     description:
@@ -62777,6 +63441,7 @@ const game_data = [
       },
     ],
     title: "V-Rally 3",
+    price: "117.75",
   },
   {
     description:
@@ -62811,6 +63476,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "Scooby-Doo!: Night of 100 Frights",
+    price: "25.98",
   },
   {
     description:
@@ -62845,6 +63511,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "NCAA Football 2003",
+    price: "51.08",
   },
   {
     description:
@@ -62930,6 +63597,7 @@ const game_data = [
       },
     ],
     title: "F1 2002",
+    price: "105.07",
   },
   {
     description:
@@ -63016,6 +63684,7 @@ const game_data = [
       },
     ],
     title: "Smashing Drive",
+    price: "74.18",
   },
   {
     description:
@@ -63045,6 +63714,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "Triple Play 2002",
+    price: "113.51",
   },
   {
     description:
@@ -63129,6 +63799,7 @@ const game_data = [
       },
     ],
     title: "The Thing",
+    price: "49.26",
   },
   {
     description:
@@ -63224,6 +63895,7 @@ const game_data = [
       },
     ],
     title: "Dead to Rights",
+    price: "62.18",
   },
   {
     description:
@@ -63324,6 +63996,7 @@ const game_data = [
       },
     ],
     title: "Enclave",
+    price: "82.86",
   },
   {
     description:
@@ -63410,6 +64083,7 @@ const game_data = [
       },
     ],
     title: "Turok: Evolution",
+    price: "80.23",
   },
   {
     description:
@@ -63494,6 +64168,7 @@ const game_data = [
       },
     ],
     title: "Arx Fatalis",
+    price: "34.79",
   },
   {
     description:
@@ -63578,6 +64253,7 @@ const game_data = [
       },
     ],
     title: "Mafia",
+    price: "90.01",
   },
   {
     description:
@@ -63640,6 +64316,7 @@ const game_data = [
       },
     ],
     title: "Prisoner of War: World War II",
+    price: "22.00",
   },
   {
     description:
@@ -63669,6 +64346,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "Knockout Kings 2002",
+    price: "59.42",
   },
   {
     description:
@@ -63744,6 +64422,7 @@ const game_data = [
       },
     ],
     title: "Run Like Hell",
+    price: "104.88",
   },
   {
     description:
@@ -63778,6 +64457,7 @@ const game_data = [
       },
     ],
     title: "Buffy the Vampire Slayer",
+    price: "99.31",
   },
   {
     description:
@@ -63859,6 +64539,7 @@ const game_data = [
       },
     ],
     title: "NFL 2K3",
+    price: "37.67",
   },
   {
     description:
@@ -63957,6 +64638,7 @@ const game_data = [
       },
     ],
     title: "Hitman 2: Silent Assassin",
+    price: "43.33",
   },
   {
     description:
@@ -64038,6 +64720,7 @@ const game_data = [
       },
     ],
     title: "NBA 2K3",
+    price: "114.60",
   },
   {
     description:
@@ -64183,6 +64866,7 @@ const game_data = [
       },
     ],
     title: "Robotron: 2084",
+    price: "26.23",
   },
   {
     description:
@@ -64449,6 +65133,7 @@ const game_data = [
       },
     ],
     title: "Pac-Man",
+    price: "98.70",
   },
   {
     description:
@@ -64689,6 +65374,7 @@ const game_data = [
       },
     ],
     title: "Dig Dug",
+    price: "106.33",
   },
   {
     description:
@@ -64839,6 +65525,7 @@ const game_data = [
       },
     ],
     title: "Defender",
+    price: "118.22",
   },
   {
     description:
@@ -65004,6 +65691,7 @@ const game_data = [
       },
     ],
     title: "Centipede",
+    price: "71.67",
   },
   {
     description:
@@ -65180,6 +65868,7 @@ const game_data = [
       },
     ],
     title: "Golden Axe",
+    price: "105.51",
   },
   {
     description:
@@ -65320,6 +66009,7 @@ const game_data = [
       },
     ],
     title: "Speedball 2: Brutal Deluxe",
+    price: "112.00",
   },
   {
     description:
@@ -65455,6 +66145,7 @@ const game_data = [
       },
     ],
     title: "Tapper",
+    price: "33.96",
   },
   {
     description:
@@ -65586,6 +66277,7 @@ const game_data = [
       },
     ],
     title: "Wolfenstein 3D",
+    price: "83.30",
   },
   {
     description:
@@ -65712,6 +66404,7 @@ const game_data = [
       },
     ],
     title: "Battlezone",
+    price: "116.08",
   },
   {
     description:
@@ -65918,6 +66611,7 @@ const game_data = [
       },
     ],
     title: "Ms. Pac-Man",
+    price: "114.35",
   },
   {
     description:
@@ -66108,6 +66802,7 @@ const game_data = [
       },
     ],
     title: "Ghosts &#39;N Goblins",
+    price: "76.79",
   },
   {
     description:
@@ -66229,6 +66924,7 @@ const game_data = [
       },
     ],
     title: "The Ultimate Doom",
+    price: "57.13",
   },
   {
     description:
@@ -66320,6 +67016,7 @@ const game_data = [
       },
     ],
     title: "Marathon 2: Durandal",
+    price: "46.54",
   },
   {
     description:
@@ -66420,6 +67117,7 @@ const game_data = [
       },
     ],
     title: "Virtua Fighter 2",
+    price: "36.49",
   },
   {
     description:
@@ -66600,6 +67298,7 @@ const game_data = [
       },
     ],
     title: "Dragon&#39;s Lair",
+    price: "51.86",
   },
   {
     description:
@@ -66790,6 +67489,7 @@ const game_data = [
       },
     ],
     title: "Commando",
+    price: "56.75",
   },
   {
     description:
@@ -66930,6 +67630,7 @@ const game_data = [
       },
     ],
     title: "Gauntlet",
+    price: "72.61",
   },
   {
     description:
@@ -67116,6 +67817,7 @@ const game_data = [
       },
     ],
     title: "Double Dragon",
+    price: "116.23",
   },
   {
     description:
@@ -67253,6 +67955,7 @@ const game_data = [
       },
     ],
     title: "Shinobi",
+    price: "61.37",
   },
   {
     description:
@@ -67443,6 +68146,7 @@ const game_data = [
       },
     ],
     title: "Altered Beast",
+    price: "81.50",
   },
   {
     description:
@@ -67533,6 +68237,7 @@ const game_data = [
       },
     ],
     title: "The Simpsons",
+    price: "69.78",
   },
   {
     description:
@@ -67618,6 +68323,7 @@ const game_data = [
       },
     ],
     title: "American McGee&#39;s Alice",
+    price: "95.86",
   },
   {
     description:
@@ -67758,6 +68464,7 @@ const game_data = [
       },
     ],
     title: "Rush&#39;n Attack",
+    price: "80.34",
   },
   {
     description:
@@ -67888,6 +68595,7 @@ const game_data = [
       },
     ],
     title: "Comix Zone",
+    price: "30.86",
   },
   {
     description:
@@ -67968,6 +68676,7 @@ const game_data = [
       },
     ],
     title: "Sonic Adventure",
+    price: "45.73",
   },
   {
     description:
@@ -68098,6 +68807,7 @@ const game_data = [
       },
     ],
     title: "Crazy Taxi",
+    price: "49.77",
   },
   {
     description:
@@ -68191,6 +68901,7 @@ const game_data = [
       },
     ],
     title: "Banjo-Kazooie",
+    price: "27.90",
   },
   {
     description:
@@ -68297,6 +69008,7 @@ const game_data = [
       },
     ],
     title: "Marvel vs. Capcom 2",
+    price: "64.95",
   },
   {
     description:
@@ -68399,6 +69111,7 @@ const game_data = [
       },
     ],
     title: "Resident Evil: Code: Veronica X",
+    price: "34.30",
   },
   {
     description:
@@ -68509,6 +69222,7 @@ const game_data = [
       },
     ],
     title: "Castlevania: Symphony of the Night",
+    price: "102.28",
   },
   {
     description:
@@ -68595,6 +69309,7 @@ const game_data = [
       },
     ],
     title: "Banjo-Tooie",
+    price: "89.85",
   },
   {
     description:
@@ -68695,6 +69410,7 @@ const game_data = [
       },
     ],
     title: "SoulCalibur",
+    price: "25.70",
   },
   {
     description:
@@ -68780,6 +69496,7 @@ const game_data = [
       },
     ],
     title: "Perfect Dark",
+    price: "117.58",
   },
   {
     description:
@@ -68917,6 +69634,7 @@ const game_data = [
       },
     ],
     title: "Joust",
+    price: "90.38",
   },
   {
     description:
@@ -69065,6 +69783,7 @@ const game_data = [
       },
     ],
     title: "Samurai Shodown II",
+    price: "83.56",
   },
   {
     description:
@@ -69170,6 +69889,7 @@ const game_data = [
       },
     ],
     title: "Jet Grind Radio",
+    price: "61.50",
   },
   {
     description:
@@ -69258,6 +69978,7 @@ const game_data = [
       },
     ],
     title: "Sonic Adventure 2",
+    price: "89.33",
   },
   {
     description:
@@ -69384,6 +70105,7 @@ const game_data = [
       },
     ],
     title: "Max Payne",
+    price: "81.24",
   },
   {
     description:
@@ -69559,6 +70281,7 @@ const game_data = [
       },
     ],
     title: "Paperboy",
+    price: "85.77",
   },
   {
     description:
@@ -69669,6 +70392,7 @@ const game_data = [
       },
     ],
     title: "Contra",
+    price: "119.45",
   },
   {
     description:
@@ -69761,6 +70485,7 @@ const game_data = [
       },
     ],
     title: "Street Fighter III: 3rd Strike",
+    price: "115.32",
   },
   {
     description:
@@ -69847,6 +70572,7 @@ const game_data = [
       },
     ],
     title: "Halo: Combat Evolved",
+    price: "92.50",
   },
   {
     description:
@@ -70007,6 +70733,7 @@ const game_data = [
       },
     ],
     title: "Garou: Mark of the Wolves",
+    price: "104.24",
   },
   {
     description:
@@ -70092,6 +70819,7 @@ const game_data = [
       },
     ],
     title: "Crash Bandicoot: The Wrath of Cortex",
+    price: "84.67",
   },
   {
     description:
@@ -70172,6 +70900,7 @@ const game_data = [
       },
     ],
     title: "Rez",
+    price: "62.40",
   },
   {
     description:
@@ -70262,6 +70991,7 @@ const game_data = [
       },
     ],
     title: "Duke Nukem 3D: Atomic Edition",
+    price: "71.80",
   },
   {
     description:
@@ -70301,6 +71031,7 @@ const game_data = [
     },
     sample_screenshots: [],
     title: "Sega Soccer Slam",
+    price: "45.42",
   },
   {
     description:
@@ -70391,6 +71122,7 @@ const game_data = [
       },
     ],
     title: "Duke Nukem: Manhattan Project",
+    price: "36.25",
   },
   {
     description:
@@ -70561,6 +71293,7 @@ const game_data = [
       },
     ],
     title: "Sonic the Hedgehog",
+    price: "40.47",
   },
   {
     description:
@@ -70697,6 +71430,7 @@ const game_data = [
       },
     ],
     title: "Gunstar Heroes",
+    price: "77.37",
   },
   {
     description:
@@ -70798,6 +71532,7 @@ const game_data = [
       },
     ],
     title: "Ultimate Mortal Kombat 3",
+    price: "109.54",
   },
   {
     description:
@@ -70938,6 +71673,7 @@ const game_data = [
       },
     ],
     title: "Sonic the Hedgehog 2",
+    price: "76.98",
   },
   {
     description:
@@ -71023,6 +71759,7 @@ const game_data = [
       },
     ],
     title: "Sonic the Hedgehog 3",
+    price: "68.70",
   },
   {
     description:
@@ -71104,6 +71841,7 @@ const game_data = [
       },
     ],
     title: "Sonic &amp; Knuckles",
+    price: "70.51",
   },
   {
     description:
@@ -71245,6 +71983,7 @@ const game_data = [
       },
     ],
     title: "Streets of Rage 2",
+    price: "79.15",
   },
   {
     description:
@@ -71375,6 +72114,7 @@ const game_data = [
       },
     ],
     title: "Ecco the Dolphin",
+    price: "68.34",
   },
   {
     description:
@@ -71463,6 +72203,7 @@ const game_data = [
       },
     ],
     title: "Hunter: The Reckoning",
+    price: "65.95",
   },
   {
     description:
@@ -71593,6 +72334,7 @@ const game_data = [
       },
     ],
     title: "Syberia",
+    price: "107.68",
   },
   {
     description:
@@ -71676,6 +72418,7 @@ const game_data = [
       },
     ],
     title: "Fuzion Frenzy",
+    price: "103.98",
   },
   {
     description:
@@ -71801,6 +72544,7 @@ const game_data = [
       },
     ],
     title: "Pitfall II: Lost Caverns",
+    price: "99.89",
   },
   {
     description:
@@ -71926,6 +72670,7 @@ const game_data = [
       },
     ],
     title: "River Raid",
+    price: "39.87",
   },
   {
     description:
@@ -72021,6 +72766,7 @@ const game_data = [
       },
     ],
     title: "Dead to Rights",
+    price: "79.92",
   },
   {
     description:
@@ -72116,6 +72862,7 @@ const game_data = [
       },
     ],
     title: "Trojan",
+    price: "97.91",
   },
   {
     description:
@@ -72221,6 +72968,7 @@ const game_data = [
       },
     ],
     title: "Super Contra",
+    price: "65.94",
   },
   {
     description:
@@ -72331,6 +73079,7 @@ const game_data = [
       },
     ],
     title: "Blades of Steel",
+    price: "114.65",
   },
   {
     description:
@@ -72426,6 +73175,7 @@ const game_data = [
       },
     ],
     title: "Sensible World of Soccer &#39;96/&#39;97",
+    price: "90.83",
   },
   {
     description:
@@ -72515,6 +73265,7 @@ const game_data = [
       },
     ],
     title: "Blinx: The Time Sweeper",
+    price: "70.25",
   },
   {
     description:
@@ -72625,6 +73376,7 @@ const game_data = [
       },
     ],
     title: "Teenage Mutant Ninja Turtles",
+    price: "102.71",
   },
   {
     description:
@@ -72716,6 +73468,7 @@ const game_data = [
       },
     ],
     title: "Zapper: One Wicked Cricket!",
+    price: "29.55",
   },
   {
     description:
@@ -72826,6 +73579,7 @@ const game_data = [
       },
     ],
     title: "Gyruss",
+    price: "109.56",
   },
   {
     description:
@@ -72942,6 +73696,7 @@ const game_data = [
       },
     ],
     title: "Ikaruga",
+    price: "61.46",
   },
   {
     description:
@@ -73050,6 +73805,7 @@ const game_data = [
       },
     ],
     title: "Resident Evil 0",
+    price: "51.05",
   },
   {
     description:
@@ -73160,6 +73916,7 @@ const game_data = [
       },
     ],
     title: "Phantasy Star II",
+    price: "100.15",
   },
   {
     description:
@@ -73325,6 +74082,7 @@ const game_data = [
       },
     ],
     title: "1942",
+    price: "113.35",
   },
   {
     description:
@@ -73510,6 +74268,7 @@ const game_data = [
       },
     ],
     title: "Galaga",
+    price: "75.66",
   },
   {
     description:
@@ -73605,6 +74364,7 @@ const game_data = [
       },
     ],
     title: "Indiana Jones and the Emperor&#39;s Tomb",
+    price: "28.32",
   },
   {
     description:
@@ -73693,6 +74453,7 @@ const game_data = [
       },
     ],
     title: "Panzer Dragoon Orta",
+    price: "92.43",
   },
   {
     description:
@@ -73804,6 +74565,7 @@ const game_data = [
       },
     ],
     title: "1943: The Battle of Midway",
+    price: "40.15",
   },
   {
     description:
@@ -73895,6 +74657,7 @@ const game_data = [
       },
     ],
     title: "Space Channel 5: Part 2",
+    price: "75.98",
   },
   {
     description:
@@ -73995,6 +74758,7 @@ const game_data = [
       },
     ],
     title: "Rayman 3: Hoodlum Havoc",
+    price: "30.60",
   },
   {
     description:
@@ -74115,6 +74879,7 @@ const game_data = [
       },
     ],
     title: "Pitfall!",
+    price: "41.57",
   },
   {
     description:
@@ -74200,6 +74965,7 @@ const game_data = [
       },
     ],
     title: "Combat",
+    price: "90.68",
   },
   {
     description:
@@ -74300,6 +75066,7 @@ const game_data = [
       },
     ],
     title: "Asteroids",
+    price: "110.17",
   },
   {
     description:
@@ -74385,6 +75152,7 @@ const game_data = [
       },
     ],
     title: "Armor Battle",
+    price: "115.36",
   },
   {
     description:
@@ -74470,6 +75238,7 @@ const game_data = [
       },
     ],
     title: "Space Battle",
+    price: "85.03",
   },
   {
     description:
@@ -74580,6 +75349,7 @@ const game_data = [
       },
     ],
     title: "Red Faction II",
+    price: "86.84",
   },
   {
     description:
@@ -74670,6 +75440,7 @@ const game_data = [
       },
     ],
     title: "Kaboom!",
+    price: "48.35",
   },
   {
     description:
@@ -74785,6 +75556,7 @@ const game_data = [
       },
     ],
     title: "Beamrider",
+    price: "72.88",
   },
   {
     description:
@@ -74870,6 +75642,7 @@ const game_data = [
       },
     ],
     title: "Breakout",
+    price: "27.21",
   },
   {
     description:
@@ -74941,6 +75714,7 @@ const game_data = [
       },
     ],
     title: "Laser Blast",
+    price: "119.65",
   },
   {
     description:
@@ -75031,6 +75805,7 @@ const game_data = [
       },
     ],
     title: "Megamania",
+    price: "33.57",
   },
   {
     description:
@@ -75121,6 +75896,7 @@ const game_data = [
       },
     ],
     title: "RealSports Baseball",
+    price: "111.30",
   },
   {
     description:
@@ -75206,6 +75982,7 @@ const game_data = [
       },
     ],
     title: "Stampede",
+    price: "29.02",
   },
   {
     description:
@@ -75286,6 +76063,7 @@ const game_data = [
       },
     ],
     title: "River Raid II",
+    price: "110.44",
   },
   {
     description:
@@ -75401,6 +76179,7 @@ const game_data = [
       },
     ],
     title: "Millipede",
+    price: "80.04",
   },
   {
     description:
@@ -75463,6 +76242,7 @@ const game_data = [
       },
     ],
     title: "Hunt &amp; Score",
+    price: "55.97",
   },
   {
     description:
@@ -75548,6 +76328,7 @@ const game_data = [
       },
     ],
     title: "Warlords",
+    price: "94.88",
   },
   {
     description:
@@ -75610,6 +76391,7 @@ const game_data = [
       },
     ],
     title: "Freeway",
+    price: "78.41",
   },
   {
     description:
@@ -75737,6 +76519,7 @@ const game_data = [
       },
     ],
     title: "Crystal Castles",
+    price: "66.39",
   },
 ];
 
