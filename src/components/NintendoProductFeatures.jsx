@@ -26,7 +26,6 @@ export default function NintendoProductFeatures() {
             and innovative game design set new standards, making it a cherished
             console in gaming history.
           </p>
-
           <dl className="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
             {features.map((feature) => (
               <div key={feature.name} className="border-t border-gray-200 pt-4">
