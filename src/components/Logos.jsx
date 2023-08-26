@@ -6,25 +6,19 @@ export default function Logos() {
           <img
             className="col-span-2  w-full object-contain lg:col-span-1"
             src="../src/assets/xbox/xbox_logo.webp"
-            alt="Transistor"
-            width={128}
-            height={48}
+            alt="Xbox Logo"
           />
 
           <img
             className="col-span-2 w-full object-contain lg:col-span-1"
             src="../src/assets/nintendo/nintendo_logo.png"
-            alt="Tuple"
-            width={128}
-            height={48}
+            alt="Nintendo Logo"
           />
 
           <img
-            className="col-span-2 col-start-2  w-full object-contain sm:col-start-auto lg:col-span-1"
+            className="col-span-2 w-full object-contain lg:col-span-1"
             src="../src/assets/playstation/playstation_logo.png"
-            alt="Statamic"
-            width={18}
-            height={48}
+            alt="PlayStation Logo"
           />
         </div>
       </div>
