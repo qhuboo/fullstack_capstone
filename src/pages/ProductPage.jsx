@@ -2,12 +2,12 @@ import Footer from "../components/Footer";
 import ProductOverview from "../components/ProductOverview";
 import StoreNavigation from "../components/StoreNavigation";
 
-export default function ProductPage() {
+export default function ProductPage({ product }) {
   return (
     <div>
       <StoreNavigation />
       <div className="h-[50px]"></div>
-      <ProductOverview />
+      <ProductOverview product={product} />
       <Footer />
     </div>
   );

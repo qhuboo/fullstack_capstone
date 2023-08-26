@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Fragment, useEffect, useState } from "react";
+import { Fragment, useState } from "react";
 import { Dialog, Popover, Tab, Transition } from "@headlessui/react";
 import {
   Bars3Icon,
@@ -68,10 +68,6 @@ export default function StoreNavigation({
   setPage,
 }) {
   const [open, setOpen] = useState(false);
-
-  useEffect(() => {
-    console.log(marketList);
-  });
 
   const handleCategoryClick = (event) => {
     console.log(event.target.textContent);
