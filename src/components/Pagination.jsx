@@ -56,10 +56,14 @@ export default function Pagination({ numPages, page, setPage }) {
             className="isolate inline-flex -space-x-px rounded-md shadow-sm"
             aria-label="Pagination"
           >
-            <div className={notCurrent}>
-              <span className="sr-only">Previous</span>
+            <button
+              disabled={page == 0 ? true : false}
+              className={notCurrent}
+              onClick={previousClick}
+              type="button"
+            >
               <ChevronLeftIcon className="h-5 w-5" aria-hidden="true" />
-            </div>
+            </button>
             {pageNumbers.map((number) => {
               return (
                 <div
@@ -71,10 +75,14 @@ export default function Pagination({ numPages, page, setPage }) {
                 </div>
               );
             })}
-            <div className={notCurrent}>
-              <span className="sr-only">Next</span>
+            <button
+              disabled={page == numPages - 1 ? true : false}
+              className={notCurrent}
+              onClick={nextClick}
+              type="button"
+            >
               <ChevronRightIcon className="h-5 w-5" aria-hidden="true" />
-            </div>
+            </button>
           </nav>
         </div>
       </div>

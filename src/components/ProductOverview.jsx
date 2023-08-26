@@ -1,14 +1,4 @@
-import { StarIcon } from "@heroicons/react/20/solid";
-import n64_data from "../data/n64_data";
-
-const reviews = { href: "#", average: 4, totalCount: 117 };
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
-
 export default function ProductOverview({ product }) {
-  console.log(product.sample_screenshots);
   return (
     <div className="bg-white">
       <div className="pt-6">
