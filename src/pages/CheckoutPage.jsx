@@ -1,10 +1,11 @@
 import Footer from "../components/Footer";
 import StoreNavigation from "../components/StoreNavigation";
 
-function CheckoutPage() {
+function CheckoutPage({ cart, setCart }) {
+  console.log(cart);
   return (
     <div>
-      <StoreNavigation />
+      <StoreNavigation cart={cart} setCart={setCart} />
       <div className="h-32"></div>
       <div className="grid sm:px-10 lg:grid-cols-2 lg:px-20 xl:px-32">
         <div className="px-4 pt-8">
@@ -13,34 +14,25 @@ function CheckoutPage() {
             Check your items. And select a suitable shipping method.
           </p>
           <div className="mt-8 space-y-3 rounded-lg border bg-white px-2 py-4 sm:px-6">
-            <div className="flex flex-col rounded-lg bg-white sm:flex-row">
-              <img
-                className="m-2 h-24 w-28 rounded-md border object-cover object-center"
-                src="https://images.unsplash.com/flagged/photo-1556637640-2c80d3201be8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c25lYWtlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-                alt=""
-              />
-              <div className="flex w-full flex-col px-4 py-4">
-                <span className="font-semibold">
-                  Nike Air Max Pro 8888 - Super Light
-                </span>
-                <span className="float-right text-gray-400">42EU - 8.5US</span>
-                <p className="text-lg font-bold">$138.99</p>
-              </div>
-            </div>
-            <div className="flex flex-col rounded-lg bg-white sm:flex-row">
-              <img
-                className="m-2 h-24 w-28 rounded-md border object-cover object-center"
-                src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8c25lYWtlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-                alt=""
-              />
-              <div className="flex w-full flex-col px-4 py-4">
-                <span className="font-semibold">
-                  Nike Air Max Pro 8888 - Super Light
-                </span>
-                <span className="float-right text-gray-400">42EU - 8.5US</span>
-                <p className="mt-auto text-lg font-bold">$238.99</p>
-              </div>
-            </div>
+            {cart.map((product) => {
+              return (
+                <div
+                  key={product.game_id}
+                  className="flex flex-col rounded-lg bg-white sm:flex-row"
+                >
+                  <img
+                    className="m-2 h-24 w-28 rounded-md border object-cover object-center"
+                    src={product.sample_cover.image}
+                    alt=""
+                  />
+                  <div className="flex w-full flex-col px-4 py-4">
+                    <span className="font-semibold">{product.title}</span>
+
+                    <p className="text-lg font-bold">${product.price}</p>
+                  </div>
+                </div>
+              );
+            })}
           </div>
 
           <p className="mt-8 text-lg font-medium">Shipping Methods</p>
@@ -251,7 +243,18 @@ function CheckoutPage() {
             <div className="mt-6 border-t border-b py-2">
               <div className="flex items-center justify-between">
                 <p className="text-sm font-medium text-gray-900">Subtotal</p>
-                <p className="font-semibold text-gray-900">$399.00</p>
+                <p className="font-semibold text-gray-900">
+                  $
+                  {parseFloat(
+                    cart
+                      .reduce(
+                        (accumulatedPrice, currentGame) =>
+                          accumulatedPrice + parseFloat(currentGame.price),
+                        0
+                      )
+                      .toFixed(2)
+                  )}
+                </p>
               </div>
               <div className="flex items-center justify-between">
                 <p className="text-sm font-medium text-gray-900">Shipping</p>
@@ -260,7 +263,22 @@ function CheckoutPage() {
             </div>
             <div className="mt-6 flex items-center justify-between">
               <p className="text-sm font-medium text-gray-900">Total</p>
-              <p className="text-2xl font-semibold text-gray-900">$408.00</p>
+              <p className="text-2xl font-semibold text-gray-900">
+                $
+                {(
+                  (parseFloat(
+                    cart
+                      .reduce(
+                        (accumulatedPrice, currentGame) =>
+                          accumulatedPrice + parseFloat(currentGame.price),
+                        0
+                      )
+                      .toFixed(2)
+                  ) +
+                    8) *
+                  1.0825
+                ).toFixed(2)}
+              </p>
             </div>
           </div>
           <button className="mt-4 mb-8 w-full rounded-md bg-gray-900 px-6 py-3 font-medium text-white">
@@ -274,3 +292,18 @@ function CheckoutPage() {
 }
 
 export default CheckoutPage;
+
+{
+  <div className="flex flex-col rounded-lg bg-white sm:flex-row">
+    <img
+      className="m-2 h-24 w-28 rounded-md border object-cover object-center"
+      src="https://images.unsplash.com/flagged/photo-1556637640-2c80d3201be8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c25lYWtlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+      alt=""
+    />
+    <div className="flex w-full flex-col px-4 py-4">
+      <span className="font-semibold">Nike Air Max Pro 8888 - Super Light</span>
+      <span className="float-right text-gray-400">42EU - 8.5US</span>
+      <p className="text-lg font-bold">$138.99</p>
+    </div>
+  </div>;
+}

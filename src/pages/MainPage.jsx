@@ -7,10 +7,10 @@ import PlaystationProductFeatures from "../components/PlaystationProductFeatures
 import XboxProductFeatures from "../components/XboxProductFeatures";
 import Footer from "../components/Footer";
 
-export default function MainPage() {
+export default function MainPage({ cart, setCart }) {
   return (
     <div>
-      <StoreNavigation />
+      <StoreNavigation cart={cart} setCart={setCart} />
       <HeaderSection />
       <FeatureSection />
       <NintendoProductFeatures />

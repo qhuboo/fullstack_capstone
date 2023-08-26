@@ -47,11 +47,6 @@ const navigation = {
             { name: "Browse All" },
           ],
         },
-        {
-          id: "accessories",
-          name: "Accessories",
-          items: [{ name: "Consoles" }, { name: "Controllers" }],
-        },
       ],
     },
   ],
@@ -66,6 +61,8 @@ export default function StoreNavigation({
   marketList,
   setMarketList,
   setPage,
+  cart,
+  setCart,
 }) {
   const [open, setOpen] = useState(false);
 
@@ -422,7 +419,7 @@ export default function StoreNavigation({
                       aria-hidden="true"
                     />
                     <span className="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800">
-                      0
+                      {cart.length}
                     </span>
                     <span className="sr-only">items in cart, view bag</span>
                   </Link>

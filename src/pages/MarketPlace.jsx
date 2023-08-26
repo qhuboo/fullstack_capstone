@@ -4,7 +4,13 @@ import ProductList from "../components/ProductList";
 import Pagination from "../components/Pagination";
 import { useState } from "react";
 
-export default function MarketPlace({ marketList, setMarketList, setProduct }) {
+export default function MarketPlace({
+  marketList,
+  setMarketList,
+  setProduct,
+  cart,
+  setCart,
+}) {
   const [page, setPage] = useState(0);
   const numPages = Math.ceil(marketList.length / 24);
   return (
@@ -13,6 +19,8 @@ export default function MarketPlace({ marketList, setMarketList, setProduct }) {
         marketList={marketList}
         setMarketList={setMarketList}
         setPage={setPage}
+        cart={cart}
+        setCart={setCart}
       />
       <ProductList
         marketList={marketList}
