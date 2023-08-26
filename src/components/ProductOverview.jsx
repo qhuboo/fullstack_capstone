@@ -1,4 +1,4 @@
-export default function ProductOverview({ product }) {
+export default function ProductOverview({ product, cart, setCart }) {
   return (
     <div className="bg-white">
       <div className="pt-6">

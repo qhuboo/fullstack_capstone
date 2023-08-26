@@ -2,7 +2,6 @@ import Footer from "../components/Footer";
 import StoreNavigation from "../components/StoreNavigation";
 
 function CheckoutPage({ cart, setCart }) {
-  console.log(cart);
   return (
     <div>
       <StoreNavigation cart={cart} setCart={setCart} />
@@ -45,23 +44,6 @@ function CheckoutPage({ cart, setCart }) {
                 name="radio"
                 checked
               />
-              <span className="peer-checked:border-gray-700 absolute right-4 top-1/2 box-content block h-3 w-3 -translate-y-1/2 rounded-full border-8 border-gray-300 bg-white"></span>
-              <label
-                className="peer-checked:border-2 peer-checked:border-gray-700 peer-checked:bg-gray-50 flex cursor-pointer select-none rounded-lg border border-gray-300 p-4"
-                htmlFor="radio_1"
-              >
-                <img
-                  className="w-14 object-contain"
-                  src="/images/naorrAeygcJzX0SyNI4Y0.png"
-                  alt=""
-                />
-                <div className="ml-5">
-                  <span className="mt-2 font-semibold">Fedex Delivery</span>
-                  <p className="text-slate-500 text-sm leading-6">
-                    Delivery: 2-4 Days
-                  </p>
-                </div>
-              </label>
             </div>
             <div className="relative">
               <input
@@ -259,6 +241,23 @@ function CheckoutPage({ cart, setCart }) {
               <div className="flex items-center justify-between">
                 <p className="text-sm font-medium text-gray-900">Shipping</p>
                 <p className="font-semibold text-gray-900">$8.00</p>
+              </div>
+              <div className="flex items-center justify-between">
+                <p className="text-sm font-medium text-gray-900">Tax</p>
+                <p className="font-semibold text-gray-900">
+                  $
+                  {(
+                    parseFloat(
+                      cart
+                        .reduce(
+                          (accumulatedPrice, currentGame) =>
+                            accumulatedPrice + parseFloat(currentGame.price),
+                          0
+                        )
+                        .toFixed(2)
+                    ) * 0.085
+                  ).toFixed(2)}
+                </p>
               </div>
             </div>
             <div className="mt-6 flex items-center justify-between">
