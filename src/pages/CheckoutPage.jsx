@@ -58,11 +58,6 @@ function CheckoutPage({ cart, setCart }) {
                 className="peer-checked:border-2 peer-checked:border-gray-700 peer-checked:bg-gray-50 flex cursor-pointer select-none rounded-lg border border-gray-300 p-4"
                 htmlFor="radio_2"
               >
-                <img
-                  className="w-14 object-contain"
-                  src="/images/oG8xsl3xsOkwkMsrLGKM4.png"
-                  alt=""
-                />
                 <div className="ml-5">
                   <span className="mt-2 font-semibold">Fedex Delivery</span>
                   <p className="text-slate-500 text-sm leading-6">
@@ -247,7 +242,7 @@ function CheckoutPage({ cart, setCart }) {
                 <p className="font-semibold text-gray-900">
                   $
                   {(
-                    parseFloat(
+                    (parseFloat(
                       cart
                         .reduce(
                           (accumulatedPrice, currentGame) =>
@@ -255,7 +250,9 @@ function CheckoutPage({ cart, setCart }) {
                           0
                         )
                         .toFixed(2)
-                    ) * 0.085
+                    ) +
+                      8) *
+                    0.0825
                   ).toFixed(2)}
                 </p>
               </div>

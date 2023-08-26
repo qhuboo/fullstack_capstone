@@ -59,8 +59,8 @@ export default function FeatureSection() {
             </div>
           </div>
           <img
-            src="../src/assets/nintendo/Default_A_video_game_selling_website_logo_with_a_transparent_b_0_49ba58a4-d1e5-4b4c-bde8-056769457caa_0.png"
-            alt="Product screenshot"
+            src="../src/assets/nintendo/mario_matemine.png"
+            alt="Mario MateMine"
             className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
             width={2132}
             height={1042}

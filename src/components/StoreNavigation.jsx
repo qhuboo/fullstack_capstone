@@ -18,17 +18,14 @@ const navigation = {
         {
           name: "New Arrivals",
           href: "#",
-          imageSrc: "./src/assets/nintendo/artwork.png",
-          imageAlt:
-            "Models sitting back to back, wearing Basic Tee in black and bone.",
+          imageSrc: "./src/assets/donkey_kong_64.jpeg",
+          imageAlt: "Donkey Kong 64 Cover",
         },
         {
           name: "Top Games",
           href: "#",
-          imageSrc:
-            "https://tailwindui.com/img/ecommerce-images/mega-menu-category-02.jpg",
-          imageAlt:
-            "Close up of Basic Tee fall bundle with off-white, ochre, olive, and black tees.",
+          imageSrc: "../src/assets/ocarina_of_time.jpeg",
+          imageAlt: "Legend of Zelda: Ocarina of Time Cover",
         },
       ],
       sections: [
@@ -67,7 +64,6 @@ export default function StoreNavigation({
   const [open, setOpen] = useState(false);
 
   const handleCategoryClick = (event) => {
-    console.log(event.target.textContent);
     setMarketList(() => {
       if (event.target.textContent === "Browse All") {
         return game_data;

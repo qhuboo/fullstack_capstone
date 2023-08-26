@@ -15,6 +15,19 @@ export default function Shopping_Cart({
       }
     }
   };
+
+  const handleRemoveFromCart = (event) => {
+    let removed = false; // flag to track if an item has been removed
+    const newCart = cart.filter((game) => {
+      if (game.game_id == event.target.getAttribute("game-id") && !removed) {
+        removed = true; // set the flag to true since we're removing this instance
+        return false; // don't include this game in the new array
+      }
+      return true; // include all other games
+    });
+    setCart(newCart);
+  };
+
   return (
     <div>
       <StoreNavigation cart={cart} setCart={cart} />
@@ -50,6 +63,8 @@ export default function Shopping_Cart({
                   </div>
                   <div className="flex justify-between items-end text-sm mt-2 text-gray-500">
                     <button
+                      game-id={product.game_id}
+                      onClick={handleRemoveFromCart}
                       type="button"
                       className="text-indigo-600 hover:text-indigo-500"
                     >

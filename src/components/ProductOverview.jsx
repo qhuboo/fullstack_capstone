@@ -1,4 +1,9 @@
 export default function ProductOverview({ product, cart, setCart }) {
+  const handleAddToCart = (event) => {
+    event.preventDefault();
+    setCart([...cart, product]);
+  };
+
   return (
     <div className="bg-white">
       <div className="pt-6">
@@ -55,6 +60,7 @@ export default function ProductOverview({ product, cart, setCart }) {
             </div>
             <form className="mt-10">
               <button
+                onClick={handleAddToCart}
                 type="submit"
                 className="mt-10 flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
               >

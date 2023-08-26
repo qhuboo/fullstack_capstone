@@ -8,8 +8,8 @@ export default function Sign_IN() {
           <Link to="/">
             <img
               className="mx-auto h-64 w-50"
-              src="../img file/main_logo.png"
-              alt="Your Company"
+              src="../src/assets/main_logo.png"
+              alt="MateMine MarketPlace Logo"
             />
           </Link>
 
