@@ -3,7 +3,6 @@ import { Fragment, useState } from "react";
 import { Dialog, Popover, Tab, Transition } from "@headlessui/react";
 import {
   Bars3Icon,
-  MagnifyingGlassIcon,
   ShoppingBagIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
@@ -16,13 +15,11 @@ const navigation = {
       featured: [
         {
           name: "New Arrivals",
-          href: "#",
           imageSrc: "./src/assets/donkey_kong_64.jpeg",
           imageAlt: "Donkey Kong 64 Cover",
         },
         {
           name: "Top Games",
-          href: "#",
           imageSrc: "../src/assets/ocarina_of_time.jpeg",
           imageAlt: "Legend of Zelda: Ocarina of Time Cover",
         },
@@ -78,6 +75,7 @@ export default function StoreNavigation({
     }
     getPlatformId(event);
     setPage(0);
+    event.preventDefault();
   };
   return (
     <div className="bg-white mt-14 z-100">
@@ -394,17 +392,6 @@ export default function StoreNavigation({
                   >
                     Sign in | Create Account
                   </Link>
-                </div>
-
-                {/* Search */}
-                <div className="flex lg:ml-6">
-                  <a href="#" className="p-2 text-gray-400 hover:text-gray-500">
-                    <span className="sr-only">Search</span>
-                    <MagnifyingGlassIcon
-                      className="h-6 w-6"
-                      aria-hidden="true"
-                    />
-                  </a>
                 </div>
 
                 {/* Cart */}
