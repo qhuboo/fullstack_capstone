@@ -7,7 +7,6 @@ import {
   ShoppingBagIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
-import game_data from "../data/game_data";
 
 const navigation = {
   categories: [
@@ -64,19 +63,20 @@ export default function StoreNavigation({
   const [open, setOpen] = useState(false);
 
   const handleCategoryClick = (event) => {
-    setMarketList(() => {
+    async function getPlatformId(event) {
       if (event.target.textContent === "Browse All") {
-        return game_data;
+        const response = await fetch("http://localhost:3000/api/games/");
+        const data = await response.json();
+        setMarketList(data);
       } else {
-        return game_data.filter((game) => {
-          for (let i = 0; i < game.platforms.length; i++) {
-            if (game.platforms[i].platform_name == event.target.textContent) {
-              return true;
-            }
-          }
-        });
+        const response = await fetch(
+          `http://localhost:3000/api/games/platform/name/${event.target.textContent}`
+        );
+        const data = await response.json();
+        setMarketList(data);
       }
-    });
+    }
+    getPlatformId(event);
     setPage(0);
   };
   return (

@@ -6,20 +6,10 @@ import ProductPage from "./pages/ProductPage";
 import Shopping_Cart from "./pages/Shopping_Cart";
 import CheckoutPage from "./pages/CheckoutPage";
 import Sign_In from "./pages/Sign_In";
-import { useEffect, useState } from "react";
-import game_data from "./data/game_data";
+import { useState } from "react";
 
 function App() {
-  useEffect(() => {
-    const fetchData = async () => {
-      const response = await fetch("http://localhost:3000/api/games/game/141");
-      const data = await response.json();
-      console.log(data);
-    };
-    fetchData();
-  });
-
-  const [marketList, setMarketList] = useState(game_data);
+  const [marketList, setMarketList] = useState([]);
   const [cart, setCart] = useState([
     {
       description:

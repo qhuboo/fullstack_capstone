@@ -2,7 +2,7 @@ import Footer from "../components/Footer";
 import StoreNavigation from "../components/StoreNavigation";
 import ProductList from "../components/ProductList";
 import Pagination from "../components/Pagination";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function MarketPlace({
   marketList,
@@ -10,7 +10,16 @@ export default function MarketPlace({
   setProduct,
   cart,
   setCart,
+  pages,
 }) {
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await fetch("http://localhost:3000/api/games/");
+      const data = await response.json();
+      setMarketList(data);
+    };
+    fetchData();
+  }, []);
   const [page, setPage] = useState(0);
   const numPages = Math.ceil(marketList.length / 24);
   return (
