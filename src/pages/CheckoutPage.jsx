@@ -21,7 +21,7 @@ function CheckoutPage({ cart, setCart }) {
                 >
                   <img
                     className="m-2 h-24 w-28 rounded-md border object-cover object-center"
-                    src={product.sample_cover.image}
+                    src={product.sample_cover_image}
                     alt=""
                   />
                   <div className="flex w-full flex-col px-4 py-4">

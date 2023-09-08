@@ -11,14 +11,21 @@ export default function ProductList({ marketList, page, setProduct }) {
     pages.push(marketList.slice(i, i + 24));
   }
   // When someone clicks the picture of a game in the marketplace the handle function finds the game object from which
-  // the image source came from and then sets the product state to this game object
+  // the image source came from and then calls the fetchGameScreenshots function using the game_id to get an array of screenshots
+  // along the rest of the information needed
+  async function fetchGameScreenshots(game_id) {
+    const response = await fetch(
+      `http://localhost:3000/api/games/game/${game_id}`
+    );
+    const data = await response.json();
+    setProduct(data);
+  }
   const handleProductClick = (event) => {
-    console.log(event);
-    // for (let i = 0; i < marketList.length; i++) {
-    //   if (marketList[i].sample_cover.image == event.target.src) {
-    //     setProduct(marketList[i]);
-    //   }
-    // }
+    for (let i = 0; i < marketList.length; i++) {
+      if (marketList[i].sample_cover_image == event.target.src) {
+        fetchGameScreenshots(marketList[i].game_id);
+      }
+    }
   };
   return (
     <div className="bg-white">

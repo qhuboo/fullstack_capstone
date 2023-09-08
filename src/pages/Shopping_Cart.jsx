@@ -9,11 +9,21 @@ export default function Shopping_Cart({
   setProduct,
 }) {
   const handleCartProductClick = (event) => {
-    for (let i = 0; i < marketList.length; i++) {
-      if (marketList[i].title == event.target.textContent) {
-        setProduct(marketList[i]);
-      }
+    async function fetchGameScreenshots(game_id) {
+      const response = await fetch(
+        `http://localhost:3000/api/games/game/${game_id}`
+      );
+      const data = await response.json();
+      setProduct(data);
     }
+    async function getGameByTitle(game_title) {
+      const response = await fetch(
+        `http://localhost:3000/api/games/game/title/${game_title}`
+      );
+      const data = await response.json();
+      fetchGameScreenshots(data[0].game_id);
+    }
+    getGameByTitle(event.target.textContent);
   };
 
   const handleRemoveFromCart = (event) => {
@@ -47,7 +57,7 @@ export default function Shopping_Cart({
               <div key={product.game_id} className="flex py-6 items-center">
                 <div className="w-36 h-36 overflow-hidden rounded-md border border-gray-200">
                   <img
-                    src={product.sample_cover.image}
+                    src={product.sample_cover_image}
                     alt={product.description}
                     className="h-full w-full object-cover object-center"
                   />
