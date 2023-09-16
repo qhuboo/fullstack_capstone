@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
-import { Fragment, useState } from "react";
+import { Fragment, useContext, useState } from "react";
 import { Dialog, Popover, Tab, Transition } from "@headlessui/react";
 import {
   Bars3Icon,
   ShoppingBagIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
+import { UserContext } from "../UserContext";
 
 const navigation = {
   categories: [
@@ -58,6 +59,7 @@ export default function StoreNavigation({
   setCart,
 }) {
   const [open, setOpen] = useState(true);
+  const { user, setUser } = useContext(UserContext);
 
   const handleCategoryClick = (event) => {
     async function getPlatformId(event) {
@@ -75,7 +77,12 @@ export default function StoreNavigation({
     }
     getPlatformId(event);
     setPage(0);
-    // event.preventDefault();
+  };
+
+  const handleLogout = (event) => {
+    localStorage.clear();
+    setUser({});
+    window.location.reload();
   };
   return (
     <div className="bg-white mt-14 z-100">
@@ -144,32 +151,6 @@ export default function StoreNavigation({
                         key={category.name}
                         className="space-y-10 px-4 pb-8 pt-10"
                       >
-                        {/* <div className="grid grid-cols-2 gap-x-4">
-                          {category.featured.map((item) => (
-                            <div
-                              key={item.name}
-                              className="group relative text-sm"
-                            >
-                              <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75">
-                                <img
-                                  src={item.imageSrc}
-                                  alt={item.imageAlt}
-                                  className="object-cover object-center"
-                                />
-                              </div>
-                              <Link
-                                to="/marketplace"
-                                className="mt-6 block font-medium text-gray-900"
-                              >
-                                <span
-                                  className="absolute inset-0 z-10"
-                                  aria-hidden="true"
-                                />
-                                {item.name}
-                              </Link>
-                            </div>
-                          ))}
-                        </div> */}
                         {category.sections.map((section) => (
                           <div key={section.name}>
                             <p
@@ -217,12 +198,14 @@ export default function StoreNavigation({
 
                 <div className="space-y-6 border-t border-gray-200 px-4 py-6">
                   <div className="flow-root">
-                    <Link
-                      to="/sign-in"
-                      className="-m-2 block p-2 font-medium text-gray-900"
-                    >
-                      Sign in | Create Account
-                    </Link>
+                    {user.email && (
+                      <Link
+                        to="/sign-in"
+                        className="-m-2 block p-2 font-medium text-gray-900"
+                      >
+                        Sign in | Create Account
+                      </Link>
+                    )}
                   </div>
                 </div>
               </Dialog.Panel>
@@ -305,32 +288,6 @@ export default function StoreNavigation({
                               <div className="relative bg-slate-300	">
                                 <div className="mx-auto max-w-7xl px-8">
                                   <div className="grid grid-cols-2 gap-x-8 gap-y-10 py-16">
-                                    {/* <div className="col-start-2 grid grid-cols-2 gap-x-8">
-                                      {category.featured.map((item) => (
-                                        <div
-                                          key={item.name}
-                                          className="group relative text-base sm:text-sm"
-                                        >
-                                          <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75">
-                                            <img
-                                              src={item.imageSrc}
-                                              alt={item.imageAlt}
-                                              className="object-cover object-center"
-                                            />
-                                          </div>
-                                          <Link
-                                            to="/marketplace"
-                                            className="mt-6 block font-medium text-gray-900"
-                                          >
-                                            <span
-                                              className="absolute inset-0 z-10"
-                                              aria-hidden="true"
-                                            />
-                                            {item.name}
-                                          </Link>
-                                        </div>
-                                      ))}
-                                    </div> */}
                                     <div className="row-start-1 grid grid-cols-3 gap-x-8 gap-y-10 text-sm">
                                       {category.sections.map((section) => (
                                         <div key={section.name}>
@@ -373,25 +330,47 @@ export default function StoreNavigation({
                     </Popover>
                   ))}
 
-                  {navigation.pages.map((page) => (
-                    <Link
-                      to="/"
-                      key={page.name}
-                      className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
-                    >
-                      {page.name}
-                    </Link>
-                  ))}
+                  {navigation.pages
+                    .filter((page) => {
+                      if (!user.email && page.name != "Admin Page") {
+                        return true;
+                      } else if (page.name === "About Us") {
+                        return true;
+                      } else {
+                        return false;
+                      }
+                    })
+                    .map((page) => (
+                      <Link
+                        to="/"
+                        key={page.name}
+                        className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
+                      >
+                        {page.name}
+                      </Link>
+                    ))}
                 </div>
               </Popover.Group>
               <div className="ml-auto flex items-center">
                 <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
-                  <Link
-                    to="/sign-in"
-                    className="text-sm font-medium text-gray-700 hover:text-gray-800"
-                  >
-                    Sign in | Create Account
-                  </Link>
+                  {!user.email && (
+                    <Link
+                      to="/sign-in"
+                      className="text-sm font-medium text-gray-700 hover:text-gray-800"
+                    >
+                      Sign in | Create Account
+                    </Link>
+                  )}
+                  {user.email && (
+                    <button onClick={handleLogout}>
+                      <Link
+                        to="/"
+                        className="text-sm font-medium text-gray-700 hover:text-gray-800"
+                      >
+                        Logout
+                      </Link>
+                    </button>
+                  )}
                 </div>
 
                 {/* Cart */}

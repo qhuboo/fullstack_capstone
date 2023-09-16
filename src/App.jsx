@@ -7,9 +7,12 @@ import Shopping_Cart from "./pages/Shopping_Cart";
 import CheckoutPage from "./pages/CheckoutPage";
 import Sign_In from "./pages/Sign_In";
 import { useEffect, useState } from "react";
+import { UserContext } from "./UserContext";
 
 function App() {
+  const [user, setUser] = useState({});
   const [marketList, setMarketList] = useState([]);
+  const [cartChange, setCartChange] = useState(0);
   const [cart, setCart] = useState([]);
   const [product, setProduct] = useState([
     {
@@ -74,45 +77,75 @@ function App() {
         "https://cdn.mobygames.com/screenshots/3612474-star-wars-episode-i-racer-windows-fire-mountain-racing-a-lava-ca.jpg",
     },
   ]);
+
+  useEffect(() => {
+    if (localStorage.getItem("user")) {
+      const userLocalStorage = JSON.parse(localStorage.getItem("user"));
+      setUser(userLocalStorage);
+    }
+  }, []);
+
+  useEffect(() => {
+    console.log(user.email);
+  }, [cart]);
+
   return (
     <div>
-      <Routes>
-        <Route path="/" element={<MainPage cart={cart} setCart={setCart} />} />
-        <Route
-          path="/marketplace"
-          element={
-            <MarketPlace
-              marketList={marketList}
-              setMarketList={setMarketList}
-              setProduct={setProduct}
-              cart={cart}
-              setCart={setCart}
-            />
-          }
-        />
-        <Route path="/sign-in" element={<Sign_In />} />
-        <Route
-          path="/cart"
-          element={
-            <Shopping_Cart
-              cart={cart}
-              setCart={setCart}
-              marketList={marketList}
-              setProduct={setProduct}
-            />
-          }
-        />
-        <Route
-          path="/checkout"
-          element={<CheckoutPage cart={cart} setCart={setCart} />}
-        />
-        <Route
-          path="/product"
-          element={
-            <ProductPage product={product} cart={cart} setCart={setCart} />
-          }
-        />
-      </Routes>
+      <UserContext.Provider value={{ user, setUser }}>
+        <Routes>
+          <Route
+            path="/"
+            element={<MainPage cart={cart} setCart={setCart} />}
+          />
+          <Route
+            path="/marketplace"
+            element={
+              <MarketPlace
+                marketList={marketList}
+                setMarketList={setMarketList}
+                setProduct={setProduct}
+                cart={cart}
+                setCart={setCart}
+                setCartChange={setCartChange}
+              />
+            }
+          />
+          <Route path="/sign-in" element={<Sign_In />} />
+          <Route
+            path="/cart"
+            element={
+              <Shopping_Cart
+                cart={cart}
+                setCart={setCart}
+                marketList={marketList}
+                setProduct={setProduct}
+                setCartChange={setCartChange}
+              />
+            }
+          />
+          <Route
+            path="/checkout"
+            element={
+              <CheckoutPage
+                cart={cart}
+                setCart={setCart}
+                setCartChange={setCartChange}
+              />
+            }
+          />
+          <Route
+            path="/product"
+            element={
+              <ProductPage
+                product={product}
+                cart={cart}
+                setCart={setCart}
+                setCartChange={setCartChange}
+              />
+            }
+          />
+        </Routes>
+      </UserContext.Provider>
     </div>
   );
 }

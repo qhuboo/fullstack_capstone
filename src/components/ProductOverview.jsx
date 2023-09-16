@@ -1,9 +1,15 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import SignInModal from "./SignInModal";
+import { UserContext } from "../UserContext";
 
-export default function ProductOverview({ product, cart, setCart }) {
+export default function ProductOverview({
+  product,
+  cart,
+  setCart,
+  setCartChange,
+}) {
   const [isModalOpen, setModalOpen] = useState(false);
-  const signedIn = false;
+  const { user, setUser } = useContext(UserContext);
   const handleAddToCart = (event) => {
     event.preventDefault();
     async function getGameByTitle(game_title) {
@@ -11,15 +17,17 @@ export default function ProductOverview({ product, cart, setCart }) {
         `http://localhost:3000/api/games/game/title/${game_title}`
       );
       const data = await response.json();
+      console.log(data);
       setCart([...cart, data[0]]);
     }
-    if (signedIn) {
+    if (user.email) {
       getGameByTitle(product[0].title);
     } else {
       setModalOpen(true);
     }
   };
 
+  console.log(setCartChange);
   return (
     <div className="bg-white">
       <div className="pt-6">
@@ -98,6 +106,8 @@ export default function ProductOverview({ product, cart, setCart }) {
         </div>
       </div>
       <div>
+        {/* Pop up modal that signals to sign in if the user wants to add items
+        to the cart */}
         <SignInModal isOpen={isModalOpen} onClose={() => setModalOpen(false)}>
           <svg
             className="mx-auto mb-4 text-gray-400 w-12 h-12 dark:text-gray-200"
@@ -114,7 +124,7 @@ export default function ProductOverview({ product, cart, setCart }) {
               d="M10 11V6m0 8h.01M19 10a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
             />
           </svg>
-          <h2 className="">Please sign in to add items to cart!</h2>
+          <h2 className="">Please sign in to add items to the cart</h2>
         </SignInModal>
       </div>
     </div>

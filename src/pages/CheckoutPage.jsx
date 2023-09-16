@@ -1,7 +1,7 @@
 import Footer from "../components/Footer";
 import StoreNavigation from "../components/StoreNavigation";
 
-function CheckoutPage({ cart, setCart }) {
+function CheckoutPage({ cart, setCart, setCartChange }) {
   return (
     <div>
       <StoreNavigation cart={cart} setCart={setCart} />

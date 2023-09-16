@@ -1,6 +1,9 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { UserContext } from "../UserContext";
 
 export default function ProductList({ marketList, page, setProduct }) {
+  const { user, setUser } = useContext(UserContext);
   // The marketList prop is the current category of games which should be displayed in the marketplace
   // The page prop is the current [index] of the pages array that should be displayed in the marketplace
   // The setProduct prop is used to set the current product that should be diplayed in the product page
@@ -30,7 +33,6 @@ export default function ProductList({ marketList, page, setProduct }) {
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-        <h2 className="sr-only">Products</h2>
         <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
           {pages[page] &&
             pages[page].map((game) => (

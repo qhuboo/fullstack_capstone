@@ -1,7 +1,9 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { UserContext } from "../UserContext";
 
 export default function Sign_In() {
+  const { user, setUser } = useContext(UserContext);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [loginError, setLoginError] = useState(false);
@@ -21,8 +23,12 @@ export default function Sign_In() {
           }
         );
         const jsonResponse = await response.json();
-        localStorage.setItem("accessToken", jsonResponse.accessToken);
         if (jsonResponse.accessToken) {
+          setUser({ email, accessToken: jsonResponse.accessToken });
+          localStorage.setItem(
+            "user",
+            JSON.stringify({ email, accessToken: jsonResponse.accessToken })
+          );
           navigate("/");
         } else {
           console.log(jsonResponse.message);
@@ -43,8 +49,12 @@ export default function Sign_In() {
           }
         );
         const jsonResponse = await response.json();
-        localStorage.setItem("accessToken", jsonResponse.accessToken);
         if (jsonResponse.accessToken) {
+          setUser({ email, accessToken: jsonResponse.accessToken });
+          localStorage.setItem(
+            "user",
+            JSON.stringify({ email, accessToken: jsonResponse.accessToken })
+          );
           navigate("/");
         } else {
           console.log(jsonResponse.message);
@@ -76,10 +86,7 @@ export default function Sign_In() {
         <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
           <form className="space-y-6">
             <div>
-              <label
-                htmlFor="email"
-                className="block text-sm font-medium leading-6 text-gray-900"
-              >
+              <label className="block text-sm font-medium leading-6 text-gray-900">
                 Email address
               </label>
               <div className="mt-2">
@@ -99,10 +106,7 @@ export default function Sign_In() {
 
             <div>
               <div className="flex items-center justify-between">
-                <label
-                  htmlFor="password"
-                  className="block text-sm font-medium leading-6 text-gray-900"
-                >
+                <label className="block text-sm font-medium leading-6 text-gray-900">
                   Password
                 </label>
               </div>
