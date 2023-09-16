@@ -43,7 +43,7 @@ const navigation = {
       ],
     },
   ],
-  pages: [{ name: "About Us" }, { name: "Account" }],
+  pages: [{ name: "About Us" }, { name: "Admin Page" }],
 };
 
 function classNames(...classes) {
@@ -57,7 +57,7 @@ export default function StoreNavigation({
   cart,
   setCart,
 }) {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
 
   const handleCategoryClick = (event) => {
     async function getPlatformId(event) {
@@ -75,7 +75,7 @@ export default function StoreNavigation({
     }
     getPlatformId(event);
     setPage(0);
-    event.preventDefault();
+    // event.preventDefault();
   };
   return (
     <div className="bg-white mt-14 z-100">
@@ -144,7 +144,7 @@ export default function StoreNavigation({
                         key={category.name}
                         className="space-y-10 px-4 pb-8 pt-10"
                       >
-                        <div className="grid grid-cols-2 gap-x-4">
+                        {/* <div className="grid grid-cols-2 gap-x-4">
                           {category.featured.map((item) => (
                             <div
                               key={item.name}
@@ -169,7 +169,7 @@ export default function StoreNavigation({
                               </Link>
                             </div>
                           ))}
-                        </div>
+                        </div> */}
                         {category.sections.map((section) => (
                           <div key={section.name}>
                             <p
@@ -305,7 +305,7 @@ export default function StoreNavigation({
                               <div className="relative bg-slate-300	">
                                 <div className="mx-auto max-w-7xl px-8">
                                   <div className="grid grid-cols-2 gap-x-8 gap-y-10 py-16">
-                                    <div className="col-start-2 grid grid-cols-2 gap-x-8">
+                                    {/* <div className="col-start-2 grid grid-cols-2 gap-x-8">
                                       {category.featured.map((item) => (
                                         <div
                                           key={item.name}
@@ -330,7 +330,7 @@ export default function StoreNavigation({
                                           </Link>
                                         </div>
                                       ))}
-                                    </div>
+                                    </div> */}
                                     <div className="row-start-1 grid grid-cols-3 gap-x-8 gap-y-10 text-sm">
                                       {category.sections.map((section) => (
                                         <div key={section.name}>

@@ -1,4 +1,9 @@
+import { useState } from "react";
+import SignInModal from "./SignInModal";
+
 export default function ProductOverview({ product, cart, setCart }) {
+  const [isModalOpen, setModalOpen] = useState(false);
+  const signedIn = false;
   const handleAddToCart = (event) => {
     event.preventDefault();
     async function getGameByTitle(game_title) {
@@ -8,7 +13,11 @@ export default function ProductOverview({ product, cart, setCart }) {
       const data = await response.json();
       setCart([...cart, data[0]]);
     }
-    getGameByTitle(product[0].title);
+    if (signedIn) {
+      getGameByTitle(product[0].title);
+    } else {
+      setModalOpen(true);
+    }
   };
 
   return (
@@ -87,6 +96,26 @@ export default function ProductOverview({ product, cart, setCart }) {
             </div>
           </div>
         </div>
+      </div>
+      <div>
+        <SignInModal isOpen={isModalOpen} onClose={() => setModalOpen(false)}>
+          <svg
+            className="mx-auto mb-4 text-gray-400 w-12 h-12 dark:text-gray-200"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 20 20"
+          >
+            <path
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M10 11V6m0 8h.01M19 10a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+            />
+          </svg>
+          <h2 className="">Please sign in to add items to cart!</h2>
+        </SignInModal>
       </div>
     </div>
   );

@@ -10,7 +10,6 @@ export default function MarketPlace({
   setProduct,
   cart,
   setCart,
-  pages,
 }) {
   useEffect(() => {
     const fetchData = async () => {
