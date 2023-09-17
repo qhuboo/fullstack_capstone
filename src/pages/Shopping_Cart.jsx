@@ -9,7 +9,6 @@ export default function Shopping_Cart({
   setProduct,
   setCartChange,
 }) {
-  console.log(setCartChange);
   const handleCartProductClick = (event) => {
     async function fetchGameScreenshots(game_id) {
       const response = await fetch(

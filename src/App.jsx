@@ -86,7 +86,9 @@ function App() {
   }, []);
 
   useEffect(() => {
-    console.log(user.email);
+    async function getCart(email) {
+      const response = await fetch()
+    }
   }, [cart]);
 
   return (

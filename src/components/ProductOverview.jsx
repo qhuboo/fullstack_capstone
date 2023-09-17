@@ -27,7 +27,6 @@ export default function ProductOverview({
     }
   };
 
-  console.log(setCartChange);
   return (
     <div className="bg-white">
       <div className="pt-6">
