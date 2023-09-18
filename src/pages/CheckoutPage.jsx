@@ -1,7 +1,7 @@
 import Footer from "../components/Footer";
 import StoreNavigation from "../components/StoreNavigation";
 
-function CheckoutPage({ cart, setCart, setCartChange }) {
+function CheckoutPage({ cart, setCart }) {
   return (
     <div>
       <StoreNavigation cart={cart} setCart={setCart} />
@@ -16,7 +16,7 @@ function CheckoutPage({ cart, setCart, setCartChange }) {
             {cart.map((product) => {
               return (
                 <div
-                  key={product.game_id}
+                  key={product.cart_item_id}
                   className="flex flex-col rounded-lg bg-white sm:flex-row"
                 >
                   <img
@@ -42,7 +42,6 @@ function CheckoutPage({ cart, setCart, setCartChange }) {
                 id="radio_1"
                 type="radio"
                 name="radio"
-                checked
               />
             </div>
             <div className="relative">
@@ -51,7 +50,6 @@ function CheckoutPage({ cart, setCart, setCartChange }) {
                 id="radio_2"
                 type="radio"
                 name="radio"
-                checked
               />
               <span className="peer-checked:border-gray-700 absolute right-4 top-1/2 box-content block h-3 w-3 -translate-y-1/2 rounded-full border-8 border-gray-300 bg-white"></span>
               <label
@@ -288,18 +286,3 @@ function CheckoutPage({ cart, setCart, setCartChange }) {
 }
 
 export default CheckoutPage;
-
-{
-  <div className="flex flex-col rounded-lg bg-white sm:flex-row">
-    <img
-      className="m-2 h-24 w-28 rounded-md border object-cover object-center"
-      src="https://images.unsplash.com/flagged/photo-1556637640-2c80d3201be8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c25lYWtlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-      alt=""
-    />
-    <div className="flex w-full flex-col px-4 py-4">
-      <span className="font-semibold">Nike Air Max Pro 8888 - Super Light</span>
-      <span className="float-right text-gray-400">42EU - 8.5US</span>
-      <p className="text-lg font-bold">$138.99</p>
-    </div>
-  </div>;
-}

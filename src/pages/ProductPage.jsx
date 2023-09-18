@@ -2,17 +2,12 @@ import Footer from "../components/Footer";
 import ProductOverview from "../components/ProductOverview";
 import StoreNavigation from "../components/StoreNavigation";
 
-export default function ProductPage({ product, cart, setCart, setCartChange }) {
+export default function ProductPage({ product, cart }) {
   return (
     <div>
-      <StoreNavigation cart={cart} setCart={setCart} />
+      <StoreNavigation cart={cart} />
       <div className="h-[50px]"></div>
-      <ProductOverview
-        product={product}
-        cart={cart}
-        setCart={setCart}
-        setCartChange={setCartChange}
-      />
+      <ProductOverview product={product} />
       <Footer />
     </div>
   );

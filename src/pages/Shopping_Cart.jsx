@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 import StoreNavigation from "../components/StoreNavigation";
 import Footer from "../components/Footer";
+import { useEffect } from "react";
 
 export default function Shopping_Cart({
   cart,
   setCart,
   marketList,
   setProduct,
-  setCartChange,
 }) {
   const handleCartProductClick = (event) => {
     async function fetchGameScreenshots(game_id) {
@@ -27,18 +27,6 @@ export default function Shopping_Cart({
     getGameByTitle(event.target.textContent);
   };
 
-  const handleRemoveFromCart = (event) => {
-    let removed = false; // flag to track if an item has been removed
-    const newCart = cart.filter((game) => {
-      if (game.game_id == event.target.getAttribute("game-id") && !removed) {
-        removed = true; // set the flag to true since we're removing this instance
-        return false; // don't include this game in the new array
-      }
-      return true; // include all other games
-    });
-    setCart(newCart);
-  };
-
   return (
     <div>
       <StoreNavigation cart={cart} setCart={cart} />
@@ -55,7 +43,10 @@ export default function Shopping_Cart({
         <main className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
           <div className="px-4 py-6 divide-y divide-gray-200">
             {cart.map((product) => (
-              <div key={product.game_id} className="flex py-6 items-center">
+              <div
+                key={product.cart_item_id}
+                className="flex py-6 items-center"
+              >
                 <div className="w-36 h-36 overflow-hidden rounded-md border border-gray-200">
                   <img
                     src={product.sample_cover_image}
@@ -74,8 +65,8 @@ export default function Shopping_Cart({
                   </div>
                   <div className="flex justify-between items-end text-sm mt-2 text-gray-500">
                     <button
-                      game-id={product.game_id}
-                      onClick={handleRemoveFromCart}
+                      // game-id={product.game_id}
+                      // onClick={handleRemoveFromCart}
                       type="button"
                       className="text-indigo-600 hover:text-indigo-500"
                     >

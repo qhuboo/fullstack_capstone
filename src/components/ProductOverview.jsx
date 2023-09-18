@@ -2,12 +2,7 @@ import { useContext, useState } from "react";
 import SignInModal from "./SignInModal";
 import { UserContext } from "../UserContext";
 
-export default function ProductOverview({
-  product,
-  cart,
-  setCart,
-  setCartChange,
-}) {
+export default function ProductOverview({ product }) {
   const [isModalOpen, setModalOpen] = useState(false);
   const { user, setUser } = useContext(UserContext);
   const handleAddToCart = (event) => {
@@ -17,8 +12,24 @@ export default function ProductOverview({
         `http://localhost:3000/api/games/game/title/${game_title}`
       );
       const data = await response.json();
-      console.log(data);
-      setCart([...cart, data[0]]);
+      const newCartItem = {
+        email: user.email,
+        game_id: data[0].game_id,
+        title: data[0].title,
+        description: data[0].description,
+        price: data[0].price,
+        sample_cover_image: data[0].sample_cover_image,
+      };
+      const anotherResponse = await fetch(
+        "http://localhost:3000/api/users/user/cart/add",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(newCartItem),
+        }
+      );
+      const userLocalStorage = JSON.parse(localStorage.getItem("user"));
+      setUser(userLocalStorage);
     }
     if (user.email) {
       getGameByTitle(product[0].title);

@@ -56,7 +56,6 @@ export default function StoreNavigation({
   setMarketList,
   setPage,
   cart,
-  setCart,
 }) {
   const [open, setOpen] = useState(true);
   const { user, setUser } = useContext(UserContext);
@@ -362,14 +361,17 @@ export default function StoreNavigation({
                     </Link>
                   )}
                   {user.email && (
-                    <button onClick={handleLogout}>
-                      <Link
-                        to="/"
-                        className="text-sm font-medium text-gray-700 hover:text-gray-800"
-                      >
-                        Logout
-                      </Link>
-                    </button>
+                    <div>
+                      <div>Hello, {user.email}</div>
+                      <button onClick={handleLogout}>
+                        <Link
+                          to="/"
+                          className="text-sm font-medium text-gray-700 hover:text-gray-800"
+                        >
+                          Logout
+                        </Link>
+                      </button>
+                    </div>
                   )}
                 </div>
 

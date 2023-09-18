@@ -6,13 +6,12 @@ import ProductPage from "./pages/ProductPage";
 import Shopping_Cart from "./pages/Shopping_Cart";
 import CheckoutPage from "./pages/CheckoutPage";
 import Sign_In from "./pages/Sign_In";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import { UserContext } from "./UserContext";
 
 function App() {
   const [user, setUser] = useState({});
   const [marketList, setMarketList] = useState([]);
-  const [cartChange, setCartChange] = useState(0);
   const [cart, setCart] = useState([]);
   const [product, setProduct] = useState([
     {
@@ -87,13 +86,28 @@ function App() {
 
   useEffect(() => {
     async function getCart(email) {
-      const response = await fetch()
+      const response = await fetch(
+        "http://localhost:3000/api/users/user/cart/",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ email: email }),
+        }
+      );
+      const cartItems = await response.json();
+      setCart(cartItems);
     }
-  }, [cart]);
+    if (localStorage.getItem("user")) {
+      const userLocalStorage = JSON.parse(localStorage.getItem("user"));
+      getCart(userLocalStorage.email);
+    }
+  }, [user]);
+
+  const value = useMemo(() => ({ user, setUser }), [user, setUser]);
 
   return (
     <div>
-      <UserContext.Provider value={{ user, setUser }}>
+      <UserContext.Provider value={value}>
         <Routes>
           <Route
             path="/"
@@ -107,8 +121,6 @@ function App() {
                 setMarketList={setMarketList}
                 setProduct={setProduct}
                 cart={cart}
-                setCart={setCart}
-                setCartChange={setCartChange}
               />
             }
           />
@@ -121,30 +133,13 @@ function App() {
                 setCart={setCart}
                 marketList={marketList}
                 setProduct={setProduct}
-                setCartChange={setCartChange}
               />
             }
           />
-          <Route
-            path="/checkout"
-            element={
-              <CheckoutPage
-                cart={cart}
-                setCart={setCart}
-                setCartChange={setCartChange}
-              />
-            }
-          />
+          <Route path="/checkout" element={<CheckoutPage cart={cart} />} />
           <Route
             path="/product"
-            element={
-              <ProductPage
-                product={product}
-                cart={cart}
-                setCart={setCart}
-                setCartChange={setCartChange}
-              />
-            }
+            element={<ProductPage product={product} cart={cart} />}
           />
         </Routes>
       </UserContext.Provider>
