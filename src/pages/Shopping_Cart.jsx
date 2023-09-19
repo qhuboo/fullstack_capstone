@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import StoreNavigation from "../components/StoreNavigation";
 import Footer from "../components/Footer";
-import { useEffect } from "react";
+import { useContext } from "react";
+import { UserContext } from "../UserContext";
 
 export default function Shopping_Cart({
   cart,
@@ -9,6 +10,8 @@ export default function Shopping_Cart({
   marketList,
   setProduct,
 }) {
+  const { user, setUser } = useContext(UserContext);
+
   const handleCartProductClick = (event) => {
     async function fetchGameScreenshots(game_id) {
       const response = await fetch(
@@ -25,6 +28,26 @@ export default function Shopping_Cart({
       fetchGameScreenshots(data[0].game_id);
     }
     getGameByTitle(event.target.textContent);
+  };
+
+  const handleRemoveFromCart = (event) => {
+    const cart_item_id = event.target.getAttribute("cart-item-id");
+    async function deleteCartItem(cartItemId) {
+      const response = await fetch(
+        "http://localhost:3000/api/users/user/cart/delete",
+        {
+          method: "DELETE",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${user.accessToken}`,
+          },
+          body: JSON.stringify({ cartItemId: cartItemId }),
+        }
+      );
+      const data = await response.json();
+      console.log(data);
+    }
+    deleteCartItem(cart_item_id);
   };
 
   return (
@@ -65,8 +88,8 @@ export default function Shopping_Cart({
                   </div>
                   <div className="flex justify-between items-end text-sm mt-2 text-gray-500">
                     <button
-                      // game-id={product.game_id}
-                      // onClick={handleRemoveFromCart}
+                      cart-item-id={product.cart_item_id}
+                      onClick={handleRemoveFromCart}
                       type="button"
                       className="text-indigo-600 hover:text-indigo-500"
                     >

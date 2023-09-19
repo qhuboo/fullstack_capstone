@@ -24,12 +24,13 @@ export default function ProductOverview({ product }) {
         "http://localhost:3000/api/users/user/cart/add",
         {
           method: "POST",
-          headers: { "Content-Type": "application/json" },
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${user.accessToken}`,
+          },
           body: JSON.stringify(newCartItem),
         }
       );
-      const userLocalStorage = JSON.parse(localStorage.getItem("user"));
-      setUser(userLocalStorage);
     }
     if (user.email) {
       getGameByTitle(product[0].title);

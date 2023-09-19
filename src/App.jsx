@@ -101,7 +101,7 @@ function App() {
       const userLocalStorage = JSON.parse(localStorage.getItem("user"));
       getCart(userLocalStorage.email);
     }
-  }, [user]);
+  });
 
   const value = useMemo(() => ({ user, setUser }), [user, setUser]);
 
