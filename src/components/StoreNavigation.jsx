@@ -44,7 +44,7 @@ const navigation = {
       ],
     },
   ],
-  pages: [{ name: "About Us" }, { name: "Admin Page" }],
+  pages: [{ name: "Admin Page" }],
 };
 
 function classNames(...classes) {
@@ -333,8 +333,6 @@ export default function StoreNavigation({
                     .filter((page) => {
                       if (!user.email && page.name != "Admin Page") {
                         return true;
-                      } else if (page.name === "About Us") {
-                        return true;
                       } else {
                         return false;
                       }
@@ -348,6 +346,12 @@ export default function StoreNavigation({
                         {page.name}
                       </Link>
                     ))}
+                  <Link
+                    to="/about"
+                    className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
+                  >
+                    About Us
+                  </Link>
                 </div>
               </Popover.Group>
               <div className="ml-auto flex items-center">
