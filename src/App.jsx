@@ -7,6 +7,7 @@ import Shopping_Cart from "./pages/Shopping_Cart";
 import CheckoutPage from "./pages/CheckoutPage";
 import Sign_In from "./pages/Sign_In";
 import AboutUsPage from "./pages/AboutUsPage";
+import AdminPage from "./pages/AdminPage";
 import { useEffect, useState, useMemo } from "react";
 import { UserContext } from "./UserContext";
 
@@ -117,6 +118,10 @@ function App() {
           <Route
             path="/about"
             element={<AboutUsPage cart={cart} setCart={setCart} />}
+          />
+          <Route
+            path="/admin"
+            element={<AdminPage cart={cart} setCart={setCart} />}
           />
           <Route
             path="/marketplace"

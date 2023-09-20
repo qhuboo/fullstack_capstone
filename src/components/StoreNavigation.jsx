@@ -352,6 +352,12 @@ export default function StoreNavigation({
                   >
                     About Us
                   </Link>
+                  <Link
+                    to="/admin"
+                    className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
+                  >
+                    Admin Page
+                  </Link>
                 </div>
               </Popover.Group>
               <div className="ml-auto flex items-center">
