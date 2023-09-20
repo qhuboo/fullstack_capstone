@@ -88,11 +88,18 @@ function App() {
 
   useEffect(() => {
     async function getCart(email) {
+      if (!user || !user.accessToken) {
+        // Exit the function if user or its accessToken doesn't exist
+        return;
+      }
       const response = await fetch(
         "http://localhost:3000/api/users/user/cart/",
         {
           method: "POST",
-          headers: { "Content-Type": "application/json" },
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${user.accessToken}`,
+          },
           body: JSON.stringify({ email: email }),
         }
       );
@@ -103,7 +110,7 @@ function App() {
       const userLocalStorage = JSON.parse(localStorage.getItem("user"));
       getCart(userLocalStorage.email);
     }
-  });
+  }, [user]);
 
   const value = useMemo(() => ({ user, setUser }), [user, setUser]);
 
