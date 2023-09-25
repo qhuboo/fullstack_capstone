@@ -24,10 +24,18 @@ export default function Sign_In() {
         );
         const jsonResponse = await response.json();
         if (jsonResponse.accessToken) {
-          setUser({ email, accessToken: jsonResponse.accessToken });
+          setUser({
+            email,
+            accessToken: jsonResponse.accessToken,
+            admin: jsonResponse.admin,
+          });
           localStorage.setItem(
             "user",
-            JSON.stringify({ email, accessToken: jsonResponse.accessToken })
+            JSON.stringify({
+              email,
+              accessToken: jsonResponse.accessToken,
+              admin: jsonResponse.admin,
+            })
           );
           navigate("/");
         } else {
@@ -50,10 +58,18 @@ export default function Sign_In() {
         );
         const jsonResponse = await response.json();
         if (jsonResponse.accessToken) {
-          setUser({ email, accessToken: jsonResponse.accessToken });
+          setUser({
+            email,
+            accessToken: jsonResponse.accessToken,
+            admin: jsonResponse.admin,
+          });
           localStorage.setItem(
             "user",
-            JSON.stringify({ email, accessToken: jsonResponse.accessToken })
+            JSON.stringify({
+              email,
+              accessToken: jsonResponse.accessToken,
+              admin: jsonResponse.admin,
+            })
           );
           navigate("/");
         } else {

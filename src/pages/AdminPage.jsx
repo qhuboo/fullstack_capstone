@@ -31,14 +31,16 @@ export default function AdminPage({
   }
 
   async function handleAdmin(event) {
-    console.log(event.target.id);
+    const response = await fetch(
+      `http://localhost:3000/api/users/user/admin/change`,
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email: event.target.id }),
+      }
+    );
     setAdminChange((n) => n + 1);
   }
-
-  useEffect(() => {
-    console.log("Re-render");
-    console.log(adminChange);
-  });
 
   useEffect(() => {
     async function getUsers(email) {

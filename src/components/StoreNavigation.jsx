@@ -185,16 +185,20 @@ export default function StoreNavigation({
                 </Tab.Group>
 
                 <div className="space-y-6 border-t border-gray-200 px-4 py-6">
-                  {navigation.pages.map((page) => (
-                    <div key={page.name} className="flow-root">
-                      <Link
-                        to="/marketplace"
-                        className="-m-2 block p-2 font-medium text-gray-900"
-                      >
-                        {page.name}
-                      </Link>
-                    </div>
-                  ))}
+                  {user.admin && (
+                    <Link
+                      to="/admin"
+                      className="-m-2 block p-2 font-medium text-gray-900"
+                    >
+                      Admin Page
+                    </Link>
+                  )}
+                  <Link
+                    to="/about"
+                    className="-m-2 block p-2 font-medium text-gray-900"
+                  >
+                    About Us
+                  </Link>
                 </div>
 
                 <div className="space-y-6 border-t border-gray-200 px-4 py-6">
@@ -331,34 +335,19 @@ export default function StoreNavigation({
                     </Popover>
                   ))}
 
-                  {navigation.pages
-                    .filter((page) => {
-                      if (!user.email && page.name != "Admin Page") {
-                        return true;
-                      } else {
-                        return false;
-                      }
-                    })
-                    .map((page) => (
-                      <Link
-                        to="/"
-                        key={page.name}
-                        className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
-                      >
-                        {page.name}
-                      </Link>
-                    ))}
+                  {user.admin && (
+                    <Link
+                      to="/admin"
+                      className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
+                    >
+                      Admin Page
+                    </Link>
+                  )}
                   <Link
                     to="/about"
                     className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
                   >
                     About Us
-                  </Link>
-                  <Link
-                    to="/admin"
-                    className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
-                  >
-                    Admin Page
                   </Link>
                 </div>
               </Popover.Group>
