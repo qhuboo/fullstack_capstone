@@ -33,8 +33,17 @@ export default function EditGamePage({
       { method: "DELETE" }
     );
   }
-  function handleEditGame(event) {
-    console.log({ game_id: currentGameEdit });
+  async function handleEditGame(event) {
+    const response = await fetch(
+      `http://localhost:3000/api/games/game/update/${currentGameEdit}`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ title, price, description }),
+      }
+    );
   }
   return (
     <div>
@@ -142,14 +151,15 @@ export default function EditGamePage({
                   Delete Game
                 </button>
               </Link>
-
-              <button
-                type="button"
-                onClick={handleEditGame}
-                className="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-              >
-                Save
-              </button>
+              <Link to="/admin">
+                <button
+                  type="button"
+                  onClick={handleEditGame}
+                  className="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                >
+                  Save
+                </button>
+              </Link>
             </div>
           </form>
         </div>

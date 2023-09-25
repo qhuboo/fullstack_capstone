@@ -12,7 +12,7 @@ export default function ProductOverview({ product }) {
     event.preventDefault();
     async function getGameByTitle(game_title) {
       const response = await fetch(
-        `http://localhost:3000/api/games/game/title/${game_title}`
+        `http://localhost:3000/api/games/game/title/name/${game_title}`
       );
       const data = await response.json();
       const newCartItem = {
@@ -37,9 +37,7 @@ export default function ProductOverview({ product }) {
     }
     if (user.email) {
       getGameByTitle(product[0].title);
-      setCartChange((prevCartChange) => {
-        return prevCartChange + 1;
-      });
+      setCartChange((n) => n + 1);
     } else {
       setModalOpen(true);
     }
