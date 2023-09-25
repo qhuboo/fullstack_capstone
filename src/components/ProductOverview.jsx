@@ -1,10 +1,13 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import SignInModal from "./SignInModal";
 import { UserContext } from "../UserContext";
+import { CartChangeContext } from "../CartChangeContext";
 
 export default function ProductOverview({ product }) {
   const [isModalOpen, setModalOpen] = useState(false);
   const { user, setUser } = useContext(UserContext);
+  const { cartChange, setCartChange } = useContext(CartChangeContext);
+
   const handleAddToCart = (event) => {
     event.preventDefault();
     async function getGameByTitle(game_title) {
@@ -34,6 +37,9 @@ export default function ProductOverview({ product }) {
     }
     if (user.email) {
       getGameByTitle(product[0].title);
+      setCartChange((prevCartChange) => {
+        return prevCartChange + 1;
+      });
     } else {
       setModalOpen(true);
     }

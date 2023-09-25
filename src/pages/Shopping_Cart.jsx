@@ -3,6 +3,7 @@ import StoreNavigation from "../components/StoreNavigation";
 import Footer from "../components/Footer";
 import { useContext } from "react";
 import { UserContext } from "../UserContext";
+import { CartChangeContext } from "../CartChangeContext";
 
 export default function Shopping_Cart({
   cart,
@@ -11,6 +12,7 @@ export default function Shopping_Cart({
   setProduct,
 }) {
   const { user, setUser } = useContext(UserContext);
+  const { cartChange, setCartChange } = useContext(CartChangeContext);
 
   const handleCartProductClick = (event) => {
     async function fetchGameScreenshots(game_id) {
@@ -48,6 +50,9 @@ export default function Shopping_Cart({
       console.log(data);
     }
     deleteCartItem(cart_item_id);
+    setCartChange((prevCartChange) => {
+      return prevCartChange + 1;
+    });
   };
 
   return (

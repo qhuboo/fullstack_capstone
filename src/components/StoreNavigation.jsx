@@ -63,7 +63,9 @@ export default function StoreNavigation({
   const handleCategoryClick = (event) => {
     async function getPlatformId(event) {
       if (event.target.textContent === "Browse All") {
-        const response = await fetch("http://localhost:3000/api/games/");
+        const response = await fetch(
+          "http://localhost:3000/api/games/available"
+        );
         const data = await response.json();
         setMarketList(data);
       } else {

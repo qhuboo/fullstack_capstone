@@ -13,7 +13,7 @@ export default function MarketPlace({
 }) {
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch("http://localhost:3000/api/games/");
+      const response = await fetch("http://localhost:3000/api/games/available");
       const data = await response.json();
       setMarketList(data);
     };

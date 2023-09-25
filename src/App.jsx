@@ -10,11 +10,15 @@ import AboutUsPage from "./pages/AboutUsPage";
 import AdminPage from "./pages/AdminPage";
 import { useEffect, useState, useMemo } from "react";
 import { UserContext } from "./UserContext";
+import { CartChangeContext } from "./CartChangeContext";
+import EditGamePage from "./pages/EditGamePage";
 
 function App() {
   const [user, setUser] = useState({});
   const [marketList, setMarketList] = useState([]);
   const [cart, setCart] = useState([]);
+  const [cartChange, setCartChange] = useState(0);
+  const [currentGameEdit, setCurrentGameEdit] = useState(1);
   const [product, setProduct] = useState([
     {
       game_id: 276,
@@ -110,56 +114,80 @@ function App() {
       const userLocalStorage = JSON.parse(localStorage.getItem("user"));
       getCart(userLocalStorage.email);
     }
-  }, [user]);
+  }, [user, cartChange]);
 
   const value = useMemo(() => ({ user, setUser }), [user, setUser]);
+  const cartValue = useMemo(
+    () => ({ cartChange, setCartChange }),
+    [cartChange, setCartChange]
+  );
 
   return (
     <div>
-      <UserContext.Provider value={value}>
-        <Routes>
-          <Route
-            path="/"
-            element={<MainPage cart={cart} setCart={setCart} />}
-          />
-          <Route
-            path="/about"
-            element={<AboutUsPage cart={cart} setCart={setCart} />}
-          />
-          <Route
-            path="/admin"
-            element={<AdminPage cart={cart} setCart={setCart} />}
-          />
-          <Route
-            path="/marketplace"
-            element={
-              <MarketPlace
-                marketList={marketList}
-                setMarketList={setMarketList}
-                setProduct={setProduct}
-                cart={cart}
-              />
-            }
-          />
-          <Route path="/sign-in" element={<Sign_In />} />
-          <Route
-            path="/cart"
-            element={
-              <Shopping_Cart
-                cart={cart}
-                setCart={setCart}
-                marketList={marketList}
-                setProduct={setProduct}
-              />
-            }
-          />
-          <Route path="/checkout" element={<CheckoutPage cart={cart} />} />
-          <Route
-            path="/product"
-            element={<ProductPage product={product} cart={cart} />}
-          />
-        </Routes>
-      </UserContext.Provider>
+      <CartChangeContext.Provider value={cartValue}>
+        <UserContext.Provider value={value}>
+          <Routes>
+            <Route
+              path="/"
+              element={<MainPage cart={cart} setCart={setCart} />}
+            />
+            <Route
+              path="/about"
+              element={<AboutUsPage cart={cart} setCart={setCart} />}
+            />
+            <Route
+              path="/admin"
+              element={
+                <AdminPage
+                  cart={cart}
+                  setCart={setCart}
+                  currentGameEdit={currentGameEdit}
+                  setCurrentGameEdit={setCurrentGameEdit}
+                />
+              }
+            />
+            <Route
+              path="/marketplace"
+              element={
+                <MarketPlace
+                  marketList={marketList}
+                  setMarketList={setMarketList}
+                  setProduct={setProduct}
+                  cart={cart}
+                />
+              }
+            />
+            <Route path="/sign-in" element={<Sign_In />} />
+            <Route
+              path="/cart"
+              element={
+                <Shopping_Cart
+                  cart={cart}
+                  setCart={setCart}
+                  marketList={marketList}
+                  setProduct={setProduct}
+                />
+              }
+            />
+            <Route path="/checkout" element={<CheckoutPage cart={cart} />} />
+            <Route
+              path="/product"
+              element={<ProductPage product={product} cart={cart} />}
+            />
+            <Route
+              path="/edit"
+              element={
+                <EditGamePage
+                  product={product}
+                  cart={cart}
+                  currentGameEdit={currentGameEdit}
+                  setCurrentGameEdit={setCurrentGameEdit}
+                />
+              }
+            />
+          </Routes>
+        </UserContext.Provider>
+      </CartChangeContext.Provider>
     </div>
   );
 }
