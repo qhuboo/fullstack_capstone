@@ -108,7 +108,7 @@ function App() {
         }
       );
       const cartItems = await response.json();
-      setCart(cartItems);
+      await setCart(cartItems);
     }
     if (localStorage.getItem("user")) {
       const userLocalStorage = JSON.parse(localStorage.getItem("user"));
