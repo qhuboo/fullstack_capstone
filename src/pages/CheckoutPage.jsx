@@ -1,7 +1,32 @@
 import Footer from "../components/Footer";
 import StoreNavigation from "../components/StoreNavigation";
+import { useContext, useState } from "react";
+import { UserContext } from "../UserContext";
+import PurchaseModal from "../components/PurchaseModal";
 
 function CheckoutPage({ cart, setCart }) {
+  const { user, setUser } = useContext(UserContext);
+  const [isModalOpen, setModalOpen] = useState(false);
+
+  function handleCheckout() {
+    async function deleteCart() {
+      const response = await fetch(
+        `http://localhost:3000/api/users/user/cart/delete/all`,
+        {
+          method: "DELETE",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${user.accessToken}`,
+          },
+          body: JSON.stringify({ email: user.email }),
+        }
+      );
+    }
+    setCart([]);
+    deleteCart();
+    setModalOpen(true);
+  }
+
   return (
     <div>
       <StoreNavigation cart={cart} setCart={setCart} />
@@ -275,12 +300,22 @@ function CheckoutPage({ cart, setCart }) {
               </p>
             </div>
           </div>
-          <button className="mt-4 mb-8 w-full rounded-md bg-gray-900 px-6 py-3 font-medium text-white">
+          <button
+            onClick={handleCheckout}
+            className="mt-4 mb-8 w-full rounded-md bg-gray-900 px-6 py-3 font-medium text-white"
+          >
             Place Order
           </button>
         </div>
       </div>
       <Footer />
+      <div>
+        {/* Pop up modal that signals to sign in if the user wants to add items
+        to the cart */}
+        <PurchaseModal isOpen={isModalOpen} onClose={() => setModalOpen(false)}>
+          <h2 className="">Thank You For Your Purchase!</h2>
+        </PurchaseModal>
+      </div>
     </div>
   );
 }

@@ -50,9 +50,7 @@ export default function Shopping_Cart({
       console.log(data);
     }
     deleteCartItem(cart_item_id);
-    setCartChange((prevCartChange) => {
-      return prevCartChange + 1;
-    });
+    setCartChange((n) => n + 1);
   };
 
   return (
@@ -126,23 +124,37 @@ export default function Shopping_Cart({
               Shipping and taxes calculated at checkout.
             </p>
             <div className="mt-6">
-              <Link
-                to="/checkout"
-                className="w-full inline-flex items-center justify-center rounded-md border border-transparent bg-orange-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
-              >
-                Checkout
-              </Link>
-            </div>
-            <div className="mt-6 text-center text-sm text-gray-500">
-              <p>
-                or{" "}
-                <button
-                  type="button"
-                  className="text-orange-600 hover:text-indigo-500"
-                >
-                  <Link to="/marketplace">Continue Shopping &rarr;</Link>
-                </button>
-              </p>
+              {cart.length > 0 && (
+                <div>
+                  <Link
+                    to="/checkout"
+                    className="w-full inline-flex items-center justify-center rounded-md border border-transparent bg-orange-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
+                  >
+                    Checkout
+                  </Link>
+                  <div className="mt-6 text-center text-sm text-gray-500">
+                    <p>
+                      or{" "}
+                      <button
+                        type="button"
+                        className="text-orange-600 hover:text-indigo-500"
+                      >
+                        <Link to="/marketplace">Continue Shopping &rarr;</Link>
+                      </button>
+                    </p>
+                  </div>
+                </div>
+              )}
+              {cart.length === 0 && (
+                <div>
+                  <Link
+                    to="/marketplace"
+                    className="w-full inline-flex items-center justify-center rounded-md border border-transparent bg-orange-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
+                  >
+                    Cart is empty, continue shopping{" "}
+                  </Link>
+                </div>
+              )}
             </div>
           </div>
         </main>

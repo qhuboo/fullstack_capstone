@@ -114,7 +114,7 @@ function App() {
       const userLocalStorage = JSON.parse(localStorage.getItem("user"));
       getCart(userLocalStorage.email);
     }
-  }, [user, cartChange]);
+  }, [user, cartChange, cart]);
 
   const value = useMemo(() => ({ user, setUser }), [user, setUser]);
   const cartValue = useMemo(
@@ -169,10 +169,15 @@ function App() {
                 />
               }
             />
-            <Route path="/checkout" element={<CheckoutPage cart={cart} />} />
+            <Route
+              path="/checkout"
+              element={<CheckoutPage cart={cart} setCart={setCart} />}
+            />
             <Route
               path="/product"
-              element={<ProductPage product={product} cart={cart} />}
+              element={
+                <ProductPage product={product} cart={cart} setCart={setCart} />
+              }
             />
             <Route
               path="/edit"
