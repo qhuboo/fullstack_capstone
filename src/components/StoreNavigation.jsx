@@ -59,7 +59,7 @@ export default function StoreNavigation({
   setPage,
   cart,
 }) {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   const { user, setUser } = useContext(UserContext);
 
   const handleCategoryClick = (event) => {
@@ -203,13 +203,26 @@ export default function StoreNavigation({
 
                 <div className="space-y-6 border-t border-gray-200 px-4 py-6">
                   <div className="flow-root">
-                    {user.email && (
+                    {!user.email && (
                       <Link
                         to="/sign-in"
                         className="-m-2 block p-2 font-medium text-gray-900"
                       >
                         Sign in | Create Account
                       </Link>
+                    )}
+                    {user.email && (
+                      <div>
+                        <div>Hello, {user.email}</div>
+                        <button onClick={handleLogout}>
+                          <Link
+                            to="/"
+                            className="text-sm font-medium text-gray-700 hover:text-gray-800"
+                          >
+                            Logout
+                          </Link>
+                        </button>
+                      </div>
                     )}
                   </div>
                 </div>

@@ -86,7 +86,7 @@ export default function Sign_In() {
           <Link to="/">
             <img
               className="mx-auto h-64 w-50"
-              src="../src/assets/main_logo.png"
+              src="/assets/main_logo.png"
               alt="MateMine MarketPlace Logo"
             />
           </Link>

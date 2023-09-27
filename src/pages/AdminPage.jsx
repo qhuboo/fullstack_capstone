@@ -108,7 +108,7 @@ export default function AdminPage({
                     <div className="flex min-w-0 gap-x-4">
                       <img
                         className="h-24 w-24 flex-none rounded-full bg-gray-50"
-                        src="../src/assets/user.png"
+                        src="/assets/user.png"
                         alt=""
                       />
                       <div className="min-w-0 flex-auto">
