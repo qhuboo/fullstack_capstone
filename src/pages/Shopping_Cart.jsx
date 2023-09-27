@@ -5,6 +5,8 @@ import { useContext } from "react";
 import { UserContext } from "../UserContext";
 import { CartChangeContext } from "../CartChangeContext";
 
+const apiUrl = import.meta.env.VITE_API_URL;
+
 export default function Shopping_Cart({
   cart,
   setCart,
@@ -16,15 +18,13 @@ export default function Shopping_Cart({
 
   const handleCartProductClick = (event) => {
     async function fetchGameScreenshots(game_id) {
-      const response = await fetch(
-        `http://localhost:3000/api/games/game/${game_id}`
-      );
+      const response = await fetch(`${apiUrl}/api/games/game/${game_id}`);
       const data = await response.json();
       setProduct(data);
     }
     async function getGameByTitle(game_title) {
       const response = await fetch(
-        `http://localhost:3000/api/games/game/title/${game_title}`
+        `${apiUrl}/api/games/game/title/${game_title}`
       );
       const data = await response.json();
       fetchGameScreenshots(data[0].game_id);
@@ -35,17 +35,14 @@ export default function Shopping_Cart({
   const handleRemoveFromCart = (event) => {
     const cart_item_id = event.target.getAttribute("cart-item-id");
     async function deleteCartItem(cartItemId) {
-      const response = await fetch(
-        "http://localhost:3000/api/users/user/cart/delete",
-        {
-          method: "DELETE",
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer ${user.accessToken}`,
-          },
-          body: JSON.stringify({ cartItemId: cartItemId }),
-        }
-      );
+      const response = await fetch(`${apiUrl}/api/users/user/cart/delete`, {
+        method: "DELETE",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${user.accessToken}`,
+        },
+        body: JSON.stringify({ cartItemId: cartItemId }),
+      });
       const data = await response.json();
       console.log(data);
     }

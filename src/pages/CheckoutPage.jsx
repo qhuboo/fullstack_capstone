@@ -4,23 +4,22 @@ import { useContext, useState } from "react";
 import { UserContext } from "../UserContext";
 import PurchaseModal from "../components/PurchaseModal";
 
+const apiUrl = import.meta.env.VITE_API_URL;
+
 function CheckoutPage({ cart, setCart }) {
   const { user, setUser } = useContext(UserContext);
   const [isModalOpen, setModalOpen] = useState(false);
 
   function handleCheckout() {
     async function deleteCart() {
-      const response = await fetch(
-        `http://localhost:3000/api/users/user/cart/delete/all`,
-        {
-          method: "DELETE",
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer ${user.accessToken}`,
-          },
-          body: JSON.stringify({ email: user.email }),
-        }
-      );
+      const response = await fetch(`${apiUrl}/api/users/user/cart/delete/all`, {
+        method: "DELETE",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${user.accessToken}`,
+        },
+        body: JSON.stringify({ email: user.email }),
+      });
     }
     setCart([]);
     deleteCart();

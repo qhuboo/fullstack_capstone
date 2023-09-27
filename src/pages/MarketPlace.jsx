@@ -4,6 +4,8 @@ import ProductList from "../components/ProductList";
 import Pagination from "../components/Pagination";
 import { useState, useEffect } from "react";
 
+const apiUrl = import.meta.env.VITE_API_URL;
+
 export default function MarketPlace({
   marketList,
   setMarketList,
@@ -13,7 +15,7 @@ export default function MarketPlace({
 }) {
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch("http://localhost:3000/api/games/available");
+      const response = await fetch(`${apiUrl}/api/games/available`);
       const data = await response.json();
       setMarketList(data);
     };

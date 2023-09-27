@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import StoreNavigation from "../components/StoreNavigation";
 import { Link } from "react-router-dom";
 
+const apiUrl = import.meta.env.VITE_API_URL;
+
 export default function EditGamePage({
   cart,
   setCart,
@@ -15,9 +17,7 @@ export default function EditGamePage({
 
   useEffect(() => {
     async function getGame(game_id) {
-      const response = await fetch(
-        `http://localhost:3000/api/games/game/title/${game_id}`
-      );
+      const response = await fetch(`${apiUrl}/api/games/game/title/${game_id}`);
       const game_data = await response.json();
       setCurrentGame(game_data[0]);
       setTitle(game_data[0].title);
@@ -29,13 +29,13 @@ export default function EditGamePage({
 
   async function handleDeleteGame() {
     const response = await fetch(
-      `http://localhost:3000/api/games/game/delete/${currentGameEdit}`,
+      `${apiUrl}/api/games/game/delete/${currentGameEdit}`,
       { method: "DELETE" }
     );
   }
   async function handleEditGame(event) {
     const response = await fetch(
-      `http://localhost:3000/api/games/game/update/${currentGameEdit}`,
+      `${apiUrl}/api/games/game/update/${currentGameEdit}`,
       {
         method: "POST",
         headers: {

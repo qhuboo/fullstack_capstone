@@ -2,6 +2,8 @@ import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { UserContext } from "../UserContext";
 
+const apiUrl = import.meta.env.VITE_API_URL;
+
 export default function ProductList({ marketList, page, setProduct }) {
   const { user, setUser } = useContext(UserContext);
   // The marketList prop is the current category of games which should be displayed in the marketplace
@@ -17,9 +19,7 @@ export default function ProductList({ marketList, page, setProduct }) {
   // the image source came from and then calls the fetchGameScreenshots function using the game_id to get an array of screenshots
   // along the rest of the information needed
   async function fetchGameScreenshots(game_id) {
-    const response = await fetch(
-      `http://localhost:3000/api/games/game/${game_id}`
-    );
+    const response = await fetch(`${apiUrl}/api/games/game/${game_id}`);
     const data = await response.json();
     setProduct(data);
   }

@@ -2,6 +2,8 @@ import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { UserContext } from "../UserContext";
 
+const apiUrl = import.meta.env.VITE_API_URL;
+
 export default function Sign_In() {
   const { user, setUser } = useContext(UserContext);
   const [email, setEmail] = useState("");
@@ -14,14 +16,11 @@ export default function Sign_In() {
     const data = { email, password };
     if (event.target.value === "signin") {
       try {
-        const response = await fetch(
-          "http://localhost:3000/api/users/user/login",
-          {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(data),
-          }
-        );
+        const response = await fetch(`${apiUrl}/api/users/user/login`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(data),
+        });
         const jsonResponse = await response.json();
         if (jsonResponse.accessToken) {
           setUser({
@@ -48,14 +47,11 @@ export default function Sign_In() {
       }
     } else {
       try {
-        const response = await fetch(
-          "http://localhost:3000/api/users/user/signup",
-          {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(data),
-          }
-        );
+        const response = await fetch(`${apiUrl}/api/users/user/signup`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(data),
+        });
         const jsonResponse = await response.json();
         if (jsonResponse.accessToken) {
           setUser({

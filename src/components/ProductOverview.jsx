@@ -3,6 +3,8 @@ import SignInModal from "./SignInModal";
 import { UserContext } from "../UserContext";
 import { CartChangeContext } from "../CartChangeContext";
 
+const apiUrl = import.meta.env.VITE_API_URL;
+
 export default function ProductOverview({ product }) {
   const [isModalOpen, setModalOpen] = useState(false);
   const { user, setUser } = useContext(UserContext);
@@ -12,7 +14,7 @@ export default function ProductOverview({ product }) {
     event.preventDefault();
     async function getGameByTitle(game_title) {
       const response = await fetch(
-        `http://localhost:3000/api/games/game/title/name/${game_title}`
+        `${apiUrl}/api/games/game/title/name/${game_title}`
       );
       const data = await response.json();
       const newCartItem = {
@@ -23,17 +25,14 @@ export default function ProductOverview({ product }) {
         price: data[0].price,
         sample_cover_image: data[0].sample_cover_image,
       };
-      const anotherResponse = await fetch(
-        "http://localhost:3000/api/users/user/cart/add",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer ${user.accessToken}`,
-          },
-          body: JSON.stringify(newCartItem),
-        }
-      );
+      const anotherResponse = await fetch(`${apiUrl}/api/users/user/cart/add`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${user.accessToken}`,
+        },
+        body: JSON.stringify(newCartItem),
+      });
     }
     if (user.email) {
       getGameByTitle(product[0].title);

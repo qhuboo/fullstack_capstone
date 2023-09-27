@@ -51,6 +51,8 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
+const apiUrl = import.meta.env.VITE_API_URL;
+
 export default function StoreNavigation({
   marketList,
   setMarketList,
@@ -63,14 +65,12 @@ export default function StoreNavigation({
   const handleCategoryClick = (event) => {
     async function getPlatformId(event) {
       if (event.target.textContent === "Browse All") {
-        const response = await fetch(
-          "http://localhost:3000/api/games/available"
-        );
+        const response = await fetch(`${apiUrl}/api/games/available`);
         const data = await response.json();
         setMarketList(data);
       } else {
         const response = await fetch(
-          `http://localhost:3000/api/games/platform/name/${event.target.textContent}`
+          `${apiUrl}/api/games/platform/name/${event.target.textContent}`
         );
         const data = await response.json();
         setMarketList(data);

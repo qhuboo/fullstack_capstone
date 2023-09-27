@@ -4,6 +4,8 @@ import { useEffect, useState, useContext } from "react";
 import { UserContext } from "../UserContext";
 import { Link } from "react-router-dom";
 
+const apiUrl = import.meta.env.VITE_API_URL;
+
 export default function AdminPage({
   cart,
   setCart,
@@ -19,7 +21,7 @@ export default function AdminPage({
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch("http://localhost:3000/api/games/");
+      const response = await fetch(`${apiUrl}/api/games/`);
       const data = await response.json();
       setGamesList(data);
     };
@@ -31,14 +33,11 @@ export default function AdminPage({
   }
 
   async function handleAdmin(event) {
-    const response = await fetch(
-      `http://localhost:3000/api/users/user/admin/change`,
-      {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email: event.target.id }),
-      }
-    );
+    const response = await fetch(`${apiUrl}/api/users/user/admin/change`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ email: event.target.id }),
+    });
     setAdminChange((n) => n + 1);
   }
 
@@ -48,7 +47,7 @@ export default function AdminPage({
         // Exit the function if user or its accessToken doesn't exist
         return;
       }
-      const response = await fetch("http://localhost:3000/api/users/", {
+      const response = await fetch(`${apiUrl}/api/users/`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

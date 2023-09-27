@@ -13,6 +13,8 @@ import { UserContext } from "./UserContext";
 import { CartChangeContext } from "./CartChangeContext";
 import EditGamePage from "./pages/EditGamePage";
 
+const apiUrl = import.meta.env.VITE_API_URL;
+
 function App() {
   const [user, setUser] = useState({});
   const [marketList, setMarketList] = useState([]);
@@ -96,17 +98,14 @@ function App() {
         // Exit the function if user or its accessToken doesn't exist
         return;
       }
-      const response = await fetch(
-        "http://localhost:3000/api/users/user/cart/",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer ${user.accessToken}`,
-          },
-          body: JSON.stringify({ email: email }),
-        }
-      );
+      const response = await fetch(`${apiUrl}/api/users/user/cart/`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${user.accessToken}`,
+        },
+        body: JSON.stringify({ email: email }),
+      });
       const cartItems = await response.json();
       await setCart(cartItems);
     }
@@ -114,7 +113,7 @@ function App() {
       const userLocalStorage = JSON.parse(localStorage.getItem("user"));
       getCart(userLocalStorage.email);
     }
-  }, [user, cartChange, cart]);
+  }, [user, cartChange]);
 
   const value = useMemo(() => ({ user, setUser }), [user, setUser]);
   const cartValue = useMemo(
