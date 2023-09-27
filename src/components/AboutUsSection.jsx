@@ -26,7 +26,7 @@ export default function AboutUsSection() {
             </div>
           </div>
           <img
-            src="../src/assets/nintendo/mario_matemine.png"
+            src="/assets/us/jose.jpeg"
             alt="Mario MateMine"
             className="w-[36rem] rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
           />
@@ -55,7 +55,7 @@ export default function AboutUsSection() {
             </div>
           </div>
           <img
-            src="../src/assets/nintendo/mario_matemine.png"
+            src="/assets/us/nate.jpeg"
             alt="Mario MateMine"
             className="w-[36rem] rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
           />

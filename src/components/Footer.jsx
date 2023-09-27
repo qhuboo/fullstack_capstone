@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="sm:flex sm:items-center sm:justify-between">
           <Link to="/">
             <img
-              src="../src/assets/main_logo.png"
+              src="/assets/main_logo.png"
               className="h-24 mr-3"
               alt="MatMine Logo"
             />

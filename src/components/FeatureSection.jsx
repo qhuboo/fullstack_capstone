@@ -59,7 +59,7 @@ export default function FeatureSection() {
             </div>
           </div>
           <img
-            src="../src/assets/nintendo/mario_matemine.png"
+            src="/assets/nintendo/mario_matemine.png"
             alt="Mario MateMine"
             className="w-[36rem] rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
           />

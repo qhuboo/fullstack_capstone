@@ -40,22 +40,22 @@ export default function PlaystationProductFeatures() {
         </div>
         <div className="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
           <img
-            src="../src/assets/xbox/halo1.jpg"
+            src="/assets/xbox/halo1.jpg"
             alt="Halo Combat Evolved AI Generated Artwork"
             className="rounded-lg bg-gray-100"
           />
           <img
-            src="../src/assets/xbox/halo2.jpg"
+            src="/assets/xbox/halo2.jpg"
             alt="Halo Combat Evolved AI Generated Artwork"
             className="rounded-lg bg-gray-100"
           />
           <img
-            src="../src/assets/xbox/gears1.jpg"
+            src="/assets/xbox/gears1.jpg"
             alt="Gears of War AI Generated Artwork"
             className="rounded-lg bg-gray-100"
           />
           <img
-            src="../src/assets/xbox/gears2.jpg"
+            src="/assets/xbox/gears2.jpg"
             alt="Gears of War AI Generated Artwork"
             className="rounded-lg bg-gray-100"
           />

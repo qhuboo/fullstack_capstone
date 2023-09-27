@@ -16,12 +16,12 @@ const navigation = {
       featured: [
         {
           name: "New Arrivals",
-          imageSrc: "./src/assets/donkey_kong_64.jpeg",
+          imageSrc: "/assets/donkey_kong_64.jpeg",
           imageAlt: "Donkey Kong 64 Cover",
         },
         {
           name: "Top Games",
-          imageSrc: "../src/assets/ocarina_of_time.jpeg",
+          imageSrc: "/assets/ocarina_of_time.jpeg",
           imageAlt: "Legend of Zelda: Ocarina of Time Cover",
         },
       ],
@@ -240,7 +240,7 @@ export default function StoreNavigation({
                 <Link to="/">
                   <img
                     className="h-52 w-auto relative z-10"
-                    src="../src/assets/main_logo.png"
+                    src="/assets/main_logo.png"
                     alt=""
                   />
                 </Link>

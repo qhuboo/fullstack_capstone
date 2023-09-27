@@ -39,22 +39,22 @@ export default function NintendoProductFeatures() {
         </div>
         <div className="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
           <img
-            src="../src/assets/nintendo/ocarina1.jpg"
+            src="/assets/nintendo/ocarina1.jpg"
             alt="Ocarina of Time AI Generated Artwork"
             className="rounded-lg bg-gray-100"
           />
           <img
-            src="../src/assets/nintendo/ocarina2.jpg"
+            src="/assets/nintendo/ocarina2.jpg"
             alt="Ocarina of Time AI Generated Artwork"
             className="rounded-lg bg-gray-100"
           />
           <img
-            src="../src/assets/nintendo/mario.jpg"
+            src="/assets/nintendo/mario.jpg"
             alt="Super Mario AI Generated Artwork"
             className="rounded-lg bg-gray-100"
           />
           <img
-            src="../src/assets/nintendo/toad.jpg"
+            src="/assets/nintendo/toad.jpg"
             alt="Super Mario Character Toad AI Generated Artwork"
             className="rounded-lg bg-gray-100"
           />
