@@ -10,6 +10,39 @@ function CheckoutPage({ cart, setCart }) {
   const { user, setUser } = useContext(UserContext);
   const [isModalOpen, setModalOpen] = useState(false);
 
+  // Payment Details State
+  const [email, setEmail] = useState(user.email);
+  const [cardHolder, setCardHolder] = useState("");
+  const [cardNo, setCardNo] = useState("");
+  const [cardExpiry, setCardExpiry] = useState("");
+  const [isCardExpiryValid, setIsCardExpiryValid] = useState(true);
+  const [cardCVC, setCardCVC] = useState("");
+  const [address, setAddress] = useState("");
+  const [state, setState] = useState("");
+  const [zipCode, setZipCode] = useState("");
+
+  function handleCreditCardNoChange(event) {
+    // Remove all non-numeric characters
+    let value = event.target.value.replace(/\D/g, "");
+
+    // Insert a space after every 4th digit
+    value = value.replace(/(\d{4})/g, "$1 ").trim();
+
+    setCardNo(value);
+  }
+
+  function validateForm() {
+    if (!email) return "Email is required.";
+    if (!cardHolder) return "Card Holder is required.";
+    if (!cardNo) return "Card Number is required.";
+    if (!cardExpiry) return "Card Expiry is required.";
+    if (!cardCVC) return "CVC is required.";
+    if (!address) return "Address is required.";
+    if (!state || state == "State") return "State is required.";
+    if (!zipCode) return "ZIP Code is required.";
+    return null; // No errors
+  }
+
   function handleCheckout() {
     async function deleteCart() {
       const response = await fetch(`${apiUrl}/api/users/user/cart/delete/all`, {
@@ -21,9 +54,14 @@ function CheckoutPage({ cart, setCart }) {
         body: JSON.stringify({ email: user.email }),
       });
     }
-    setCart([]);
-    deleteCart();
-    setModalOpen(true);
+    const errorMessage = validateForm();
+    if (errorMessage) {
+      alert(errorMessage);
+    } else {
+      deleteCart();
+      setCart([]);
+      setModalOpen(true);
+    }
   }
 
   return (
@@ -62,6 +100,7 @@ function CheckoutPage({ cart, setCart }) {
           <form className="mt-5 grid gap-6">
             <div className="relative">
               <input
+                required
                 className="peer hidden"
                 id="radio_1"
                 type="radio"
@@ -104,11 +143,14 @@ function CheckoutPage({ cart, setCart }) {
             </label>
             <div className="relative">
               <input
+                value={email}
+                onChange={(event) => setEmail(event.target.value)}
                 type="text"
                 id="email"
                 name="email"
                 className="w-full rounded-md border border-gray-200 px-4 py-3 pl-11 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
                 placeholder="your.email@gmail.com"
+                required
               />
               <div className="pointer-events-none absolute inset-y-0 left-0 inline-flex items-center px-3">
                 <svg
@@ -135,6 +177,9 @@ function CheckoutPage({ cart, setCart }) {
             </label>
             <div className="relative">
               <input
+                value={cardHolder}
+                onChange={(event) => setCardHolder(event.target.value)}
+                required
                 type="text"
                 id="card-holder"
                 name="card-holder"
@@ -167,7 +212,11 @@ function CheckoutPage({ cart, setCart }) {
             <div className="flex">
               <div className="relative w-7/12 flex-shrink-0">
                 <input
+                  value={cardNo}
+                  onChange={(event) => handleCreditCardNoChange(event)}
+                  required
                   type="text"
+                  maxLength={19}
                   id="card-no"
                   name="card-no"
                   className="w-full rounded-md border border-gray-200 px-2 py-3 pl-11 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
@@ -188,12 +237,49 @@ function CheckoutPage({ cart, setCart }) {
                 </div>
               </div>
               <input
+                value={cardExpiry}
+                onChange={(e) => {
+                  const value = e.target.value;
+                  // Allow only numeric values and a slash
+                  const cleanedValue = value.replace(/[^0-9/]/g, "");
+
+                  if (cleanedValue.length <= 5) {
+                    // Place a slash at the third position if not present
+                    const finalValue =
+                      cleanedValue.length === 4 && cleanedValue[2] !== "/"
+                        ? cleanedValue.slice(0, 2) + "/" + cleanedValue.slice(2)
+                        : cleanedValue;
+                    setCardExpiry(finalValue);
+                  }
+
+                  // Validate the final value
+                  if (cleanedValue.length === 5) {
+                    const [month, year] = cleanedValue.split("/");
+                    if (
+                      !isNaN(month) &&
+                      !isNaN(year) &&
+                      month >= 1 &&
+                      month <= 12
+                    ) {
+                      setIsCardExpiryValid(true);
+                    } else {
+                      setIsCardExpiryValid(false);
+                    }
+                  } else {
+                    setIsCardExpiryValid(false);
+                  }
+                }}
+                required
                 type="text"
                 name="credit-expiry"
                 className="w-full rounded-md border border-gray-200 px-2 py-3 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
                 placeholder="MM/YY"
               />
+
               <input
+                value={cardCVC}
+                onChange={(event) => setCardCVC(event.target.value)}
+                required
                 type="text"
                 name="credit-cvc"
                 className="w-1/6 flex-shrink-0 rounded-md border border-gray-200 px-2 py-3 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
@@ -209,6 +295,9 @@ function CheckoutPage({ cart, setCart }) {
             <div className="flex flex-col sm:flex-row">
               <div className="relative flex-shrink-0 sm:w-7/12">
                 <input
+                  value={address}
+                  onChange={(event) => setAddress(event.target.value)}
+                  required
                   type="text"
                   id="billing-address"
                   name="billing-address"
@@ -224,13 +313,69 @@ function CheckoutPage({ cart, setCart }) {
                 </div>
               </div>
               <select
+                value={state}
+                onChange={(event) => setState(event.target.value)}
+                required
                 type="text"
                 name="billing-state"
                 className="w-full rounded-md border border-gray-200 px-4 py-3 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
               >
                 <option value="State">State</option>
+                <option value="Alabama">Alabama</option>
+                <option value="Alaska">Alaska</option>
+                <option value="Arizona">Arizona</option>
+                <option value="Arkansas">Arkansas</option>
+                <option value="California">California</option>
+                <option value="Colorado">Colorado</option>
+                <option value="Connecticut">Connecticut</option>
+                <option value="Delaware">Delaware</option>
+                <option value="Florida">Florida</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Hawaii">Hawaii</option>
+                <option value="Idaho">Idaho</option>
+                <option value="Illinois">Illinois</option>
+                <option value="Indiana">Indiana</option>
+                <option value="Iowa">Iowa</option>
+                <option value="Kansas">Kansas</option>
+                <option value="Kentucky">Kentucky</option>
+                <option value="Louisiana">Louisiana</option>
+                <option value="Maine">Maine</option>
+                <option value="Maryland">Maryland</option>
+                <option value="Massachusetts">Massachusetts</option>
+                <option value="Michigan">Michigan</option>
+                <option value="Minnesota">Minnesota</option>
+                <option value="Mississippi">Mississippi</option>
+                <option value="Missouri">Missouri</option>
+                <option value="Montana">Montana</option>
+                <option value="Nebraska">Nebraska</option>
+                <option value="Nevada">Nevada</option>
+                <option value="New Hampshire">New Hampshire</option>
+                <option value="New Jersey">New Jersey</option>
+                <option value="New Mexico">New Mexico</option>
+                <option value="New York">New York</option>
+                <option value="North Carolina">North Carolina</option>
+                <option value="North Dakota">North Dakota</option>
+                <option value="Ohio">Ohio</option>
+                <option value="Oklahoma">Oklahoma</option>
+                <option value="Oregon">Oregon</option>
+                <option value="Pennsylvania">Pennsylvania</option>
+                <option value="Rhode Island">Rhode Island</option>
+                <option value="South Carolina">South Carolina</option>
+                <option value="South Dakota">South Dakota</option>
+                <option value="Tennessee">Tennessee</option>
+                <option value="Texas">Texas</option>
+                <option value="Utah">Utah</option>
+                <option value="Vermont">Vermont</option>
+                <option value="Virginia">Virginia</option>
+                <option value="Washington">Washington</option>
+                <option value="West Virginia">West Virginia</option>
+                <option value="Wisconsin">Wisconsin</option>
+                <option value="Wyoming">Wyoming</option>
               </select>
               <input
+                value={zipCode}
+                onChange={(event) => setZipCode(event.target.value)}
+                required
                 type="text"
                 name="billing-zip"
                 className="flex-shrink-0 rounded-md border border-gray-200 px-4 py-3 text-sm shadow-sm outline-none sm:w-1/6 focus:z-10 focus:border-blue-500 focus:ring-blue-500"
