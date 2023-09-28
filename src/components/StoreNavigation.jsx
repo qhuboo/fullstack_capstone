@@ -80,7 +80,7 @@ export default function StoreNavigation({
     setPage(0);
   };
 
-  const handleLogout = (event) => {
+  const handleLogout = () => {
     localStorage.clear();
     setUser({});
     window.location.reload();
